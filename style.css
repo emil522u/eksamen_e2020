@@ -1,0 +1,767 @@
+html {
+    overflow-x: hidden;
+}
+
+
+/****************NAV****************/
+
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+.menuknap {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 90%;
+    position: relative;
+    z-index: 2000;
+}
+
+.bar1,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+.bar2 {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 0 5px;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-46deg) translate(-8px, 7px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hidden_menu {
+    opacity: 0;
+    transition: visibility .3s linear .3s, opacity .3s linear;
+    pointer-events: none;
+}
+
+.uklikbar {
+    pointer-events: none;
+}
+
+nav {
+    background-color: white;
+    width: 110vw;
+    height: 110vh;
+    z-index: 1000;
+    position: relative;
+    margin-top: -66px;
+    margin-left: -10px;
+    transition: visibility 0s linear .3s, opacity .3s linear;
+}
+
+#menu {
+    list-style-type: none;
+    padding-top: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    opacity: 100%;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    position: relative;
+    z-index: 1000;
+    transition: color .3s ease-in-out;
+}
+
+li {
+    justify-content: center;
+}
+
+.voresUnivers_menupunkt,
+.shop_menupunkt,
+.omos_menupunkt,
+.kontakt_menupunkt,
+.kurv_menupunkt {
+    display: flex;
+    height: 100px;
+    width: 80vw;
+    align-items: center;
+    border-bottom: 2px solid black;
+    opacity: 100%;
+}
+
+.soeg_menupunkt {
+    display: flex;
+    height: 100px;
+    width: 80vw;
+    align-items: center;
+}
+
+ul ul {
+    margin-left: -30px;
+}
+
+@media(min-width: 600px) {
+    .menuknap {
+        margin-left: 95%;
+        margin-top: 2%;
+    }
+
+    nav {
+        margin-top: -100px;
+    }
+
+    nav a {
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .voresUnivers_menupunkt,
+    .omos_menupunkt {
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        width: 40vw;
+        height: 200px;
+    }
+
+    .shop_menupunkt,
+    .kontakt_menupunkt {
+        width: 40vw;
+        height: 200px;
+    }
+
+    .kurv_menupunkt {
+        border-right: 2px solid black;
+        border-bottom: none;
+        width: 40vw;
+        height: 200px;
+    }
+
+    .soeg_menupunkt {
+        width: 40vw;
+        height: 200px;
+    }
+
+    ul ul {
+        display: flex;
+    }
+
+    #menu {
+        padding: 5% 8%;
+    }
+
+    a:hover {
+        background: url("SVG/wave.svg");
+        background-repeat: repeat;
+        /*        background-position-x: 50%;*/
+        /*        background-position-y: 100%;*/
+        /*        background-size: auto auto;*/
+        background-repeat: repeat-x;
+        background-size: 50px 20px;
+        background-position: 5px 5px;
+        padding: 10px;
+        /*        animation: move 15s linear infinite;*/
+        -webkit-animation: move 17s linear infinite;
+        /*        animation-play-state: paused;*/
+        /*        text-decoration: none;*/
+        /*        background-color: transparent;*/
+        /*        -webkit-text-decoration-skip: objects;*/
+    }
+
+    a:hover {
+        animation-play-state: running;
+    }
+
+
+    @-webkit-keyframes move {
+        from {
+            background-position: 60px 60px;
+        }
+
+        to {
+            background-position: 600px 60px;
+        }
+    }
+
+}
+
+/***************INDEX***********************/
+
+.index_body {
+    background-color: rgb(216, 226, 255);
+}
+
+.farve1_container {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+}
+
+.farve1_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#f9cee0, rgba(255, 0, 0, 0) 70%);
+}
+
+.farve2_container {
+    position: absolute;
+    left: -20vw;
+    top: -40vh;
+}
+
+.farve2_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#faf19b, rgba(255, 0, 0, 0) 70%);
+}
+
+.farve3_container {
+    position: absolute;
+    left: 100vw;
+    top: -80vh;
+}
+
+.farve3_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#d6e397, rgba(255, 0, 0, 0) 70%);
+}
+
+.farve4_container {
+    position: absolute;
+    left: 10vw;
+    top: -20vh;
+}
+
+.farve4_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#d6e397, rgba(255, 0, 0, 0) 70%);
+}
+
+.farve5_container {
+    position: absolute;
+    left: 50vw;
+    top: -50vw;
+}
+
+.farve5_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#faf19b, rgba(0, 0, 0, 0) 70%);
+}
+
+.farve6_container {
+    position: absolute;
+    top: 10vh;
+
+}
+
+.farve6_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#f9cee0, rgba(0, 0, 0, 0) 70%);
+}
+
+.farve7_container {
+    position: absolute;
+}
+
+.farve7_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#faf19b, rgba(0, 0, 0, 0) 70%);
+}
+
+.farve8_container {
+    position: absolute;
+    left: 80vw;
+    top: -30vh;
+}
+
+.farve8_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#f9cee0, rgba(0, 0, 0, 0) 70%);
+}
+
+.farve9_container {
+    position: absolute;
+    top: -50vh;
+    z-index: 1;
+}
+
+.farve9_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#d6e397, rgba(0, 0, 0, 0) 70%);
+}
+
+.farve10_container {
+    position: absolute;
+    left: 40vw;
+    top: -70vh;
+}
+
+.farve10_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#faf19b, rgba(0, 0, 0, 0) 70%);
+}
+
+.farve11_container {
+    position: absolute;
+    left: 100vw;
+    top: -50vh;
+}
+
+.farve11_sprite {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    background-image: radial-gradient(#f9cee0, rgba(0, 0, 0, 0) 70%);
+}
+
+.ltr {
+    animation-name: ltr_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ltr_kf {
+    0% {
+
+        transform: translateX(-10vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+
+.rtl {
+    animation-name: rtl_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes rtl_kf {
+    0% {
+
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-10vw);
+    }
+}
+
+.updown {
+    animation-name: updown_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes updown_kf {
+    from {
+        transform: translateY(-10vh);
+
+    }
+
+    to {
+        transform: translateY(50vh);
+    }
+}
+
+.updown2 {
+    animation-name: updown2_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes updown2_kf {
+    from {
+
+        transform: translateY(100vh);
+    }
+
+    to {
+        transform: translateY(-20vh);
+    }
+}
+
+.round {
+    transform-origin: left;
+    animation-name: round_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes round_kf {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.round2 {
+    transform-origin: left;
+    animation-name: round2_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes round2_kf {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+/****************UNIVERS****************/
+
+.splash {
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+
+.vores_univers_svg {
+    background-image: url(SVG/vores_univers3.svg);
+    background-size: cover;
+    background-position: 55% 50%;
+    width: 100%;
+    height: 50vh;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+}
+
+.indhold_univers {
+    background-color: white;
+    height: 200vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50vh;
+}
+
+.univers_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 10px;
+    /*    margin-top: 10px;*/
+    /*    height: 200vh;*/
+    width: 100vw;
+    position: relative;
+    z-index: 5;
+    left: 0;
+    background-color: white;
+}
+
+.univers_article {}
+
+.hvid_box {
+    height: 500px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.77);
+    position: absolute;
+}
+
+.post_navn {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: century-gothic, sans-serif;
+}
+
+.post_dato {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: century-gothic, sans-serif;
+}
+
+.post_billede {
+    max-width: 100%;
+}
+
+.post_tekst {
+    display: none;
+}
+
+/****************SHOP****************/
+
+
+.shop_svg {
+    background-image: url(SVG/shop.svg);
+    background-size: cover;
+    background-position: 55% 50%;
+    width: 100%;
+    height: 50vh;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+}
+
+.indhold_shop {
+    background-color: white;
+    height: 200vh;
+    width: 100vw;
+    position: relative;
+    z-index: 2;
+    left: 0;
+}
+
+
+
+/****************OM OS****************/
+
+.omOS_svg {
+    background-image: url(SVG/om_os.svg);
+    background-size: cover;
+    background-position: 55% 50%;
+    width: 100%;
+    height: 50vh;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+}
+
+.indhold_omOS {
+    background-color: white;
+    height: 200vh;
+    width: 100vw;
+    position: relative;
+    z-index: 2;
+    left: 0;
+}
+
+
+/****************KONTAKT****************/
+
+
+.kontakt_svg {
+    background-image: url(SVG/kontakt.svg);
+    background-size: cover;
+    background-position: 55% 50%;
+    width: 100%;
+    height: 50vh;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+}
+
+.indhold_kontakt {
+    background-color: white;
+    height: 200vh;
+    width: 100vw;
+    position: relative;
+    z-index: 2;
+    left: 0;
+}
+
+
+/****************FOOTER****************/
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    z-index: 500;
+    bottom: 0;
+    left: 0;
+}
+
+.facebook {
+    width: 16.07px;
+    height: 30px;
+    background-image: url(SVG/facebook.svg);
+    background-size: cover;
+    position: absolute;
+    top: 7.5px;
+    right: 15%;
+}
+
+.instagram {
+    width: 29.98px;
+    height: 30px;
+    background-image: url(SVG/instagram.svg);
+    background-size: cover;
+    position: absolute;
+    top: 7.5px;
+    right: 5%;
+}
+
+
+/****************MEDIA************************************************/
+
+
+@media(min-width: 600px) {
+
+
+    /****************UNIVERS****************/
+
+    .splash {
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+    }
+
+    .vores_univers_svg {
+        background-image: url(SVG/vores_univers3.svg);
+        background-position: 55% 50%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        position: absolute;
+        left: 0;
+    }
+
+    .indhold_univers {
+        background-color: white;
+        height: 200vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 100vh;
+    }
+
+    .univers_grid {
+
+        margin-top: 10px;
+
+    }
+
+
+    /****************SHOP****************/
+
+
+    .shop_svg {
+        background-image: url(SVG/shop.svg);
+        background-position: 55% 50%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        position: absolute;
+        left: 0;
+    }
+
+    .indhold_shop {
+        background-color: white;
+        height: 200vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 100vh;
+    }
+
+
+
+    /****************OM OS****************/
+
+
+    .omOS_svg {
+        background-image: url(SVG/om_os.svg);
+        background-position: 55% 50%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        position: absolute;
+        left: 0;
+    }
+
+    .indhold_omOS {
+        background-color: white;
+        height: 200vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 100vh;
+    }
+
+
+    /****************KONTAKT****************/
+
+
+    .kontakt_svg {
+        background-image: url(SVG/kontakt.svg);
+        background-position: 55% 50%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        position: absolute;
+        left: 0;
+    }
+
+    .indhold_kontakt {
+        background-color: white;
+        height: 200vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 100vh;
+    }
+
+
+}

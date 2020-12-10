@@ -4,13 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thrift Planet | Om os</title>
+    <title>Thrift Planet | Vores Univers</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pkv3fsf.css">
+    <style>
+        /*
+        html {
+        overflow: hidden;
+        }
+*/
+
+    </style>
 </head>
 
 <body class="index_body">
-
     <header>
         <div class="menuknap" onclick="myFunction(this)">
             <div class="bar1"></div>
@@ -18,7 +25,7 @@
             <div class="bar3"></div>
         </div>
 
-        <nav class="hidden_menu">
+        <nav id="knap" class="hidden_menu">
             <ul id="menu">
                 <li>
                     <ul>
@@ -40,13 +47,11 @@
                 </li>
             </ul>
         </nav>
-
     </header>
-
 
     <section class="splash">
 
-        <div class="omOS_svg"></div>
+        <div class="vores_univers_svg"></div>
         <div class="farve1_container ltr">
             <div class="farve1_sprite"></div>
         </div>
@@ -84,9 +89,28 @@
 
     </section>
 
-    <section class="indhold_omOS">
+    <section class="indhold_univers">
 
+        <section class="univers_grid">
+
+
+        </section>
+
+        <template class="univers_template">
+
+            <article class="univers_article">
+                <div class="hvid_box">
+                    <h2 class="post_navn"></h2>
+                    <p class="post_dato"></p>
+                </div>
+
+                <img class="post_billede" src="" alt="">
+                <p class="post_tekst"></p>
+            </article>
+
+        </template>
     </section>
+
 
     <!--
     <footer>
@@ -98,7 +122,12 @@
 
     </footer>
 -->
-    <script src="script.js"></script>
+
+
+    <script src="script.js">
+
+
+    </script>
 </body>
 
 </html>
