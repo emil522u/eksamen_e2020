@@ -71,6 +71,7 @@ function postClick(id) {
 
 //*********SHOP********//
 
+
 async function varerJSON() {
     const JSONData = await
     fetch("http://signemariemathiasen.dk/kea/2_sem/eksamen/wordpress/wp-json/wp/v2/vare");
@@ -96,11 +97,9 @@ function visVare() {
 
         klon.querySelector(".vare").addEventListener("click", () => visSingleview(vare));
 
-    });
+        sectionPointer.appendChild(klon);
 
-    sectionPointer.appendChild(klon);
-
-})
+    })
 }
 
 function visSingleview(vare) {

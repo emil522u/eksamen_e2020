@@ -410,14 +410,12 @@ ul ul {
     position: absolute;
     top: 0;
     overflow-y: hidden;
-<<<<<<< HEAD
     left: 0;
     background-color: rgb(216, 226, 255);
 
     /*    overflow: hidden;*/
-=======
+
     background-color: rgb(216, 226, 255);
->>>>>>> Linea
 }
 
 .vores_univers_svg {
