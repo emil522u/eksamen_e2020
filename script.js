@@ -70,15 +70,22 @@ function visVare() {
         //klon.querySelector(".vare-beskrivelse").innerHTML = vare.varebeskrivelse;
         klon.querySelector(".pris").innerHTML = vare.varepris + "kr.";
 
+        klon.querySelector(".vare").addEventListener("click", () => visSingleview(vare));
 
-        //        klon.querySelector(".univers_article").addEventListener("click", function () {
-        //            postClick(post.id)
-        //        });
         sectionPointer.appendChild(klon);
-
 
     })
 }
+
+function visSingleview(vare) {
+    console.log();
+    window.location.href = `singleview_shop.html?id=${vare.id}`;
+
+}
+
+
+
+
 
 //*********BURGERMENU************//
 function myFunction(x) {
