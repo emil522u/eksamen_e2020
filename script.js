@@ -67,12 +67,19 @@ function postClick(id) {
 
 
 //*********BURGERMENU************//
+
+const menutag = document.getElementsByClassName("menu_link");
+
 function myFunction(x) {
     let nav = document.querySelector("nav")
     x.classList.toggle("change");
     document.querySelector("nav").classList.toggle("hidden_menu");
-    document.querySelector("li a").classList.toggle("klikbar");
+    pointToggle();
+}
 
 
-
+function pointToggle () {
+  for (var i = 0; i < menutag.length; i++) {
+    menutag[i].classList.toggle("klikbar");
+  }
 }
