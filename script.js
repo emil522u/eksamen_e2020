@@ -6,6 +6,7 @@ function start() {
     loadUniversJSON();
     loadUniversPostsJSON();
     varerJSON();
+    loadSingleVare();
 
 }
 
@@ -81,7 +82,6 @@ async function varerJSON() {
 }
 
 
-
 function visVare() {
     const templatePointer = document.querySelector(".template-shop");
     const sectionPointer = document.querySelector(".shop-grid");
@@ -101,6 +101,26 @@ function visVare() {
 
     })
 }
+
+async function loadSingleVare() {
+
+    let urlParams = new URLSearchParams(window.location.search);
+    let id = urlParams.get("id");
+    let SingleVare;
+    let url = "http://signemariemathiasen.dk/kea/2_sem/eksamen/wordpress/wp-json/wp/v2/vare/" + id;
+    let jsonData = await fetch(url);
+    SingleVare = await jsonData.json();
+
+
+    document.querySelector(".vare-navn-sv").innerHTML = SingleVare.varenavn;
+    document.querySelector(".vare-billede-sv").src = SingleVare.varebillede.guid;
+    document.querySelector(".pris-sv").innerHTML = SingleVare.varepris;
+    document.querySelector(".vare-beskrivelse-sv").innerHTML = SingleVare.varebeskrivelse + "kr.";
+
+    //    document.querySelector(".tilbage").addEventListener("click", function () {
+    //        window.history.back();
+}
+
 
 function visSingleview(vare) {
     console.log();
