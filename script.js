@@ -67,6 +67,6 @@ function postClick(id) {
 function myFunction(x) {
     x.classList.toggle("change");
     document.querySelector("nav").classList.toggle("hidden_menu");
-    document.querySelector("nav a").classList.toggle("klikbar");
+    document.querySelector(".menu_link").classList.toggle("klikbar");
 
 }
