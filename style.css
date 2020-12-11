@@ -485,7 +485,6 @@ ul ul {
     display: none;
 }
 
-<<<<<<< HEAD=======
 /***************UNIVERS SINGLE******************/
 
 .univers_singleview {
@@ -531,7 +530,6 @@ ul ul {
 }
 
 
-> > > > > > > origin/master
 /****************SHOP****************/
 
 
@@ -549,6 +547,13 @@ ul ul {
 .indhold_shop {
     width: 100vw;
     background-color: #FAF29B;
+    position: relative;
+    top: 50vh;
+    z-index: 2;
+}
+
+.indhold_shop h2 {
+    background-color: #FAF29B;
 }
 
 .vare-billede {
@@ -562,9 +567,10 @@ ul ul {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-template-rows: 1fr;
     margin: 0;
-
     background-color: #FAF29B;
     padding: 3%;
+    position: absolute;
+    z-index: 3;
 }
 
 .vare {
@@ -594,6 +600,7 @@ ul ul {
     position: relative;
     z-index: 2;
     left: 0;
+    top: 50vh;
 }
 
 
@@ -618,6 +625,7 @@ ul ul {
     position: relative;
     z-index: 2;
     left: 0;
+    top: 500vh;
 }
 
 
