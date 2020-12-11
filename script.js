@@ -96,16 +96,11 @@ function visVare() {
 
         klon.querySelector(".vare").addEventListener("click", () => visSingleview(vare));
 
-<<<<<<< HEAD
-        klon.querySelector("").addEventListener("click", function () {
-            postClick(post.id)
-        });
+    });
 
-=======
->>>>>>> Linea
-        sectionPointer.appendChild(klon);
+    sectionPointer.appendChild(klon);
 
-    })
+})
 }
 
 function visSingleview(vare) {
