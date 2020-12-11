@@ -93,8 +93,8 @@ function visVare() {
 
         klon.querySelector(".vare-navn").innerHTML = vare.varenavn;
         klon.querySelector(".vare-billede").src = vare.varebillede.guid;
-        klon.querySelector(".vare-beskrivelse").innerHTML = vare.varebeskrivelse;
-        klon.querySelector(".pris").innerHTML = vare.varepris;
+        //klon.querySelector(".vare-beskrivelse").innerHTML = vare.varebeskrivelse;
+        klon.querySelector(".pris").innerHTML = vare.varepris + "kr.";
 
 
         //        klon.querySelector(".univers_article").addEventListener("click", function () {
