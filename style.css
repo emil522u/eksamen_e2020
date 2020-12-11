@@ -60,12 +60,9 @@ header {
 .hidden_menu {
     opacity: 0;
     transition: visibility .3s linear .3s, opacity .3s linear;
-
+    pointer-events: none;
 }
 
-.klikbar {
-    pointer-events: all !important;
-}
 
 nav {
     background-color: white;
@@ -95,6 +92,7 @@ nav a {
     z-index: 1000;
     transition: color .3s ease-in-out;
     text-transform: uppercase;
+    pointer-events: all;
 }
 
 li {
@@ -129,11 +127,9 @@ ul ul {
 
 /***************INDEX***********************/
 
-/*
 .index_body {
     background-color: rgb(216, 226, 255);
 }
-*/
 
 .farve1_container {
     position: absolute;
@@ -397,7 +393,6 @@ ul ul {
     width: 100vw;
     position: absolute;
     top: 0;
-    background-color: rgb(216, 226, 255);
 }
 
 .vores_univers_svg {
@@ -466,16 +461,6 @@ ul ul {
 .post_tekst {
     display: none;
 }
-
-
-
-/***************UNIVERS SINGLE******************/
-
-.single_post_navn {
-    font-family: century-gothic, sans-serif;
-}
-
-
 
 /****************SHOP****************/
 
@@ -733,6 +718,7 @@ footer {
         left: 0;
         top: 100vh;
     }
+
 
 
 
