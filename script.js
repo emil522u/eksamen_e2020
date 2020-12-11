@@ -68,10 +68,12 @@ function postClick(id) {
 const menutag = document.getElementsByClassName("menu_link");
 
 function myFunction(x) {
+    let nav = document.querySelector("nav")
     x.classList.toggle("change");
     document.querySelector("nav").classList.toggle("hidden_menu");
     pointToggle();
 }
+
 
 function pointToggle () {
   for (var i = 0; i < menutag.length; i++) {
