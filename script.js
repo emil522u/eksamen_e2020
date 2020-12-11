@@ -59,7 +59,7 @@ async function varerJSON() {
 
 function visVare() {
     const templatePointer = document.querySelector(".template-shop");
-    const sectionPointer = document.querySelector(".indhold_shop");
+    const sectionPointer = document.querySelector(".shop-grid");
     sectionPointer.innerHTML = "";
     jsonvare.forEach(vare => {
 

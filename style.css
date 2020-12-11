@@ -127,9 +127,11 @@ ul ul {
 
 /***************INDEX***********************/
 
+/*
 .index_body {
     background-color: rgb(216, 226, 255);
 }
+*/
 
 .farve1_container {
     position: absolute;
@@ -393,6 +395,7 @@ ul ul {
     width: 100vw;
     position: absolute;
     top: 0;
+    overflow-y: hidden;
 }
 
 .vores_univers_svg {
@@ -477,12 +480,29 @@ ul ul {
 }
 
 .indhold_shop {
-    background-color: white;
-    height: 200vh;
+    background-color: #FAF29B;
     width: 100vw;
-    position: relative;
+    position: absolute;
     z-index: 2;
     left: 0;
+    top: 100vh;
+
+}
+
+.vare-billede {
+    max-width: 100%;
+
+}
+
+.shop-grid {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    background-color: white;
+    position: absolute;
+    z-index: 3;
 }
 
 
@@ -710,15 +730,15 @@ footer {
     }
 
     .indhold_shop {
-        background-color: white;
-        height: 200vh;
+        background-color: #FAF29B;
         width: 100vw;
         position: absolute;
         z-index: 2;
         left: 0;
         top: 100vh;
-    }
 
+
+    }
 
 
     /****************OM OS****************/
@@ -766,7 +786,6 @@ footer {
         z-index: 2;
         left: 0;
         top: 100vh;
+
     }
-
-
 }
