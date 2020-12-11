@@ -94,16 +94,29 @@ function visVare() {
         //klon.querySelector(".vare-beskrivelse").innerHTML = vare.varebeskrivelse;
         klon.querySelector(".pris").innerHTML = vare.varepris + "kr.";
 
+        klon.querySelector(".vare").addEventListener("click", () => visSingleview(vare));
 
+<<<<<<< HEAD
         klon.querySelector("").addEventListener("click", function () {
             postClick(post.id)
         });
 
+=======
+>>>>>>> Linea
         sectionPointer.appendChild(klon);
-
 
     })
 }
+
+function visSingleview(vare) {
+    console.log();
+    window.location.href = `singleview_shop.html?id=${vare.id}`;
+
+}
+
+
+
+
 
 //*********BURGERMENU************//
 
