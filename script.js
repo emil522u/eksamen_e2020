@@ -95,9 +95,10 @@ function visVare() {
         klon.querySelector(".pris").innerHTML = vare.varepris + "kr.";
 
 
-        //        klon.querySelector(".univers_article").addEventListener("click", function () {
-        //            postClick(post.id)
-        //        });
+        klon.querySelector("").addEventListener("click", function () {
+            postClick(post.id)
+        });
+
         sectionPointer.appendChild(klon);
 
 
