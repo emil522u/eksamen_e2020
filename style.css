@@ -2,11 +2,7 @@ html {
     overflow-x: hidden;
 }
 
-<<<<<<< HEAD
 body {
-=======
-* {
->>>>>>> Linea
     margin: 0;
 }
 
@@ -404,20 +400,11 @@ ul ul {
     width: 100vw;
     position: absolute;
     top: 0;
-<<<<<<< HEAD
     overflow-y: hidden;
-=======
     left: 0;
     background-color: rgb(216, 226, 255);
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-=======
     /*    overflow: hidden;*/
->>>>>>> blog
-=======
->>>>>>> origin/master
->>>>>>> origin/master
 }
 
 .vores_univers_svg {
@@ -489,10 +476,7 @@ ul ul {
     display: none;
 }
 
-<<<<<<< HEAD
-=======
-
-
+<<<<<<< HEAD=======
 /***************UNIVERS SINGLE******************/
 
 .univers_singleview {
@@ -533,7 +517,7 @@ ul ul {
 }
 
 
->>>>>>> origin/master
+> > > > > > > origin/master
 /****************SHOP****************/
 
 
