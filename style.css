@@ -554,9 +554,6 @@ ul ul {
     z-index: 2;
 }
 
-.indhold_shop h2 {
-    background-color: #FAF29B;
-}
 
 .vare-billede {
     max-width: 100%;
@@ -571,9 +568,9 @@ ul ul {
     margin: 0;
     background-color: #FAF29B;
     padding: 3%;
-    position: absolute;
     z-index: 3;
 }
+
 
 .vare {
     background-color: white;
