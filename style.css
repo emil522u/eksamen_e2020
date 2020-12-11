@@ -64,7 +64,7 @@ header {
 }
 
 .klikbar {
-    pointer-events: all;
+    pointer-events: all !important;
 }
 
 nav {
@@ -129,9 +129,11 @@ ul ul {
 
 /***************INDEX***********************/
 
+/*
 .index_body {
     background-color: rgb(216, 226, 255);
 }
+*/
 
 .farve1_container {
     position: absolute;
@@ -395,6 +397,7 @@ ul ul {
     width: 100vw;
     position: absolute;
     top: 0;
+    background-color: rgb(216, 226, 255);
 }
 
 .vores_univers_svg {

@@ -65,8 +65,11 @@ function postClick(id) {
 
 //*********BURGERMENU************//
 function myFunction(x) {
+    let nav = document.querySelector("nav")
     x.classList.toggle("change");
     document.querySelector("nav").classList.toggle("hidden_menu");
-    document.querySelector(".menu_link").classList.toggle("klikbar");
+    document.querySelector("li a").classList.toggle("klikbar");
+
+
 
 }
