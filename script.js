@@ -19,9 +19,12 @@ async function loadUniversPostsJSON() {
 
     document.querySelector(".single_post_navn").innerHTML = blogPost.overskrift;
     document.querySelector(".single_post_billede").src = blogPost.billede.guid;
-    klon.querySelector(".single_post_dato").innerHTML = post.dato;
-    document.querySelector(".single_post_tekst1").innerHTML = blogPost.tekst1;
-    document.querySelector(".single_post_tekst2").innerHTML = blogPost.tekst2;
+    document.querySelector(".single_post_dato").innerHTML = blogPost.dato;
+    document.querySelector(".single_post_tekst1").innerHTML = blogPost.tekstcolonne1;
+    document.querySelector(".single_post_tekst2").innerHTML = blogPost.tekstcolonne2;
+    document.querySelector(".tilbage").addEventListener("click", function () {
+        window.history.back();
+    })
 }
 
 
