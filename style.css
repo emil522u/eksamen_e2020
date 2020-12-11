@@ -2,11 +2,15 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    margin: 0;
+}
+
 
 /****************NAV****************/
 
 header {
-    position: relative;
+    position: absolute;
     z-index: 1000;
     pointer-events: none;
 }
@@ -14,7 +18,7 @@ header {
 .menuknap {
     display: inline-block;
     cursor: pointer;
-    margin-left: 90%;
+    margin-left: 80%;
     position: relative;
     z-index: 2000;
     pointer-events: all;
@@ -395,7 +399,13 @@ ul ul {
     width: 100vw;
     position: absolute;
     top: 0;
+<<<<<<< HEAD
     overflow-y: hidden;
+=======
+    left: 0;
+    background-color: rgb(216, 226, 255);
+
+>>>>>>> origin/master
 }
 
 .vores_univers_svg {
@@ -432,7 +442,9 @@ ul ul {
     background-color: white;
 }
 
-.univers_article {}
+.univers_article {
+    cursor: pointer;
+}
 
 .hvid_box {
     height: 500px;
@@ -465,6 +477,51 @@ ul ul {
     display: none;
 }
 
+<<<<<<< HEAD
+=======
+
+
+/***************UNIVERS SINGLE******************/
+
+.univers_singleview {
+    margin-top: 50px;
+}
+
+.tilbage {
+    font-family: century-gothic, sans-serif;
+    color: #D68A98;
+    cursor: pointer;
+    text-decoration: underline;
+    padding-top: 50px;
+}
+
+.single_post_navn {
+    font-family: century-gothic, sans-serif;
+    color: #D68A98;
+    text-transform: uppercase;
+}
+
+.single_post_dato {
+    font-family: century-gothic, sans-serif;
+    color: #D68A98;
+    text-transform: uppercase;
+}
+
+
+.single_post_tekst1 {
+    font-family: century-gothic, sans-serif;
+}
+
+.single_post_tekst2 {
+    font-family: century-gothic, sans-serif;
+}
+
+.single_post_billede {
+    max-width: 100%;
+}
+
+
+>>>>>>> origin/master
 /****************SHOP****************/
 
 
@@ -597,7 +654,7 @@ footer {
 
 
     .menuknap {
-        margin-left: 95%;
+        margin-left: 85%;
         margin-top: 2%;
     }
 
