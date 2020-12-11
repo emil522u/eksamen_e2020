@@ -48,8 +48,4 @@ function myFunction(x) {
     x.classList.toggle("change");
     document.querySelector("nav").classList.toggle("hidden_menu");
 
-    //    if (document.getElementById("knap").classList.contains("hidden_menu")) {
-    //        document.querySelector("header").classList.toggle("uklikbar");
-    //        console.log("uklikbar");
-    //    }
 }
