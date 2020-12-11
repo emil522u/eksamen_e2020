@@ -2,6 +2,10 @@ html {
     overflow-x: hidden;
 }
 
+* {
+    margin: 0;
+}
+
 
 /****************NAV****************/
 
@@ -9,6 +13,7 @@ header {
     position: relative;
     z-index: 1000;
     pointer-events: none;
+    height: 50vh;
 }
 
 .menuknap {
@@ -480,13 +485,8 @@ ul ul {
 }
 
 .indhold_shop {
-    background-color: #FAF29B;
     width: 100vw;
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    top: 100vh;
-
+    background-color: #FAF29B;
 }
 
 .vare-billede {
@@ -496,13 +496,18 @@ ul ul {
 
 .shop-grid {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 25px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-template-rows: 1fr;
-    margin: 0 auto;
+    margin: 0;
+
+    background-color: #FAF29B;
+    padding: 3%;
+}
+
+.vare {
     background-color: white;
-    position: absolute;
-    z-index: 3;
+    padding: 4%;
 }
 
 
@@ -687,6 +692,7 @@ footer {
         width: 100vw;
         position: absolute;
         top: 0;
+
     }
 
     .vores_univers_svg {
@@ -739,6 +745,11 @@ footer {
 
 
     }
+
+    header {
+        height: 100vh;
+    }
+
 
 
     /****************OM OS****************/
