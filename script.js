@@ -3,7 +3,27 @@ document.addEventListener("DOMContentLoaded", start)
 
 function start() {
     loadUniversJSON();
+    loadUniversPostsJSON();
 }
+
+async function loadUniversPostsJSON() {
+
+    let urlParams = new
+    URLSearchParams(window.location.search);
+    let id = urlParams.get("id");
+    let blogPost;
+    let url = "http://signemariemathiasen.dk/kea/2_sem/eksamen/wordpress/wp-json/wp/v2/blogpost/" + id;
+    let jsonData = await fetch(url);
+    blogPost = await jsonData.json();
+
+
+    document.querySelector(".single_post_navn").innerHTML = blogPost.overskrift;
+    document.querySelector(".single_post_billede").src = blogPost.billede.guid;
+    klon.querySelector(".single_post_dato").innerHTML = post.dato;
+    document.querySelector(".single_post_tekst1").innerHTML = blogPost.tekst1;
+    document.querySelector(".single_post_tekst2").innerHTML = blogPost.tekst2;
+}
+
 
 async function loadUniversJSON() {
     const JSONData = await
@@ -47,5 +67,6 @@ function postClick(id) {
 function myFunction(x) {
     x.classList.toggle("change");
     document.querySelector("nav").classList.toggle("hidden_menu");
+    document.querySelector("nav a").classList.toggle("klikbar");
 
 }
