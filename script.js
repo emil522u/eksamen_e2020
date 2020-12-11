@@ -1,9 +1,14 @@
 let blogPosts;
+let varer;
 document.addEventListener("DOMContentLoaded", start)
 
 function start() {
     loadUniversJSON();
+<<<<<<< HEAD
     loadUniversPostsJSON();
+=======
+    varerJSON();
+>>>>>>> Linea
 }
 
 async function loadUniversPostsJSON() {
@@ -65,6 +70,41 @@ function postClick(id) {
     window.location.href = "singleview_blog.html?id=" + id;
 }
 
+
+//*********SHOP********//
+
+async function varerJSON() {
+    const JSONData = await
+    fetch("http://signemariemathiasen.dk/kea/2_sem/eksamen/wordpress/wp-json/wp/v2/vare");
+    jsonvare = await JSONData.json();
+    visVare();
+    console.log("loaded");
+}
+
+
+
+function visVare() {
+    const templatePointer = document.querySelector(".template-shop");
+    const sectionPointer = document.querySelector(".shop-grid");
+    sectionPointer.innerHTML = "";
+    jsonvare.forEach(vare => {
+
+        const klon = templatePointer.cloneNode(true).content;
+
+        klon.querySelector(".vare-navn").innerHTML = vare.varenavn;
+        klon.querySelector(".vare-billede").src = vare.varebillede.guid;
+        klon.querySelector(".vare-beskrivelse").innerHTML = vare.varebeskrivelse;
+        klon.querySelector(".pris").innerHTML = vare.varepris;
+
+
+        //        klon.querySelector(".univers_article").addEventListener("click", function () {
+        //            postClick(post.id)
+        //        });
+        sectionPointer.appendChild(klon);
+
+
+    })
+}
 
 //*********BURGERMENU************//
 
