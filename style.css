@@ -19,6 +19,7 @@ header {
     display: inline-block;
     cursor: pointer;
     margin-left: 80%;
+    margin-top: 2%;
     position: relative;
     z-index: 2000;
     pointer-events: all;
@@ -127,7 +128,6 @@ ul ul {
     margin-left: -30px;
 }
 
-@media(min-width: 600px) {}
 
 /***************INDEX***********************/
 
@@ -391,6 +391,15 @@ ul ul {
     }
 }
 
+.splash_forside {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(216, 226, 255);
+    overflow: hidden;
+}
 
 /****************UNIVERS****************/
 
@@ -405,6 +414,7 @@ ul ul {
     left: 0;
     background-color: rgb(216, 226, 255);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 =======
@@ -413,6 +423,9 @@ ul ul {
 =======
 >>>>>>> origin/master
 >>>>>>> origin/master
+=======
+    overflow: hidden;
+>>>>>>> singleview
 }
 
 .vores_univers_svg {
@@ -499,32 +512,37 @@ ul ul {
     color: #D68A98;
     cursor: pointer;
     text-decoration: underline;
-    padding-top: 50px;
+    padding: 50px 15px 0;
 }
 
 .single_post_navn {
     font-family: century-gothic, sans-serif;
     color: #D68A98;
     text-transform: uppercase;
+    padding: 0 15px;
 }
 
 .single_post_dato {
     font-family: century-gothic, sans-serif;
     color: #D68A98;
     text-transform: uppercase;
+    margin: -15px 15px 0;
 }
 
 
 .single_post_tekst1 {
     font-family: century-gothic, sans-serif;
+    padding: 0 15px;
 }
 
 .single_post_tekst2 {
     font-family: century-gothic, sans-serif;
+    padding: 0 15px;
 }
 
 .single_post_billede {
-    max-width: 100%;
+    max-width: 95%;
+    margin: 0 15px;
 }
 
 
@@ -657,93 +675,6 @@ footer {
 @media(min-width: 600px) {
 
 
-    /***********************NAV**********************/
-
-
-    .menuknap {
-        margin-left: 85%;
-        margin-top: 2%;
-    }
-
-    nav {
-        margin-top: -100px;
-    }
-
-    nav a {
-        font-size: 3rem;
-        text-align: center;
-
-    }
-
-    .voresUnivers_menupunkt,
-    .omos_menupunkt {
-        border-bottom: 2px solid black;
-        border-right: 2px solid black;
-        width: 40vw;
-        height: 200px;
-    }
-
-    .shop_menupunkt,
-    .kontakt_menupunkt {
-        width: 40vw;
-        height: 200px;
-    }
-
-    .kurv_menupunkt {
-        border-right: 2px solid black;
-        border-bottom: none;
-        width: 40vw;
-        height: 200px;
-    }
-
-    .soeg_menupunkt {
-        width: 40vw;
-        height: 200px;
-    }
-
-    ul ul {
-        display: flex;
-    }
-
-    #menu {
-        padding: 5% 8%;
-    }
-
-    a:hover {
-        background: url("SVG/wave.svg");
-        background-repeat: repeat;
-        /*        background-position-x: 50%;*/
-        /*        background-position-y: 100%;*/
-        /*        background-size: auto auto;*/
-        background-repeat: repeat-x;
-        background-size: 50px 20px;
-        background-position: 5px 5px;
-        padding: 10px;
-        /*        animation: move 15s linear infinite;*/
-        -webkit-animation: move 17s linear infinite;
-        /*        animation-play-state: paused;*/
-        /*        text-decoration: none;*/
-        /*        background-color: transparent;*/
-        /*        -webkit-text-decoration-skip: objects;*/
-    }
-
-    a:hover {
-        animation-play-state: running;
-    }
-
-
-    @-webkit-keyframes move {
-        from {
-            background-position: 60px 60px;
-        }
-
-        to {
-            background-position: 600px 60px;
-        }
-    }
-
-
-
     /****************UNIVERS****************/
 
     .splash {
@@ -852,5 +783,112 @@ footer {
         left: 0;
         top: 100vh;
 
+    }
+}
+
+@media(min-width: 1000px) {
+    /***********************NAV**********************/
+
+
+    .menuknap {
+        margin-left: 85%;
+        margin-top: 2%;
+    }
+
+    nav {
+        margin-top: -100px;
+    }
+
+    nav a {
+        font-size: 3rem;
+        text-align: center;
+
+    }
+
+    .voresUnivers_menupunkt,
+    .omos_menupunkt {
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+        width: 40vw;
+        height: 200px;
+    }
+
+    .shop_menupunkt,
+    .kontakt_menupunkt {
+        width: 40vw;
+        height: 200px;
+    }
+
+    .kurv_menupunkt {
+        border-right: 2px solid black;
+        border-bottom: none;
+        width: 40vw;
+        height: 200px;
+    }
+
+    .soeg_menupunkt {
+        width: 40vw;
+        height: 200px;
+    }
+
+    ul ul {
+        display: flex;
+    }
+
+    #menu {
+        padding: 5% 8%;
+    }
+
+    a:hover {
+        background: url("SVG/wave.svg");
+        background-repeat: repeat;
+        /*        background-position-x: 50%;*/
+        /*        background-position-y: 100%;*/
+        /*        background-size: auto auto;*/
+        background-repeat: repeat-x;
+        background-size: 50px 20px;
+        background-position: 5px 5px;
+        padding: 10px;
+        /*        animation: move 15s linear infinite;*/
+        -webkit-animation: move 17s linear infinite;
+        /*        animation-play-state: paused;*/
+        /*        text-decoration: none;*/
+        /*        background-color: transparent;*/
+        /*        -webkit-text-decoration-skip: objects;*/
+    }
+
+    a:hover {
+        animation-play-state: running;
+    }
+
+
+    @-webkit-keyframes move {
+        from {
+            background-position: 60px 60px;
+        }
+
+        to {
+            background-position: 600px 60px;
+        }
+    }
+
+
+    /***************UNIVERS SINGLE******************/
+
+    .univers_singleview {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .univers_singleview_containerBig {
+        max-width: 60%;
+    }
+
+    .univers_singleview_containerTekst {
+        display: flex;
+    }
+
+    .single_post_navn {
+        margin: 0;
     }
 }
