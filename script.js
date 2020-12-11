@@ -4,11 +4,9 @@ document.addEventListener("DOMContentLoaded", start)
 
 function start() {
     loadUniversJSON();
-<<<<<<< HEAD
     loadUniversPostsJSON();
-=======
     varerJSON();
->>>>>>> Linea
+
 }
 
 async function loadUniversPostsJSON() {
@@ -118,8 +116,8 @@ function myFunction(x) {
 }
 
 
-function pointToggle () {
-  for (var i = 0; i < menutag.length; i++) {
-    menutag[i].classList.toggle("klikbar");
-  }
+function pointToggle() {
+    for (var i = 0; i < menutag.length; i++) {
+        menutag[i].classList.toggle("klikbar");
+    }
 }
