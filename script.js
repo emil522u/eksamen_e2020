@@ -123,8 +123,10 @@ async function loadSingleVare() {
     document.querySelector(".pris-sv").innerHTML = SingleVare.varepris + "kr.";
     document.querySelector(".vare-beskrivelse-sv").innerHTML = SingleVare.varebeskrivelse;
 
-    //    document.querySelector(".tilbage").addEventListener("click", function () {
-    //        window.history.back();
+    document.querySelector(".tilbage-shop").addEventListener("click", function () {
+        window.history.back();
+    })
+
 }
 
 

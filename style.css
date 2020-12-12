@@ -581,9 +581,10 @@ ul ul {
 
 .single-view-vare {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    padding: 25% 5%;
+    padding: 22% 5%;
+    align-items: center;
+    height: 100vh;
 }
 
 .single-view-vare .column {
@@ -603,7 +604,6 @@ ul ul {
 
 .singleview-shop .pris-sv {
     font-family: century-gothic, sans-serif;
-    text-transform: uppercase;
 }
 
 .singleview-shop .vare-beskrivelse-sv {
@@ -615,8 +615,18 @@ ul ul {
     border: none;
     text-transform: uppercase;
     font-family: century-gothic, sans-serif;
-    width: 300px;
-    height: 40px;
+    width: 100%;
+    height: 45px;
+    margin: 2vh 0;
+}
+
+.tilbage-shop {
+    font-family: century-gothic, sans-serif;
+    color: #D68A98;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 30px;
+
 }
 
 
@@ -773,7 +783,16 @@ footer {
         height: 100vh;
     }
 
+    /****************SHOP SINGLEVIEW****************/
 
+    .single-view-vare {
+        flex-direction: row;
+        padding: 3% 2% 0%;
+    }
+
+    .shop-single-tekst {
+        padding: 10%;
+    }
 
 
     /****************OM OS****************/
@@ -929,5 +948,11 @@ footer {
 
     .single_post_navn {
         margin: 0;
+    }
+}
+
+@media(min-width: 1000px) {
+    .single-view-vare {
+        padding: 1% 12% 0%;
     }
 }
