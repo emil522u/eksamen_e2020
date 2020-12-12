@@ -554,7 +554,7 @@ ul ul {
     width: 100vw;
     background-color: #FAF29B;
     position: relative;
-    top: 50vh;
+    top: 200vh;
     z-index: 2;
 }
 
@@ -579,6 +579,15 @@ ul ul {
 .vare {
     background-color: white;
     padding: 4%;
+}
+
+
+#collage {
+    width: 100vw;
+    background-color: aqua;
+    position: relative;
+    top: 100vh;
+
 }
 
 /****************SHOP SINGLEVIEW****************/
@@ -632,6 +641,7 @@ ul ul {
     margin-bottom: 30px;
 
 }
+
 
 
 /****************OM OS****************/
@@ -778,7 +788,13 @@ footer {
         position: absolute;
         z-index: 2;
         left: 0;
+<<<<<<< HEAD
         top: 100vh;
+=======
+        top: 200vh;
+
+
+>>>>>>> origin/Linea
     }
 
     header {
