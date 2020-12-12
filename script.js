@@ -7,6 +7,7 @@ function start() {
     loadUniversPostsJSON();
     varerJSON();
     loadSingleVare();
+    loadCollage();
 
 }
 
@@ -129,7 +130,22 @@ async function loadSingleVare() {
 
 }
 
+async function loadCollage() {
+    let collage;
+    let url = "http://signemariemathiasen.dk/kea/2_sem/eksamen/wordpress/wp-json/wp/v2/collage/";
+    let jsonData = await fetch(url);
+    collage = await jsonData.json();
+    console.log({
+        collage
+    })
 
+    document.querySelector(".collage-billede-1").src = collage[0].billede1.guid;
+    document.querySelector(".collage-billede-2").src = collage[0].billede2.guid;
+    document.querySelector(".collage-billede-3").src = collage[0].billede3.guid;
+    document.querySelector(".collage-billede-4").src = collage[0].billede4.guid;
+    document.querySelector(".collage-billede-5").src = collage[0].billede5.guid;
+
+}
 
 
 

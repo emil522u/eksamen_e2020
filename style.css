@@ -554,7 +554,7 @@ ul ul {
     width: 100vw;
     background-color: #FAF29B;
     position: relative;
-    top: 200vh;
+    top: 125vh;
     z-index: 2;
 }
 
@@ -581,16 +581,73 @@ ul ul {
     padding: 4%;
 }
 
+#collage h2 {
+    padding-top: 5%;
+    font-family: century-gothic, sans-serif;
+    color: #D68A98;
+    text-decoration: uppercase;
+}
+
+.indhold_shop h2 {
+    font-family: century-gothic, sans-serif;
+    color: #D68A98;
+}
 
 #collage {
     width: 100vw;
-    background-color: aqua;
+    height: 100vh;
     position: relative;
-    top: 100vh;
+    top: 50vh;
 
 }
 
-/****************SHOP SINGLEVIEW****************/
+#collage img {
+    max-width: 100%;
+}
+
+.collage-billede-1 {
+    position: absolute;
+    height: 250px;
+    top: 10vh;
+    left: 4vw;
+}
+
+.collage-billede-2 {
+    height: 300px;
+    position: absolute;
+    top: 30vh;
+    right: 4vw;
+}
+
+.collage-billede-3 {
+    height: 220px;
+    position: absolute;
+    top: 55vh;
+    left: 4vw;
+}
+
+.collage-billede-4 {
+    height: 250px;
+    position: absolute;
+    top: 80vh;
+    right: 4vw;
+}
+
+.collage-billede-5 {
+    height: 300px;
+    position: absolute;
+    top: 112vh;
+    left: 4vw;
+}
+
+.collage-smiley {
+    height: 140px;
+    position: absolute;
+    top: 89vh;
+    left: 10vw;
+}
+
+/****************SHOP SINGLEVIEW***************/
 
 .single-view-vare {
     display: flex;
@@ -788,17 +845,64 @@ footer {
         position: absolute;
         z-index: 2;
         left: 0;
-<<<<<<< HEAD
         top: 100vh;
-=======
         top: 200vh;
 
 
->>>>>>> origin/Linea
     }
 
     header {
         height: 100vh;
+    }
+
+    #collage {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        top: 100vh;
+
+    }
+
+    .collage-billede-1 {
+        position: absolute;
+        height: 300px;
+        top: 20vh;
+        left: 16vw;
+    }
+
+    .collage-billede-2 {
+        height: 300px;
+        position: absolute;
+        top: 14vh;
+        left: 37vw;
+    }
+
+    .collage-billede-3 {
+        height: 220px;
+        position: absolute;
+        top: 61vh;
+        left: 21.5vw;
+    }
+
+    .collage-billede-4 {
+        height: 200px;
+        position: absolute;
+        top: 55vh;
+        left: 37vw;
+    }
+
+    .collage-billede-5 {
+        height: 300px;
+        position: absolute;
+        top: 46vh;
+        left: 58vw;
+    }
+
+    .collage-smiley {
+        height: 140px;
+        position: absolute;
+        top: 23vh;
+        left: 60vw;
     }
 
     /****************SHOP SINGLEVIEW****************/
