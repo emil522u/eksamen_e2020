@@ -98,7 +98,12 @@ nav a {
     z-index: 1000;
     transition: color .3s ease-in-out;
     text-transform: uppercase;
+    pointer-events: none;
+}
+
+.klikbar {
     pointer-events: all;
+
 }
 
 li {
@@ -415,7 +420,6 @@ ul ul {
 
     /*    overflow: hidden;*/
 
-    background-color: rgb(216, 226, 255);
 }
 
 .vores_univers_svg {
@@ -925,5 +929,9 @@ footer {
 
     .single_post_navn {
         margin: 0;
+    }
+
+    .single_post_dato {
+        margin: 0 15px;
     }
 }
