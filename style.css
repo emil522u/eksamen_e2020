@@ -577,6 +577,47 @@ ul ul {
     padding: 4%;
 }
 
+/****************SHOP SINGLEVIEW****************/
+
+.single-view-vare {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 25% 5%;
+}
+
+.single-view-vare .column {
+    flex-grow: 1;
+    flex-basis: 200px;
+}
+
+.vare-billede-sv {
+    max-width: 100%;
+}
+
+.singleview-shop h2 {
+    font-family: century-gothic, sans-serif;
+    color: #D68A98;
+    text-transform: uppercase;
+}
+
+.singleview-shop .pris-sv {
+    font-family: century-gothic, sans-serif;
+    text-transform: uppercase;
+}
+
+.singleview-shop .vare-beskrivelse-sv {
+    font-family: century-gothic, sans-serif;
+}
+
+.singleview-shop button {
+    background-color: #D5E59E;
+    border: none;
+    text-transform: uppercase;
+    font-family: century-gothic, sans-serif;
+    width: 300px;
+    height: 40px;
+}
 
 
 /****************OM OS****************/

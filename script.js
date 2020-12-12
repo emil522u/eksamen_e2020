@@ -92,7 +92,6 @@ function visVare() {
 
         klon.querySelector(".vare-navn").innerHTML = vare.varenavn;
         klon.querySelector(".vare-billede").src = vare.varebillede.guid;
-        //klon.querySelector(".vare-beskrivelse").innerHTML = vare.varebeskrivelse;
         klon.querySelector(".pris").innerHTML = vare.varepris + "kr.";
 
         klon.querySelector(".vare").addEventListener("click", () => visSingleview(vare));
@@ -101,6 +100,13 @@ function visVare() {
 
     })
 }
+
+function visSingleview(vare) {
+    console.log();
+    window.location.href = `singleview_shop.html?id=${vare.id}`;
+
+}
+
 
 async function loadSingleVare() {
 
@@ -114,18 +120,11 @@ async function loadSingleVare() {
 
     document.querySelector(".vare-navn-sv").innerHTML = SingleVare.varenavn;
     document.querySelector(".vare-billede-sv").src = SingleVare.varebillede.guid;
-    document.querySelector(".pris-sv").innerHTML = SingleVare.varepris;
-    document.querySelector(".vare-beskrivelse-sv").innerHTML = SingleVare.varebeskrivelse + "kr.";
+    document.querySelector(".pris-sv").innerHTML = SingleVare.varepris + "kr.";
+    document.querySelector(".vare-beskrivelse-sv").innerHTML = SingleVare.varebeskrivelse;
 
     //    document.querySelector(".tilbage").addEventListener("click", function () {
     //        window.history.back();
-}
-
-
-function visSingleview(vare) {
-    console.log();
-    window.location.href = `singleview_shop.html?id=${vare.id}`;
-
 }
 
 
