@@ -6,6 +6,7 @@ function start() {
     loadUniversJSON();
     loadUniversPostsJSON();
     varerJSON();
+    loadSingleVare();
 
 }
 
@@ -71,6 +72,7 @@ function postClick(id) {
 
 //*********SHOP********//
 
+
 async function varerJSON() {
     const JSONData = await
     fetch("http://signemariemathiasen.dk/kea/2_sem/eksamen/wordpress/wp-json/wp/v2/vare");
@@ -78,7 +80,6 @@ async function varerJSON() {
     visVare();
     console.log("loaded");
 }
-
 
 
 function visVare() {
@@ -91,18 +92,44 @@ function visVare() {
 
         klon.querySelector(".vare-navn").innerHTML = vare.varenavn;
         klon.querySelector(".vare-billede").src = vare.varebillede.guid;
-        //klon.querySelector(".vare-beskrivelse").innerHTML = vare.varebeskrivelse;
         klon.querySelector(".pris").innerHTML = vare.varepris + "kr.";
 
+        klon.querySelector(".vare").addEventListener("click", () => visSingleview(vare));
 
-        //        klon.querySelector(".univers_article").addEventListener("click", function () {
-        //            postClick(post.id)
-        //        });
         sectionPointer.appendChild(klon);
-
 
     })
 }
+
+function visSingleview(vare) {
+    console.log();
+    window.location.href = `singleview_shop.html?id=${vare.id}`;
+
+}
+
+
+async function loadSingleVare() {
+
+    let urlParams = new URLSearchParams(window.location.search);
+    let id = urlParams.get("id");
+    let SingleVare;
+    let url = "http://signemariemathiasen.dk/kea/2_sem/eksamen/wordpress/wp-json/wp/v2/vare/" + id;
+    let jsonData = await fetch(url);
+    SingleVare = await jsonData.json();
+
+
+    document.querySelector(".vare-navn-sv").innerHTML = SingleVare.varenavn;
+    document.querySelector(".vare-billede-sv").src = SingleVare.varebillede.guid;
+    document.querySelector(".pris-sv").innerHTML = SingleVare.varepris + "kr.";
+    document.querySelector(".vare-beskrivelse-sv").innerHTML = SingleVare.varebeskrivelse;
+
+    //    document.querySelector(".tilbage").addEventListener("click", function () {
+    //        window.history.back();
+}
+
+
+
+
 
 //*********BURGERMENU************//
 
