@@ -621,6 +621,7 @@ ul ul {
     position: absolute;
     top: 30vh;
     right: 4vw;
+    border: 20px solid #D5E59E;
 }
 
 .collage-billede-3 {
