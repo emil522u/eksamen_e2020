@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pkv3fsf.css">
     <style>
-        /*
-        html {
-        overflow: hidden;
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
         }
-*/
-
     </style>
 </head>
 
@@ -90,31 +89,32 @@
         </div>
 
     </section>
+    <main>
+        <section class="indhold_univers">
 
-    <section class="indhold_univers">
-
-        <section class="univers_grid">
+            <section class="univers_grid">
 
 
+            </section>
+
+            <template class="univers_template">
+
+                <article class="univers_article">
+                    <div class="univers_hvid_box">
+                        <h2 class="post_navn"></h2>
+                        <p class="post_dato"></p>
+                    </div>
+
+                    <img class="post_billede" src="" alt="">
+                    <p class="post_tekst"></p>
+                </article>
+
+            </template>
         </section>
 
-        <template class="univers_template">
-
-            <article class="univers_article">
-                <div class="hvid_box">
-                    <h2 class="post_navn"></h2>
-                    <p class="post_dato"></p>
-                </div>
-
-                <img class="post_billede" src="" alt="">
-                <p class="post_tekst"></p>
-            </article>
-
-        </template>
-    </section>
+    </main>
 
 
-    <!--
     <footer>
 
         <p>hejhejhejmeddig</p>
@@ -123,13 +123,11 @@
         <a class="instagram" href=""></a>
 
     </footer>
--->
+
 
 
     <script src="script.js">
 
 
     </script>
-</body>
-
-</html>
+</body></html>

@@ -458,13 +458,17 @@ ul ul {
 
 .univers_article {
     cursor: pointer;
+    display: flex;
+    position: relative;
+
 }
 
-.hvid_box {
-    height: 500px;
-    width: 500px;
+.univers_hvid_box {
+    height: 100%;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.77);
     position: absolute;
+
 }
 
 .post_navn {
@@ -683,6 +687,7 @@ footer {
     z-index: 500;
     bottom: 0;
     left: 0;
+    display: block;
 }
 
 .facebook {
@@ -743,9 +748,17 @@ footer {
     }
 
     .univers_grid {
-
         margin-top: 10px;
+    }
 
+    .univers_hvid_box {
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .univers_article:hover .univers_hvid_box {
+        opacity: 1;
+        transition: .3s;
     }
 
 
@@ -835,7 +848,7 @@ footer {
     }
 
     nav {
-        margin-top: -100px;
+        margin-top: -115px;
     }
 
     nav a {
