@@ -729,6 +729,60 @@ ul ul {
     top: 50vh;
 }
 
+#omosvideo {
+    width: 100vw;
+    height: 56.25vw;
+}
+
+.indhold_omOS .wave {
+    fill: #F8E9AC;
+
+}
+
+.indhold_omOS #omos2 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    padding-left: 50px;
+    padding-right: 10%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.indhold_omOS #omos2 div div {
+    margin-bottom: 50px;
+}
+
+.indhold_omOS h2 {
+    color: #D68A98;
+    font-family: century-gothic, sans-serif;
+}
+
+.indhold_omOS .smileyboks {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.indhold_omOS .omossmiley {
+    width: 100px;
+}
+
+
+@media(min-width: 900px) {
+    .indhold_omOS #omos2 {
+        flex-direction: row;
+        padding-left: 12%;
+        padding-right: 10%;
+
+    }
+
+    .indhold_omOS #column1 {
+        padding-right: 5%;
+    }
+}
+
 
 /****************KONTAKT****************/
 
@@ -752,6 +806,139 @@ ul ul {
     z-index: 2;
     left: 0;
     top: 500vh;
+}
+
+.indhold_kontakt .smileyboks {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.indhold_kontakt .omossmiley {
+    width: 100px;
+}
+
+.indhold_kontakt #insta {
+    max-width: 1199px;
+}
+
+
+.indhold_kontakt #kortcontainer {
+    padding-bottom: 50px;
+}
+
+.indhold_kontakt #kortoverflow {
+    width: 90vw;
+    height: 50.625vw;
+    overflow: hidden;
+    padding-bottom: 15vh;
+
+}
+
+.indhold_kontakt #kortoverflow #kort {
+    width: 90vw;
+    height: 50.625vw;
+    transform: scale(2);
+
+}
+
+.indhold_kontakt #kortoverflow #kort {
+    transition: transform .5s ease;
+
+}
+
+
+.indhold_kontakt .indhold_kontakt {
+    position: absolute;
+    top: 60vh;
+
+}
+
+.indhold_kontakt h2 {
+    color: #D68A98;
+    font-family: century-gothic, sans-serif;
+}
+
+.indhold_kontakt #kontakttekst {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 25%;
+}
+
+.indhold_kontakt #kortcontainer {
+    width: 100vw;
+    background-color: #F9D0E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indhold_kontakt #kort {
+    background-image: url(PNG/kort.png);
+    background-size: cover;
+}
+
+.indhold_kontakt #kortcontainer h2 {
+    color: black;
+
+}
+
+@media(min-width: 600px) {
+
+    .indhold_kontakt .indhold_kontakt {
+        top: 115vh;
+
+    }
+
+}
+
+@media(min-width: 768px) {
+    .indhold_kontakt #insta {
+        margin: auto;
+    }
+}
+
+
+@media(min-width: 900px) {
+
+    .indhold_kontakt #kontakttekst {
+        flex-direction: row;
+        padding-left: 0%;
+        justify-content: space-around;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+
+    .indhold_kontakt #kortcontainer {
+        padding-bottom: 100px;
+    }
+
+    .indhold_kontakt #kortoverflow {
+        width: 60vw;
+        height: 33.75vw;
+        overflow: hidden;
+        padding-bottom: 0;
+
+    }
+
+    .indhold_kontakt #kortoverflow #kort {
+        width: 60vw;
+        height: 33.75vw;
+        transform: scale(1);
+    }
+
+    .indhold_kontakt #kortoverflow #kort {
+        transition: transform .5s ease;
+
+    }
+
+    .indhold_kontakt #kortoverflow:hover #kort {
+        transform: scale(1.8);
+
+    }
+
 }
 
 
