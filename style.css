@@ -575,7 +575,7 @@ ul ul {
 
 .tilbage {
     font-family: century-gothic, sans-serif;
-    color: #D68A98;
+    color: #ffa8ce;
     cursor: pointer;
     text-decoration: underline;
     padding: 50px 15px 0;
@@ -583,14 +583,15 @@ ul ul {
 
 .single_post_navn {
     font-family: century-gothic, sans-serif;
-    color: #D68A98;
+    color: #ffa8ce;
+    font-size: 3rem;
     text-transform: uppercase;
     padding: 0 15px;
 }
 
 .single_post_dato {
     font-family: century-gothic, sans-serif;
-    color: #D68A98;
+    color: #ffa8ce;
     text-transform: uppercase;
     margin: -15px 15px 0;
 }
@@ -646,7 +647,7 @@ ul ul {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-template-rows: 1fr;
     margin: 0;
-    /*    background-color: #F9EEA3;*/
+    background-color: #f0f5ff;
     /*    background-color: #ffedf6;*/
     /*    background-color: #F9D0E2;*/
     padding: 3%;
@@ -655,20 +656,21 @@ ul ul {
 
 
 .vare {
-    /*    background-color: white;*/
-    background-color: #eef4cf;
+    background-color: white;
+    /*    background-color: #f0f5ff;*/
     padding: 4%;
 }
 
 #collage h2 {
-    padding: 5% 15px;
+    padding: 45px 45px 10px;
     font-family: century-gothic, sans-serif;
-    color: #D68A98;
+    color: #ffa8ce;
+    font-size: 3rem;
 }
 
 .vare-navn {
     font-family: century-gothic, sans-serif;
-    color: #D68A98;
+    color: #ffa8ce;
     /*    padding: 5% 0px;*/
     font-size: 2rem;
 }
@@ -676,8 +678,8 @@ ul ul {
 .faste_varer {
     padding: 45px 45px 10px;
     font-family: century-gothic, sans-serif;
-    color: #D68A98;
-    /*    background-color: #F9D0E2;*/
+    color: #ffa8ce;
+    background-color: #f0f5ff;
     margin: 0;
     font-size: 3rem;
     /*    color: black;*/
@@ -687,8 +689,8 @@ ul ul {
     width: 100vw;
     position: relative;
     top: 50vh;
-    /*    background-color: #F9CFE1;*/
-    /*    background-color: white;*/
+    /*    background-color: #f0f5ff;*/
+    background-color: white;
 }
 
 .collage_wrapper {
@@ -749,9 +751,10 @@ ul ul {
     max-width: 100%;
 }
 
-.singleview-shop h2 {
+.singleview-shop h3 {
     font-family: century-gothic, sans-serif;
-    color: #D68A98;
+    color: #ffa8ce;
+    font-size: 3rem;
     text-transform: uppercase;
 }
 
@@ -775,7 +778,7 @@ ul ul {
 
 .tilbage-shop {
     font-family: century-gothic, sans-serif;
-    color: #D68A98;
+    color: #ffa8ce;
     cursor: pointer;
     text-decoration: underline;
     margin-bottom: 30px;
@@ -833,7 +836,8 @@ ul ul {
 }
 
 .indhold_omOS h2 {
-    color: #D68A98;
+    color: #ffa8ce;
+    font-size: 3rem;
     font-family: century-gothic, sans-serif;
 }
 
@@ -934,15 +938,32 @@ ul ul {
 }
 
 .indhold_kontakt h2 {
-    color: #D68A98;
+    color: #ffa8ce;
+    font-size: 3rem;
+    text-transform: uppercase;
     font-family: century-gothic, sans-serif;
 }
 
 .indhold_kontakt #kontakttekst {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
-    padding-left: 25%;
+
+}
+
+.billede-kontakt {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+#kontakttekst kontaktoplysninger {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+#kontakttekst img {
+    max-width: 100%;
+    object-fit: fill;
 }
 
 .indhold_kontakt #kortcontainer {
@@ -984,9 +1005,7 @@ ul ul {
     .indhold_kontakt #kontakttekst {
         flex-direction: row;
         padding-left: 0%;
-        justify-content: space-around;
-        margin-top: 200px;
-        margin-bottom: 200px;
+
     }
 
     .indhold_kontakt #kortcontainer {
