@@ -76,7 +76,7 @@ nav {
     height: 110vh;
     z-index: 1000;
     position: relative;
-    margin-top: -66px;
+    margin-top: -70px;
     margin-left: -10px;
     transition: visibility 0s linear .3s, opacity .3s linear;
 }
@@ -446,10 +446,10 @@ ul ul {
 .univers_grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 15px;
     /*    margin-top: 10px;*/
     /*    height: 200vh;*/
-    width: 100vw;
+    /*    width: 100vw;*/
     position: relative;
     z-index: 5;
     left: 0;
@@ -1013,7 +1013,7 @@ footer {
     }
 
     .univers_grid {
-        margin-top: 10px;
+        margin: 15px 15px;
     }
 
     .univers_hvid_box {
