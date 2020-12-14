@@ -38,10 +38,10 @@ header {
 }
 
 .bar2 {
-    width: 30px;
+    width: 35px;
     height: 5px;
     background-color: black;
-    margin: 0 5px;
+    margin: 6px 0;
     transition: 0.4s;
     z-index: 1000;
 }
