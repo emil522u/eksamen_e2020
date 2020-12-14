@@ -86,8 +86,11 @@
     </section>
 
     <section class="indhold_kontakt">
-
+        <div>
+            <img class="wave wave1" src="PNG/wave.png">
+        </div>
         <div id=kontakttekst>
+
             <div>
                 <h2>Åbningstider</h2>
                 <ul>
@@ -108,6 +111,13 @@
                     <li>Insta</li>
                 </ul>
             </div>
+
+
+
+        </div>
+
+        <div>
+            <img class="wave wave2" src="PNG/wave.png">
         </div>
 
         <div id="kortcontainer">
@@ -146,7 +156,63 @@
 
     </section>
 
+    <style>
+        .indhold_kontakt {
+            position: relative;
+        }
 
+        .indhold_kontakt .wave {
+            height: 60px;
+            width: 800px;
+            position: absolute;
+        }
+
+        .indhold_kontakt .wave1 {
+            right: -60%;
+            top: -50px transform: scale(-1, -1);
+        }
+
+        .indhold_kontakt .wave2 {
+            left: -60%;
+            top: 450px;
+
+        }
+
+        #kontakttekst {
+            height: 500px;
+            justify-content: center;
+            margin-bottom: 100px;
+            margin-top: 100px;
+        }
+
+
+        @media(min-width: 600px) {
+
+            .indhold_kontakt .wave1 {
+                top: -20px;
+                right: -50%;
+            }
+
+            .indhold_kontakt .wave2 {
+                top: 470px;
+                left: -50%;
+            }
+        }
+
+
+        @media(min-width: 900px) {
+
+            .indhold_kontakt .wave1 {
+                top: -120px;
+                right: -1%;
+            }
+
+            .indhold_kontakt .wave2 {
+                top: 280px;
+                left: 0%;
+            }
+        }
+    </style>
 
 
     <!--

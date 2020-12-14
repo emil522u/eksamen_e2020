@@ -14,6 +14,7 @@ header {
     z-index: 1000;
     pointer-events: none;
     height: 50vh;
+    top: 0;
 }
 
 .menuknap {
@@ -76,7 +77,7 @@ nav {
     height: 110vh;
     z-index: 1000;
     position: relative;
-    margin-top: -66px;
+    margin-top: -70px;
     margin-left: -10px;
     transition: visibility 0s linear .3s, opacity .3s linear;
 }
@@ -84,6 +85,7 @@ nav {
 #menu {
     list-style-type: none;
     padding-top: 50px;
+    margin: 0 -25px;
 }
 
 nav a {
@@ -110,6 +112,76 @@ li {
     justify-content: center;
 }
 
+/*
+.voresUnivers_menupunkt,
+.shop_menupunkt,
+.omos_menupunkt,
+.kontakt_menupunkt,
+.kurv_menupunkt {
+    display: flex;
+    height: 100px;
+    width: 80vw;
+    align-items: center;
+    border-bottom: 2px solid black;
+    opacity: 100%;
+}
+*/
+
+.soeg_menupunkt {
+    display: flex;
+    height: 100px;
+    width: 80vw;
+    align-items: center;
+}
+
+.voresUnivers_menupunkt,
+.omos_menupunkt {
+    display: flex;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    width: 40vw;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.shop_menupunkt,
+.kontakt_menupunkt {
+    width: 40vw;
+    height: 200px;
+    display: flex;
+    border-bottom: 2px solid black;
+    /*    border-right: 2px solid black;*/
+    width: 40vw;
+    height: 200px;
+    align-items: center;
+}
+
+.kurv_menupunkt {
+    border-right: 2px solid black;
+    border-bottom: none;
+    width: 40vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.soeg_menupunkt {
+    width: 40vw;
+    height: 200px;
+}
+
+ul ul {
+    display: flex;
+}
+
+/*
+#menu {
+    padding: 5% 8%;
+}
+*/
+
+/*
 .voresUnivers_menupunkt,
 .shop_menupunkt,
 .omos_menupunkt,
@@ -133,6 +205,7 @@ li {
 ul ul {
     margin-left: -30px;
 }
+*/
 
 
 /***************INDEX***********************/
@@ -446,10 +519,10 @@ ul ul {
 .univers_grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 15px;
     /*    margin-top: 10px;*/
     /*    height: 200vh;*/
-    width: 100vw;
+    /*    width: 100vw;*/
     position: relative;
     z-index: 5;
     left: 0;
@@ -1002,7 +1075,7 @@ footer {
     }
 
     .univers_grid {
-        margin-top: 10px;
+        margin: 15px 15px;
     }
 
     .univers_hvid_box {
