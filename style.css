@@ -556,7 +556,7 @@ ul ul {
 
 .indhold_shop {
     width: 100vw;
-    background-color: #FAF29B;
+    background-color: #F9CFE1;
     position: relative;
     top: 125vh;
     z-index: 2;
@@ -574,7 +574,7 @@ ul ul {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-template-rows: 1fr;
     margin: 0;
-    background-color: #FAF29B;
+    background-color: #F9CFE1;
     padding: 3%;
     z-index: 3;
 }
@@ -1041,7 +1041,6 @@ footer {
     }
 
     .indhold_shop {
-        background-color: #FAF29B;
         width: 100vw;
         position: absolute;
         z-index: 2;
