@@ -85,6 +85,7 @@ nav {
 #menu {
     list-style-type: none;
     padding-top: 50px;
+    margin: 0 -25px;
 }
 
 nav a {
@@ -111,6 +112,76 @@ li {
     justify-content: center;
 }
 
+/*
+.voresUnivers_menupunkt,
+.shop_menupunkt,
+.omos_menupunkt,
+.kontakt_menupunkt,
+.kurv_menupunkt {
+    display: flex;
+    height: 100px;
+    width: 80vw;
+    align-items: center;
+    border-bottom: 2px solid black;
+    opacity: 100%;
+}
+*/
+
+.soeg_menupunkt {
+    display: flex;
+    height: 100px;
+    width: 80vw;
+    align-items: center;
+}
+
+.voresUnivers_menupunkt,
+.omos_menupunkt {
+    display: flex;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    width: 40vw;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.shop_menupunkt,
+.kontakt_menupunkt {
+    width: 40vw;
+    height: 200px;
+    display: flex;
+    border-bottom: 2px solid black;
+    /*    border-right: 2px solid black;*/
+    width: 40vw;
+    height: 200px;
+    align-items: center;
+}
+
+.kurv_menupunkt {
+    border-right: 2px solid black;
+    border-bottom: none;
+    width: 40vw;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.soeg_menupunkt {
+    width: 40vw;
+    height: 200px;
+}
+
+ul ul {
+    display: flex;
+}
+
+/*
+#menu {
+    padding: 5% 8%;
+}
+*/
+
+/*
 .voresUnivers_menupunkt,
 .shop_menupunkt,
 .omos_menupunkt,
@@ -134,6 +205,7 @@ li {
 ul ul {
     margin-left: -30px;
 }
+*/
 
 
 /***************INDEX***********************/
