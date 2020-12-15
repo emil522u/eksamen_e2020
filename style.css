@@ -631,7 +631,7 @@ ul ul {
     width: 100vw;
     /*    background-color: #F9CFE1;*/
     position: relative;
-    top: 60vh;
+    top: 50vh;
     z-index: 2;
 }
 
@@ -1143,7 +1143,7 @@ footer {
         z-index: 2;
         left: 0;
         /*        top: 100vh;*/
-        top: 300vh;
+        top: 100vh;
     }
 
     header {
@@ -1153,14 +1153,17 @@ footer {
     #collage {
         width: 100vw;
         position: relative;
-        top: 100vh;
+        top: 370vh;
     }
 
     .collage_wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 15px;
-        padding: 70px 70px;
+        /*        padding: 150px 150px;*/
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
     }
 
 
