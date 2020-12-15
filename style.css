@@ -1148,18 +1148,22 @@ ul ul {
 #kortcontainer {
     height: 100vh;
     width: 100vw;
-    background-color: #F9D0E2;
+    /*    background-color: #F9D0E2;*/
 
 
 }
 
+/*
 #kortcontainer h2 {
     font-family: century-gothic, sans-serif;
     text-align: center;
     color: #d67da5;
 }
+*/
 
+/*
 #kortoverflow {
+    background-image: url(SVG/kort_stor.svg);
     background-size: cover;
     width: 100vw;
     height: 90vh;
@@ -1167,11 +1171,12 @@ ul ul {
     justify-content: center;
     align-items: center;
 }
+*/
 
 #kort {
-    background-image: url(PNG/kort.png);
-    width: 94vw;
-    height: 56.34vh;
+    background-image: url(SVG/kort_stor.svg);
+    width: 100vw;
+    height: 56.25vw;
     background-size: cover;
 }
 
