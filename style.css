@@ -527,6 +527,7 @@ ul ul {
     z-index: 5;
     left: 0;
     background-color: white;
+    margin: 15px 15px;
 }
 
 .univers_article {
@@ -539,24 +540,31 @@ ul ul {
 .univers_hvid_box {
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.77);
+    background-color: rgba(255, 255, 255, 0.78);
     position: absolute;
 }
 
 .post_navn {
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 6%;
+    left: 7%;
     font-family: century-gothic, sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    transform-origin: bottom left;
+    max-width: 300px;
+    margin: 0;
+    color: #fc8bbc;
+
 }
 
 .post_dato {
     position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 6%;
+    right: 6%;
     font-family: century-gothic, sans-serif;
+    margin: 0;
+    color: #fc8bbc;
 }
 
 .post_billede {
