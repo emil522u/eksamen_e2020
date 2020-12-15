@@ -31,7 +31,8 @@ header {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: white;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
     margin: 6px 0;
     transition: 0.4s;
     z-index: 1000;
@@ -40,10 +41,17 @@ header {
 .bar2 {
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: white;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
     margin: 6px 0;
     transition: 0.4s;
     z-index: 1000;
+}
+
+.farve {
+    /*    background-color: #D5E59E;*/
+    background-color: black;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
 }
 
 
@@ -51,6 +59,10 @@ header {
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-46deg) translate(-8px, 7px);
+    background-color: black;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
+    /*    background-color: #D5E59E;*/
+    ;
 }
 
 /* Fade out the second bar */
@@ -62,6 +74,10 @@ header {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+    background-color: black;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
+    /*    background-color: #D5E59E;*/
+
 }
 
 
@@ -76,6 +92,7 @@ header {
     z-index: 500;
     cursor: pointer;
     pointer-events: all;
+    filter: drop-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
 }
 
 .logo_pink {
@@ -89,6 +106,7 @@ header {
     z-index: 5000;
     cursor: pointer;
     pointer-events: all;
+    filter: drop-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
 }
 
 .logo_pink_kontakt {
@@ -101,6 +119,8 @@ header {
     left: 2.3%;
     z-index: 500;
     cursor: pointer;
+    pointer-events: all;
+    filter: drop-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
 }
 
 .hidden_menu {
@@ -517,6 +537,20 @@ ul ul {
     left: 0;
     background-color: rgb(216, 226, 255);
     overflow: hidden;
+}
+
+#forside_logo {
+    background-image: url(SVG/forside_logo2.svg);
+    background-size: cover;
+    width: 400px;
+    height: 299px;
+    position: absolute;
+    top: 29%;
+    z-index: 500;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+
 }
 
 /****************UNIVERS****************/
@@ -1400,7 +1434,7 @@ footer {
         /*        -webkit-text-decoration-skip: objects;*/
     }
 
-   #menu a:hover {
+    #menu a:hover {
         animation-play-state: running;
     }
 
@@ -1414,6 +1448,7 @@ footer {
             background-position: 600px 60px;
         }
     }
+
 
 
     /***************UNIVERS SINGLE******************/
