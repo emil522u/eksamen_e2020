@@ -1030,9 +1030,12 @@ ul ul {
 }
 
 .indhold_omOS h2 {
-    color: #ffa8ce;
-    font-size: 3rem;
+
+
+    font-size: 2rem;
     font-family: century-gothic, sans-serif;
+    /*    padding: 45px 45px 10px;*/
+    color: #d67da5;
 }
 
 .boelge-om-os {
@@ -1061,55 +1064,13 @@ ul ul {
         padding-right: 10%;
     }
 
+    #omosvideo {
+        width: 85vw;
+        height: 51vw;
+        display: block;
+        margin: 0 100px 50px;
+    }
 }
-
-
-/****************KONTAKT****************/
-
-
-.kontakt_svg {
-    background-image: url(SVG/kontakt.svg);
-    background-size: cover;
-    background-position: 55% 50%;
-    width: 100%;
-    height: 50vh;
-    z-index: 10;
-    position: absolute;
-    left: -2%;
-}
-
-.indhold_kontakt {
-    background-color: white;
-    width: 100vw;
-    position: relative;
-    z-index: 2;
-
-    top: 50vh;
-}
-
-.indhold_kontakt .smileyboks {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 100px;
-}
-
-.indhold_kontakt .omossmiley {
-    width: 100px;
-}
-
-.indhold_kontakt #insta {
-    max-width: 1199px;
-}
-
-
-#omosvideo {
-    width: 85vw;
-    height: 51vw;
-    display: block;
-    margin: 0 100px 50px;
-}
-
 
 /****************KONTAKT****************/
 
@@ -1135,184 +1096,59 @@ ul ul {
     top: 50vh;
 }
 
-.indhold_kontakt .smileyboks {
+.kontakt_container {
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 100px;
 }
 
-.indhold_kontakt .omossmiley {
-    width: 100px;
+.kontakt_oplysninger {
+    margin: 0 0 50px;
 }
 
-
-.indhold_kontakt #kontakttekst {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-}
-
-#kontakttekst img {
-    max-width: 100%;
-}
-
-.indhold_kontakt #insta {
-    max-width: 1199px;
-}
-
-
-.indhold_kontakt #kortcontainer {
-    padding-bottom: 50px;
-}
-
-.indhold_kontakt #kortoverflow {
-    width: 90vw;
-    height: 50.625vw;
-    overflow: hidden;
-    padding-bottom: 15vh;
-
-}
-
-.indhold_kontakt #kortoverflow #kort {
-    width: 90vw;
-    height: 50.625vw;
-    transform: scale(2);
-
-}
-
-.indhold_kontakt #kortoverflow #kort {
-    transition: transform .5s ease;
-
-}
-
-
-.indhold_kontakt .indhold_kontakt {
-    position: absolute;
-    top: 60vh;
-
-}
-
-.indhold_kontakt h2 {
-    color: #ffa8ce;
-    font-size: 3rem;
-    text-transform: uppercase;
+.kontakt_oplysninger h2 {
+    padding: 45px 45px 5px;
     font-family: century-gothic, sans-serif;
+    color: #d67da5;
+    font-size: 2rem;
 }
 
-.indhold_kontakt #kontakttekst {
-    display: flex;
-    flex-direction: row;
-
-    position: relative;
-
-
-
-}
-
-.indhold_kontakt img {
-    max-width: 700px;
-}
-
-.kontakt-oplysninger {
-    width: 50vw;
+.kontakt_oplysninger li {
+    list-style-type: none;
+    font-family: century-gothic, sans-serif;
+    padding: 0px 45px 5px;
 
 }
 
-billede-kontakt {
-    width: 50vw;
+.kontakt_oplysninger ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.omos_billede_container {
+    width: 100vw;
+    padding: 0 15px;
 }
 
 .billede-kontakt {
-    flex-grow: 1;
-    flex-basis: 400px;
+    /*    padding: 15px;*/
+    max-width: 94%;
 }
 
-#kontakttekst kontaktoplysninger {
-    flex-grow: 1;
-    flex-basis: 400px;
-}
-
-#kontakttekst img {
-    max-width: 100%;
-    object-fit: fill;
-}
-
-.indhold_kontakt #kortcontainer {
+#kortcontainer {
+    height: 100vh;
     width: 100vw;
     background-color: #F9D0E2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.indhold_kontakt #kort {
-    background-image: url(PNG/kort.png);
-    background-size: cover;
-}
-
-.indhold_kontakt #kortcontainer h2 {
-    color: black;
-
-}
-
-@media(min-width: 600px) {
-
-    .indhold_kontakt .indhold_kontakt {
-        top: 115vh;
-
-    }
-
-}
-
-@media(min-width: 768px) {
-    .indhold_kontakt #insta {
-        margin: auto;
-    }
+#kortcontainer h2 {
+    font-family: century-gothic, sans-serif;
+    text-align: center;
+    color: #d67da5;
 }
 
 
-@media(min-width: 900px) {
-
-    .indhold_kontakt #kontakttekst {
-        flex-direction: row;
-        padding-left: 0%;
-
-    }
-
-    .indhold_kontakt #kortcontainer {
-        padding-bottom: 100px;
-    }
-
-    .indhold_kontakt #kortoverflow {
-        width: 60vw;
-        height: 33.75vw;
-        overflow: hidden;
-        padding-bottom: 0;
-
-    }
-
-    .indhold_kontakt #kortoverflow #kort {
-        width: 60vw;
-        height: 33.75vw;
-        transform: scale(1);
-    }
-
-    .indhold_kontakt #kortoverflow #kort {
-        transition: transform .5s ease;
-
-    }
-
-    .indhold_kontakt #kortoverflow:hover #kort {
-        transform: scale(1.8);
-
-    }
-
-}
 
 
 /****************FOOTER****************/
@@ -1741,7 +1577,5 @@ footer {
         bottom: 15%;
         z-index: -1;
     }
-
-
 
 }
