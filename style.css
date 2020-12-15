@@ -64,6 +64,45 @@ header {
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+
+.logo_hvid {
+    background-image: url(SVG/logo_planet_hvid.svg);
+    height: 35px;
+    width: 61px;
+    background-size: cover;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    z-index: 500;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.logo_pink {
+    background-image: url(SVG/logo_planet_lyseroed.svg);
+    height: 35px;
+    width: 61px;
+    background-size: cover;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    z-index: 5000;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.logo_pink_kontakt {
+    background-image: url(SVG/logo_planet_lyseroed.svg);
+    height: 35px;
+    width: 61px;
+    background-size: cover;
+    position: absolute;
+    top: 4.5%;
+    left: 2.3%;
+    z-index: 500;
+    cursor: pointer;
+}
+
 .hidden_menu {
     opacity: 0;
     transition: visibility .3s linear .3s, opacity .3s linear;
@@ -84,7 +123,7 @@ nav {
 
 #menu {
     list-style-type: none;
-    padding-top: 50px;
+    padding-top: 100px;
     margin: 0 -25px;
 }
 
@@ -496,7 +535,7 @@ ul ul {
 }
 
 .vores_univers_svg {
-    background-image: url(SVG/vores_univers3.svg);
+    background-image: url(SVG/vores_univers.svg);
     background-size: cover;
     background-position: 55% 50%;
     width: 100%;
@@ -586,7 +625,8 @@ ul ul {
     color: #ffa8ce;
     cursor: pointer;
     text-decoration: underline;
-    padding: 50px 15px 0;
+    margin: 150px 15px 0;
+    width: 100px;
 }
 
 .single_post_navn {
@@ -608,11 +648,15 @@ ul ul {
 .single_post_tekst1 {
     font-family: century-gothic, sans-serif;
     padding: 0 15px;
+    flex-grow: 1;
+    flex-basis: 400px;
 }
 
 .single_post_tekst2 {
     font-family: century-gothic, sans-serif;
     padding: 0 15px;
+    flex-grow: 1;
+    flex-basis: 400px;
 }
 
 .single_post_billede {
@@ -905,7 +949,7 @@ ul ul {
     position: relative;
     z-index: 2;
     left: 0;
-    top: 500vh;
+    top: 50vh;
 }
 
 .indhold_kontakt .smileyboks {
@@ -1108,8 +1152,7 @@ footer {
     }
 
     .vores_univers_svg {
-        background-image: url(SVG/vores_univers3.svg);
-        background-position: 55% 50%;
+        background-position: 55% 80%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1147,7 +1190,7 @@ footer {
 
     .shop_svg {
         background-image: url(SVG/shop.svg);
-        background-position: 55% 50%;
+        background-position: 55% 80%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1231,7 +1274,7 @@ footer {
 
     .omOS_svg {
         background-image: url(SVG/om_os.svg);
-        background-position: 55% 50%;
+        background-position: 55% 80%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1255,7 +1298,7 @@ footer {
 
     .kontakt_svg {
         background-image: url(SVG/kontakt.svg);
-        background-position: 55% 50%;
+        background-position: 55% 80%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1282,6 +1325,17 @@ footer {
     .menuknap {
         margin-left: 85%;
         margin-top: 2%;
+    }
+
+
+    .logo_pink.menu_link {
+        top: 8.5%;
+        left: 2.5%;
+    }
+
+    .logo_pink_kontakt {
+        top: 3.8%;
+        left: 1.9%;
     }
 
     nav {
@@ -1325,10 +1379,10 @@ footer {
     }
 
     #menu {
-        padding: 5% 8%;
+        padding: 7% 8%;
     }
 
-    a:hover {
+    #menu a:hover {
         background: url("SVG/wave.svg");
         background-repeat: repeat;
         /*        background-position-x: 50%;*/
@@ -1346,7 +1400,7 @@ footer {
         /*        -webkit-text-decoration-skip: objects;*/
     }
 
-    a:hover {
+   #menu a:hover {
         animation-play-state: running;
     }
 
@@ -1367,6 +1421,7 @@ footer {
     .univers_singleview {
         display: flex;
         flex-direction: row-reverse;
+        padding: 0 150px;
     }
 
     .univers_singleview_containerBig {
@@ -1378,12 +1433,17 @@ footer {
     }
 
     .single_post_navn {
-        margin: 0;
+        margin: -13px 0 0;
     }
 
     .single_post_dato {
         margin: 0 15px;
     }
+
+    .tilbage {
+        margin: 150px 165px 0;
+    }
+
 }
 
 @media(min-width: 1000px) {
