@@ -715,11 +715,18 @@ ul ul {
 .indhold_shop .varevideo {
     max-width: 92%;
     padding: 4%;
+<<<<<<< HEAD
+=======
+    cursor: pointer;
+>>>>>>> origin/master
 }
 
 .indhold_shop .vare {
     position: relative;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> origin/master
 }
 
 .indhold_shop .vare:hover img {
@@ -770,7 +777,6 @@ ul ul {
 
 .vare-billede {
     max-width: 100%;
-
 }
 
 .shop-grid {
@@ -941,6 +947,37 @@ ul ul {
 .boelge-shop-sv {
     display: none;
 }
+
+.singleview-shop .vare-video-sv {
+    max-width: 95%;
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+}
+
+.singleview-shop .column {
+    position: relative;
+}
+
+.singleview-shop .column:hover img {
+    opacity: 0;
+}
+
+.singleview-shop .column:hover video {
+    opacity: 1;
+}
+
+.singleview-shop .column img {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+
+}
+
+.singleview-shop .fade {
+    transition: opacity .5s ease-in-out;
+}
+
 
 
 
