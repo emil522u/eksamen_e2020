@@ -617,7 +617,7 @@ ul ul {
 /***************UNIVERS SINGLE******************/
 
 .univers_singleview {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .tilbage {
@@ -664,6 +664,9 @@ ul ul {
     margin: 0 15px;
 }
 
+.boelge-blog {
+    display: none;
+}
 
 /****************SHOP****************/
 
@@ -718,7 +721,8 @@ ul ul {
     font-family: century-gothic, sans-serif;
     color: #ffa8ce;
     font-size: 3rem;
-    padding: 25px 0 0 25px;
+    padding: 100px 0 0 25px;
+
 }
 
 .vare-navn {
@@ -744,7 +748,9 @@ ul ul {
     width: 375px;
     position: relative;
     top: 0vh;
-    margin: auto;
+    margin: 0 auto;
+    height: 600px;
+    padding-bottom: 100px;
 }
 
 #collage img {
@@ -794,13 +800,20 @@ ul ul {
     top: 851px;
 }
 
+.boelge-shop {
+    position: absolute;
+    bottom: 15%;
+    z-index: -1;
+}
+
+
 /****************SHOP SINGLEVIEW***************/
 
 .single-view-vare {
     display: flex;
     flex-direction: column;
     padding: 22% 5%;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
 }
 
@@ -810,7 +823,7 @@ ul ul {
 }
 
 .vare-billede-sv {
-    max-width: 100%;
+    max-width: 95%;
 }
 
 .singleview-shop h3 {
@@ -818,6 +831,7 @@ ul ul {
     color: #ffa8ce;
     font-size: 3rem;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .singleview-shop .pris-sv {
@@ -845,6 +859,10 @@ ul ul {
     text-decoration: underline;
     margin-bottom: 30px;
 
+}
+
+.boelge-shop-sv {
+    display: none;
 }
 
 
@@ -1400,7 +1418,7 @@ footer {
         /*        -webkit-text-decoration-skip: objects;*/
     }
 
-   #menu a:hover {
+    #menu a:hover {
         animation-play-state: running;
     }
 
@@ -1449,17 +1467,22 @@ footer {
 @media(min-width: 1000px) {
     .single-view-vare {
         padding: 1% 12% 0%;
+        margin-top: 5%;
     }
 
 }
 
 @media(min-width: 1200px) {
 
+    .collage {
+        margin-bottom: 400px;
+    }
+
     .collage_wrapper {
         width: 1000px;
         position: relative;
-        top: 0vh;
-        margin-left: 40px;
+        top: -4vh;
+        margin-left: 0 auto;
 
     }
 
@@ -1500,5 +1523,20 @@ footer {
         left: 610px;
         top: 160px;
     }
+
+    .boelge-blog {
+        display: block;
+        position: absolute;
+        bottom: 15%;
+        z-index: -1;
+    }
+
+    .boelge-shop-sv {
+        display: block;
+        position: absolute;
+        bottom: 15%;
+        z-index: -1;
+    }
+
 
 }
