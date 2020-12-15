@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+p {
+    font-family: century-gothic, sans-serif;
+}
+
 
 /****************NAV****************/
 
@@ -50,8 +54,9 @@ header {
 
 .farve {
     /*    background-color: #D5E59E;*/
-    background-color: black;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
+    background-color: #f9d1e3;
+    box-shadow: none;
+    /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
 }
 
 
@@ -59,10 +64,11 @@ header {
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-46deg) translate(-8px, 7px);
-    background-color: black;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
+    background-color: #f9d1e3;
+    /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
     /*    background-color: #D5E59E;*/
-    ;
+    box-shadow: none;
+
 }
 
 /* Fade out the second bar */
@@ -74,8 +80,9 @@ header {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-    background-color: black;
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
+    background-color: #f9d1e3;
+    box-shadow: none;
+    /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
     /*    background-color: #D5E59E;*/
 
 }
@@ -613,7 +620,7 @@ ul ul {
 .univers_hvid_box {
     height: 100%;
     width: 100%;
-    background-color: rgba(244, 248, 255, 0.84);
+    background-color: rgba(244, 248, 255, 0.9);
     position: absolute;
 }
 
@@ -627,7 +634,7 @@ ul ul {
     transform-origin: bottom left;
     max-width: 300px;
     margin: 0;
-    color: #fc8bbc;
+    color: #d67da5;
 
 }
 
@@ -637,7 +644,7 @@ ul ul {
     right: 6%;
     font-family: century-gothic, sans-serif;
     margin: 0;
-    color: #fc8bbc;
+    color: #d67da5;
 }
 
 .post_billede {
@@ -656,7 +663,7 @@ ul ul {
 
 .tilbage {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     cursor: pointer;
     text-decoration: underline;
     margin: 150px 15px 0;
@@ -665,7 +672,7 @@ ul ul {
 
 .single_post_navn {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     font-size: 3rem;
     text-transform: uppercase;
     padding: 0 15px;
@@ -673,7 +680,7 @@ ul ul {
 
 .single_post_dato {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     text-transform: uppercase;
     margin: -15px 15px 0;
 }
@@ -706,39 +713,40 @@ ul ul {
 
 
 .indhold_shop .varevideo {
-            max-width: 92%;
-            padding: 4%;
-        }
+    max-width: 92%;
+    padding: 4%;
+}
 
-        .indhold_shop .vare {
-            position: relative;
-        }
+.indhold_shop .vare {
+    position: relative;
+    cursor: pointer;
+}
 
-        .indhold_shop .vare:hover img {
-            opacity: 0;
-        }
+.indhold_shop .vare:hover img {
+    opacity: 0;
+}
 
-        .indhold_shop .vare:hover video {
-            opacity: 1;
-        }
+.indhold_shop .vare:hover video {
+    opacity: 1;
+}
 
-        .indhold_shop .vare img {
-            top: 0px;
-            left: 0px;
-            opacity: 1;
+.indhold_shop .vare img {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
 
-        }
+}
 
-        .indhold_shop .fade {
-            transition: opacity .5s ease-in-out;
-        }
+.indhold_shop .fade {
+    transition: opacity .5s ease-in-out;
+}
 
-       .indhold_shop video {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            opacity: 0;
-        }
+.indhold_shop video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
 
 .shop_svg {
     background-image: url(SVG/shop.svg);
@@ -960,8 +968,17 @@ ul ul {
 }
 
 #omosvideo {
-    width: 100vw;
-    height: 56.25vw;
+
+    width: 80vw;
+    height: 45vw;
+
+
+    /*
+    width: 100%;
+    height: 100%;
+*/
+    display: block;
+    margin: 0 50px;
 }
 
 .indhold_omOS .wave {
@@ -973,9 +990,7 @@ ul ul {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    align-items: ;
-    padding-left: 50px;
-    padding-right: 10%;
+    padding: 0 50px;
     position: relative;
     margin-bottom: 50px;
 }
@@ -1004,379 +1019,19 @@ ul ul {
 @media(min-width: 900px) {
     .indhold_omOS #omos2 {
         flex-direction: row;
-        padding-left: 12%;
-        padding-right: 10%;
+        padding: 0 100px;
 
     }
 
     .indhold_omOS #column1 {
-        padding-right: 5%;
-    }
-}
-
-
-/****************KONTAKT****************/
-
-
-.kontakt_svg {
-    background-image: url(SVG/kontakt.svg);
-    background-size: cover;
-    background-position: 55% 50%;
-    width: 100%;
-    height: 50vh;
-    z-index: 10;
-    position: absolute;
-    left: -2%;
-}
-
-.indhold_kontakt {
-    background-color: white;
-    height: 200vh;
-    width: 100vw;
-    position: relative;
-    z-index: 2;
-    left: 0;
-    top: 50vh;
-}
-
-.indhold_kontakt .smileyboks {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 100px;
-}
-
-.indhold_kontakt .omossmiley {
-    width: 100px;
-}
-
-.indhold_kontakt #insta {
-    max-width: 1199px;
-}
-
-
-.indhold_kontakt #kortcontainer {
-    padding-bottom: 50px;
-}
-
-.indhold_kontakt #kortoverflow {
-    width: 90vw;
-    height: 50.625vw;
-    overflow: hidden;
-    padding-bottom: 15vh;
-
-}
-
-.indhold_kontakt #kortoverflow #kort {
-    width: 90vw;
-    height: 50.625vw;
-    transform: scale(2);
-
-}
-
-.indhold_kontakt #kortoverflow #kort {
-    transition: transform .5s ease;
-
-}
-
-
-.indhold_kontakt .indhold_kontakt {
-    position: absolute;
-    top: 60vh;
-
-}
-
-.indhold_kontakt h2 {
-    color: #ffa8ce;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-family: century-gothic, sans-serif;
-}
-
-.indhold_kontakt #kontakttekst {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-
-}
-
-.billede-kontakt {
-    flex-grow: 1;
-    flex-basis: 400px;
-}
-
-#kontakttekst kontaktoplysninger {
-    flex-grow: 1;
-    flex-basis: 400px;
-}
-
-#kontakttekst img {
-    max-width: 100%;
-    object-fit: fill;
-}
-
-.indhold_kontakt #kortcontainer {
-    width: 100vw;
-    background-color: #F9D0E2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.indhold_kontakt #kort {
-    background-image: url(PNG/kort.png);
-    background-size: cover;
-}
-
-.indhold_kontakt #kortcontainer h2 {
-    color: black;
-
-}
-
-@media(min-width: 600px) {
-
-    .indhold_kontakt .indhold_kontakt {
-        top: 115vh;
-
+        padding-right: 10%;
     }
 
-}
-
-@media(min-width: 768px) {
-    .indhold_kontakt #insta {
-        margin: auto;
-    }
-}
-
-
-@media(min-width: 900px) {
-
-    .indhold_kontakt #kontakttekst {
-        flex-direction: row;
-        padding-left: 0%;
-
-    }
-
-    .indhold_kontakt #kortcontainer {
-        padding-bottom: 100px;
-    }
-
-    .indhold_kontakt #kortoverflow {
-        width: 60vw;
-        height: 33.75vw;
-        overflow: hidden;
-        padding-bottom: 0;
-
-    }
-
-    .indhold_kontakt #kortoverflow #kort {
-        width: 60vw;
-        height: 33.75vw;
-        transform: scale(1);
-    }
-
-    .indhold_kontakt #kortoverflow #kort {
-        transition: transform .5s ease;
-
-    }
-
-    .indhold_kontakt #kortoverflow:hover #kort {
-        transform: scale(1.8);
-
-    }
-
-}
-
-
-/****************FOOTER****************/
-
-footer {
-    width: 100%;
-    height: 50px;
-    background-color: white;
-    position: relative;
-    z-index: 500;
-    bottom: 0;
-    left: 0;
-    display: block;
-}
-
-.facebook {
-    width: 16.07px;
-    height: 30px;
-    background-image: url(SVG/facebook.svg);
-    background-size: cover;
-    position: absolute;
-    top: 7.5px;
-    right: 15%;
-}
-
-.instagram {
-    width: 29.98px;
-    height: 30px;
-    background-image: url(SVG/instagram.svg);
-    background-size: cover;
-    position: absolute;
-    top: 7.5px;
-    right: 5%;
-}
-
-
-/****************MEDIA************************************************/
-
-
-@media(min-width: 600px) {
-
-
-    /****************UNIVERS****************/
-
-    .splash {
-        height: 100vh;
-        width: 100vw;
-        position: absolute;
-        top: 0;
-
-    }
-
-    .vores_univers_svg {
-        background-position: 55% 80%;
-        width: 100vw;
-        height: 100vh;
-        z-index: 10;
-        position: absolute;
-        left: 0;
-    }
-
-    .indhold_univers {
-        background-color: white;
-        height: 200vh;
-        width: 100vw;
-        position: absolute;
-        z-index: 2;
-        left: 0;
-        top: 100vh;
-    }
-
-    .univers_grid {
-        margin: 15px 15px;
-    }
-
-    .univers_hvid_box {
-        opacity: 0;
-        transition: .3s;
-    }
-
-    .univers_article:hover .univers_hvid_box {
-        opacity: 1;
-        transition: .3s;
-    }
-
-
-    /****************SHOP****************/
-
-
-    .shop_svg {
-        background-image: url(SVG/shop.svg);
-        background-position: 55% 80%;
-        width: 100vw;
-        height: 100vh;
-        z-index: 10;
-        position: absolute;
-        left: -1%;
-    }
-
-    .indhold_shop {
-        width: 100vw;
-        position: absolute;
-        z-index: 2;
-        left: 0;
-        /*        top: 100vh;*/
-        top: 100vh;
-    }
-
-    header {
-        height: 100vh;
-    }
-
-    #collage {}
-
-    .collage_wrapper {
-        width: 600px;
-        position: relative;
-        top: 0vh;
-
-    }
-
-    .collage-billede-1 {
-        width: 340px;
-        left: 20px;
-        top: 270px;
-    }
-
-    .collage-smiley {
-        top: 625px;
-        width: 162px;
-        left: 390px;
-
-    }
-
-    .collage-billede-2 {
-        top: 610px;
-        width: 340px;
-        left: 20px;
-
-    }
-
-    .collage-billede-3 {
-        width: 225px;
-        right: 16px;
-        top: 145px;
-    }
-
-    .collage-billede-4 {
-        top: 370px;
-        width: 225px;
-        right: 16px;
-    }
-
-    .collage-billede-5 {
-        width: 225px;
-        left: 360px;
-        top: 810px;
-    }
-
-    /****************SHOP SINGLEVIEW****************/
-
-    .single-view-vare {
-        flex-direction: row;
-        padding: 3% 2% 0%;
-    }
-
-    .shop-single-tekst {
-        padding: 10%;
-    }
-
-    /****************OM OS****************/
-
-
-    .omOS_svg {
-        background-image: url(SVG/om_os.svg);
-        background-position: 55% 80%;
-        width: 100vw;
-        height: 100vh;
-        z-index: 10;
-        position: absolute;
-        left: 0;
-    }
-
-    .indhold_omOS {
-        background-color: white;
-        height: 200vh;
-        width: 100vw;
-        position: absolute;
-        z-index: 2;
-        left: 0;
-        top: 100vh;
+    #omosvideo {
+        width: 85vw;
+        height: 51vw;
+        display: block;
+        margin: 0 100px 50px;
     }
 
 
@@ -1385,228 +1040,593 @@ footer {
 
     .kontakt_svg {
         background-image: url(SVG/kontakt.svg);
-        background-position: 55% 80%;
-        width: 100vw;
-        height: 100vh;
+        background-size: cover;
+        background-position: 55% 50%;
+        width: 100%;
+        height: 50vh;
         z-index: 10;
         position: absolute;
-        left: -1%;
+        left: -2%;
     }
 
     .indhold_kontakt {
         background-color: white;
         height: 200vh;
         width: 100vw;
-        position: absolute;
+        position: relative;
         z-index: 2;
         left: 0;
-        top: 100vh;
-
-    }
-}
-
-@media(min-width: 1000px) {
-    /***********************NAV**********************/
-
-
-    .menuknap {
-        margin-left: 85%;
-        margin-top: 2%;
+        top: 50vh;
     }
 
-
-    .logo_pink.menu_link {
-        top: 8.5%;
-        left: 2.5%;
-    }
-
-    .logo_pink_kontakt {
-        top: 3.8%;
-        left: 1.9%;
-    }
-
-    nav {
-        margin-top: -115px;
-    }
-
-    nav a {
-        font-size: 3rem;
-        text-align: center;
-
-    }
-
-    .voresUnivers_menupunkt,
-    .omos_menupunkt {
-        border-bottom: 2px solid black;
-        border-right: 2px solid black;
-        width: 40vw;
-        height: 200px;
-    }
-
-    .shop_menupunkt,
-    .kontakt_menupunkt {
-        width: 40vw;
-        height: 200px;
-    }
-
-    .kurv_menupunkt {
-        border-right: 2px solid black;
-        border-bottom: none;
-        width: 40vw;
-        height: 200px;
-    }
-
-    .soeg_menupunkt {
-        width: 40vw;
-        height: 200px;
-    }
-
-    ul ul {
+    .indhold_kontakt .smileyboks {
+        width: 100vw;
         display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
     }
 
-    #menu {
-        padding: 7% 8%;
-    }
-
-    #menu a:hover {
-        background: url("SVG/wave.svg");
-        background-repeat: repeat;
-        /*        background-position-x: 50%;*/
-        /*        background-position-y: 100%;*/
-        /*        background-size: auto auto;*/
-        background-repeat: repeat-x;
-        background-size: 50px 20px;
-        background-position: 5px 5px;
-        padding: 10px;
-        /*        animation: move 15s linear infinite;*/
-        -webkit-animation: move 17s linear infinite;
-        /*        animation-play-state: paused;*/
-        /*        text-decoration: none;*/
-        /*        background-color: transparent;*/
-        /*        -webkit-text-decoration-skip: objects;*/
-    }
-
-    #menu a:hover {
-        animation-play-state: running;
-    }
-
-
-    @-webkit-keyframes move {
-        from {
-            background-position: 60px 60px;
-        }
-
-        to {
-            background-position: 600px 60px;
-        }
-    }
-
-
-
-    /***************UNIVERS SINGLE******************/
-
-    .univers_singleview {
-        display: flex;
-        flex-direction: row-reverse;
-        padding: 0 150px;
-    }
-
-    .univers_singleview_containerBig {
-        max-width: 60%;
-    }
-
-    .univers_singleview_containerTekst {
-        display: flex;
-    }
-
-    .single_post_navn {
-        margin: -13px 0 0;
-    }
-
-    .single_post_dato {
-        margin: 0 15px;
-    }
-
-    .tilbage {
-        margin: 150px 165px 0;
-    }
-
-}
-
-@media(min-width: 1000px) {
-    .single-view-vare {
-        padding: 1% 12% 0%;
-        margin-top: 5%;
-    }
-
-}
-
-@media(min-width: 1200px) {
-
-    .collage {
-        margin-bottom: 400px;
-    }
-
-    .collage_wrapper {
-        width: 1000px;
-        position: relative;
-        top: -4vh;
-        margin-left: 0 auto;
-
-    }
-
-    .collage-billede-1 {
-        width: 340px;
-        left: 20px;
-        top: 100px;
-    }
-
-    .collage-smiley {
-        top: 500px;
+    .indhold_kontakt .omossmiley {
         width: 100px;
-        left: 700px;
+    }
+
+    .indhold_kontakt #insta {
+        max-width: 1199px;
+    }
+
+
+    .indhold_kontakt #kortcontainer {
+        padding-bottom: 50px;
+    }
+
+    .indhold_kontakt #kortoverflow {
+        width: 90vw;
+        height: 50.625vw;
+        overflow: hidden;
+        padding-bottom: 15vh;
 
     }
 
-    .collage-billede-2 {
-        top: 440px;
-        width: 200px;
-        left: 160px;
+    .indhold_kontakt #kortoverflow #kort {
+        width: 90vw;
+        height: 50.625vw;
+        transform: scale(2);
 
     }
 
-    .collage-billede-3 {
-        width: 250px;
-        right: 390px;
-        top: 70px;
+    .indhold_kontakt #kortoverflow #kort {
+        transition: transform .5s ease;
+
     }
 
-    .collage-billede-4 {
-        top: 320px;
-        width: 250px;
-        right: 390px;
-    }
 
-    .collage-billede-5 {
-        width: 300px;
-        left: 610px;
-        top: 160px;
-    }
-
-    .boelge-blog {
-        display: block;
+    .indhold_kontakt .indhold_kontakt {
         position: absolute;
-        bottom: 15%;
-        z-index: -1;
+        top: 60vh;
+
     }
 
-    .boelge-shop-sv {
+    .indhold_kontakt h2 {
+        color: #ffa8ce;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-family: century-gothic, sans-serif;
+    }
+
+    .indhold_kontakt #kontakttekst {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+    }
+
+    .billede-kontakt {
+        flex-grow: 1;
+        flex-basis: 400px;
+    }
+
+    #kontakttekst kontaktoplysninger {
+        flex-grow: 1;
+        flex-basis: 400px;
+    }
+
+    #kontakttekst img {
+        max-width: 100%;
+        object-fit: fill;
+    }
+
+    .indhold_kontakt #kortcontainer {
+        width: 100vw;
+        background-color: #F9D0E2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .indhold_kontakt #kort {
+        background-image: url(PNG/kort.png);
+        background-size: cover;
+    }
+
+    .indhold_kontakt #kortcontainer h2 {
+        color: black;
+
+    }
+
+    @media(min-width: 600px) {
+
+        .indhold_kontakt .indhold_kontakt {
+            top: 115vh;
+
+        }
+
+    }
+
+    @media(min-width: 768px) {
+        .indhold_kontakt #insta {
+            margin: auto;
+        }
+    }
+
+
+    @media(min-width: 900px) {
+
+        .indhold_kontakt #kontakttekst {
+            flex-direction: row;
+            padding-left: 0%;
+
+        }
+
+        .indhold_kontakt #kortcontainer {
+            padding-bottom: 100px;
+        }
+
+        .indhold_kontakt #kortoverflow {
+            width: 60vw;
+            height: 33.75vw;
+            overflow: hidden;
+            padding-bottom: 0;
+
+        }
+
+        .indhold_kontakt #kortoverflow #kort {
+            width: 60vw;
+            height: 33.75vw;
+            transform: scale(1);
+        }
+
+        .indhold_kontakt #kortoverflow #kort {
+            transition: transform .5s ease;
+
+        }
+
+        .indhold_kontakt #kortoverflow:hover #kort {
+            transform: scale(1.8);
+
+        }
+
+    }
+
+
+    /****************FOOTER****************/
+
+    footer {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        position: relative;
+        z-index: 500;
+        bottom: 0;
+        left: 0;
         display: block;
+    }
+
+    .facebook {
+        width: 16.07px;
+        height: 30px;
+        background-image: url(SVG/facebook.svg);
+        background-size: cover;
         position: absolute;
-        bottom: 15%;
-        z-index: -1;
+        top: 7.5px;
+        right: 15%;
+    }
+
+    .instagram {
+        width: 29.98px;
+        height: 30px;
+        background-image: url(SVG/instagram.svg);
+        background-size: cover;
+        position: absolute;
+        top: 7.5px;
+        right: 5%;
     }
 
 
-}
+    /****************MEDIA************************************************/
+
+
+    @media(min-width: 600px) {
+
+
+        /****************UNIVERS****************/
+
+        .splash {
+            height: 100vh;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+
+        }
+
+        .vores_univers_svg {
+            background-position: 55% 80%;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            position: absolute;
+            left: 0;
+        }
+
+        .indhold_univers {
+            background-color: white;
+            height: 200vh;
+            width: 100vw;
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            top: 100vh;
+        }
+
+        .univers_grid {
+            margin: 15px 15px;
+        }
+
+        .univers_hvid_box {
+            opacity: 0;
+            transition: .3s;
+        }
+
+        .univers_article:hover .univers_hvid_box {
+            opacity: 1;
+            transition: .3s;
+        }
+
+
+        /****************SHOP****************/
+
+
+        .shop_svg {
+            background-image: url(SVG/shop.svg);
+            background-position: 55% 80%;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            position: absolute;
+            left: -1%;
+        }
+
+        .indhold_shop {
+            width: 100vw;
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            /*        top: 100vh;*/
+            top: 100vh;
+        }
+
+        header {
+            height: 100vh;
+        }
+
+        #collage {}
+
+        .collage_wrapper {
+            width: 600px;
+            position: relative;
+            top: 0vh;
+
+        }
+
+        .collage-billede-1 {
+            width: 340px;
+            left: 20px;
+            top: 270px;
+        }
+
+        .collage-smiley {
+            top: 625px;
+            width: 162px;
+            left: 390px;
+
+        }
+
+        .collage-billede-2 {
+            top: 610px;
+            width: 340px;
+            left: 20px;
+
+        }
+
+        .collage-billede-3 {
+            width: 225px;
+            right: 16px;
+            top: 145px;
+        }
+
+        .collage-billede-4 {
+            top: 370px;
+            width: 225px;
+            right: 16px;
+        }
+
+        .collage-billede-5 {
+            width: 225px;
+            left: 360px;
+            top: 810px;
+        }
+
+        /****************SHOP SINGLEVIEW****************/
+
+        .single-view-vare {
+            flex-direction: row;
+            padding: 3% 2% 0%;
+        }
+
+        .shop-single-tekst {
+            padding: 10%;
+        }
+
+        /****************OM OS****************/
+
+
+        .omOS_svg {
+            background-image: url(SVG/om_os.svg);
+            background-position: 55% 80%;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            position: absolute;
+            left: 0;
+        }
+
+        .indhold_omOS {
+            background-color: white;
+            height: 200vh;
+            width: 100vw;
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            top: 100vh;
+        }
+
+
+        /****************KONTAKT****************/
+
+
+        .kontakt_svg {
+            background-image: url(SVG/kontakt.svg);
+            background-position: 55% 80%;
+            width: 100vw;
+            height: 100vh;
+            z-index: 10;
+            position: absolute;
+            left: -1%;
+        }
+
+        .indhold_kontakt {
+            background-color: white;
+            height: 200vh;
+            width: 100vw;
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            top: 100vh;
+
+        }
+    }
+
+    @media(min-width: 1000px) {
+        /***********************NAV**********************/
+
+
+        .menuknap {
+            margin-left: 85%;
+            margin-top: 2%;
+        }
+
+
+        .logo_pink.menu_link {
+            top: 8.5%;
+            left: 2.5%;
+        }
+
+        .logo_pink_kontakt {
+            top: 3.8%;
+            left: 1.9%;
+        }
+
+        nav {
+            margin-top: -115px;
+        }
+
+        nav a {
+            font-size: 3rem;
+            text-align: center;
+
+        }
+
+        .voresUnivers_menupunkt,
+        .omos_menupunkt {
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            width: 40vw;
+            height: 200px;
+        }
+
+        .shop_menupunkt,
+        .kontakt_menupunkt {
+            width: 40vw;
+            height: 200px;
+        }
+
+        .kurv_menupunkt {
+            border-right: 2px solid black;
+            border-bottom: none;
+            width: 40vw;
+            height: 200px;
+        }
+
+        .soeg_menupunkt {
+            width: 40vw;
+            height: 200px;
+        }
+
+        ul ul {
+            display: flex;
+        }
+
+        #menu {
+            padding: 7% 8%;
+        }
+
+        #menu a:hover {
+            background: url("SVG/wave.svg");
+            background-repeat: repeat;
+            /*        background-position-x: 50%;*/
+            /*        background-position-y: 100%;*/
+            /*        background-size: auto auto;*/
+            background-repeat: repeat-x;
+            background-size: 50px 20px;
+            background-position: 5px 5px;
+            padding: 10px;
+            /*        animation: move 15s linear infinite;*/
+            -webkit-animation: move 17s linear infinite;
+            /*        animation-play-state: paused;*/
+            /*        text-decoration: none;*/
+            /*        background-color: transparent;*/
+            /*        -webkit-text-decoration-skip: objects;*/
+        }
+
+        #menu a:hover {
+            animation-play-state: running;
+        }
+
+
+        @-webkit-keyframes move {
+            from {
+                background-position: 60px 60px;
+            }
+
+            to {
+                background-position: 600px 60px;
+            }
+        }
+
+
+
+        /***************UNIVERS SINGLE******************/
+
+        .univers_singleview {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 0 150px;
+        }
+
+        .univers_singleview_containerBig {
+            max-width: 60%;
+        }
+
+        .univers_singleview_containerTekst {
+            display: flex;
+        }
+
+        .single_post_navn {
+            margin: -13px 0 0;
+        }
+
+        .single_post_dato {
+            margin: 0 15px;
+        }
+
+        .tilbage {
+            margin: 150px 165px 0;
+        }
+
+    }
+
+    @media(min-width: 1000px) {
+        .single-view-vare {
+            padding: 1% 12% 0%;
+            margin-top: 5%;
+        }
+
+    }
+
+    @media(min-width: 1200px) {
+
+        .collage {
+            margin-bottom: 400px;
+        }
+
+        .collage_wrapper {
+            width: 1000px;
+            position: relative;
+            top: -4vh;
+            margin-left: 0 auto;
+
+        }
+
+        .collage-billede-1 {
+            width: 340px;
+            left: 20px;
+            top: 100px;
+        }
+
+        .collage-smiley {
+            top: 500px;
+            width: 100px;
+            left: 700px;
+
+        }
+
+        .collage-billede-2 {
+            top: 440px;
+            width: 200px;
+            left: 160px;
+
+        }
+
+        .collage-billede-3 {
+            width: 250px;
+            right: 390px;
+            top: 70px;
+        }
+
+        .collage-billede-4 {
+            top: 320px;
+            width: 250px;
+            right: 390px;
+        }
+
+        .collage-billede-5 {
+            width: 300px;
+            left: 610px;
+            top: 160px;
+        }
+
+        .boelge-blog {
+            display: block;
+            position: absolute;
+            bottom: 15%;
+            z-index: -1;
+        }
+
+        .boelge-shop-sv {
+            display: block;
+            position: absolute;
+            bottom: 15%;
+            z-index: -1;
+        }
+
+
+    }
