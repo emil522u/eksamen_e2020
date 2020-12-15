@@ -535,7 +535,7 @@ ul ul {
 }
 
 .vores_univers_svg {
-    background-image: url(SVG/vores_univers3.svg);
+    background-image: url(SVG/vores_univers.svg);
     background-size: cover;
     background-position: 55% 50%;
     width: 100%;
@@ -1142,8 +1142,7 @@ footer {
     }
 
     .vores_univers_svg {
-        background-image: url(SVG/vores_univers3.svg);
-        background-position: 55% 50%;
+        background-position: 55% 80%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1181,7 +1180,7 @@ footer {
 
     .shop_svg {
         background-image: url(SVG/shop.svg);
-        background-position: 55% 50%;
+        background-position: 55% 80%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1267,7 +1266,7 @@ footer {
 
     .omOS_svg {
         background-image: url(SVG/om_os.svg);
-        background-position: 55% 50%;
+        background-position: 55% 80%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1291,7 +1290,7 @@ footer {
 
     .kontakt_svg {
         background-image: url(SVG/kontakt.svg);
-        background-position: 55% 50%;
+        background-position: 55% 80%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
