@@ -6,6 +6,10 @@ body {
     margin: 0;
 }
 
+p {
+    font-family: century-gothic, sans-serif;
+}
+
 
 /****************NAV****************/
 
@@ -31,7 +35,8 @@ header {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: white;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
     margin: 6px 0;
     transition: 0.4s;
     z-index: 1000;
@@ -40,10 +45,18 @@ header {
 .bar2 {
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: white;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
     margin: 6px 0;
     transition: 0.4s;
     z-index: 1000;
+}
+
+.farve {
+    /*    background-color: #D5E59E;*/
+    background-color: #f9d1e3;
+    box-shadow: none;
+    /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
 }
 
 
@@ -51,6 +64,11 @@ header {
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-46deg) translate(-8px, 7px);
+    background-color: #f9d1e3;
+    /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
+    /*    background-color: #D5E59E;*/
+    box-shadow: none;
+
 }
 
 /* Fade out the second bar */
@@ -62,6 +80,11 @@ header {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+    background-color: #f9d1e3;
+    box-shadow: none;
+    /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
+    /*    background-color: #D5E59E;*/
+
 }
 
 
@@ -76,6 +99,7 @@ header {
     z-index: 500;
     cursor: pointer;
     pointer-events: all;
+    filter: drop-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
 }
 
 .logo_pink {
@@ -89,6 +113,7 @@ header {
     z-index: 5000;
     cursor: pointer;
     pointer-events: all;
+    filter: drop-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
 }
 
 .logo_pink_kontakt {
@@ -101,6 +126,8 @@ header {
     left: 2.3%;
     z-index: 500;
     cursor: pointer;
+    pointer-events: all;
+    filter: drop-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);
 }
 
 .hidden_menu {
@@ -519,6 +546,20 @@ ul ul {
     overflow: hidden;
 }
 
+#forside_logo {
+    background-image: url(SVG/forside_logo2.svg);
+    background-size: cover;
+    width: 400px;
+    height: 299px;
+    position: absolute;
+    top: 29%;
+    z-index: 500;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+}
+
 /****************UNIVERS****************/
 
 .splash {
@@ -579,7 +620,7 @@ ul ul {
 .univers_hvid_box {
     height: 100%;
     width: 100%;
-    background-color: rgba(244, 248, 255, 0.84);
+    background-color: rgba(244, 248, 255, 0.9);
     position: absolute;
 }
 
@@ -593,7 +634,7 @@ ul ul {
     transform-origin: bottom left;
     max-width: 300px;
     margin: 0;
-    color: #fc8bbc;
+    color: #d67da5;
 
 }
 
@@ -603,7 +644,7 @@ ul ul {
     right: 6%;
     font-family: century-gothic, sans-serif;
     margin: 0;
-    color: #fc8bbc;
+    color: #d67da5;
 }
 
 .post_billede {
@@ -622,7 +663,7 @@ ul ul {
 
 .tilbage {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     cursor: pointer;
     text-decoration: underline;
     margin: 150px 15px 0;
@@ -631,7 +672,7 @@ ul ul {
 
 .single_post_navn {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     font-size: 3rem;
     text-transform: uppercase;
     padding: 0 15px;
@@ -639,7 +680,7 @@ ul ul {
 
 .single_post_dato {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     text-transform: uppercase;
     margin: -15px 15px 0;
 }
@@ -671,6 +712,44 @@ ul ul {
 /****************SHOP****************/
 
 
+.indhold_shop .varevideo {
+    max-width: 92%;
+    padding: 4%;
+    cursor: pointer;
+
+}
+
+.indhold_shop .vare {
+    position: relative;
+    cursor: pointer;
+}
+
+.indhold_shop .vare:hover img {
+    opacity: 0;
+}
+
+.indhold_shop .vare:hover video {
+    opacity: 1;
+}
+
+.indhold_shop .vare img {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+
+}
+
+.indhold_shop .fade {
+    transition: opacity .5s ease-in-out;
+}
+
+.indhold_shop video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+
 .shop_svg {
     background-image: url(SVG/shop.svg);
     background-size: cover;
@@ -690,10 +769,12 @@ ul ul {
     z-index: 2;
 }
 
+.pris {
+    font-size: 1.2rem;
+}
 
 .vare-billede {
     max-width: 100%;
-
 }
 
 .shop-grid {
@@ -719,7 +800,7 @@ ul ul {
 #collage h2 {
     margin: 0;
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     font-size: 3rem;
     padding: 100px 0 0 25px;
 
@@ -727,7 +808,7 @@ ul ul {
 
 .vare-navn {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     /*    padding: 5% 0px;*/
     font-size: 2rem;
 }
@@ -735,7 +816,7 @@ ul ul {
 .faste_varer {
     padding: 45px 45px 10px;
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     background-color: #f0f5ff;
     margin: 0;
     font-size: 3rem;
@@ -828,7 +909,7 @@ ul ul {
 
 .singleview-shop h3 {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     font-size: 3rem;
     text-transform: uppercase;
     margin: 0;
@@ -844,6 +925,7 @@ ul ul {
 
 .singleview-shop button {
     background-color: #D5E59E;
+    /*    background-color: #FAF29B;*/
     border: none;
     text-transform: uppercase;
     font-family: century-gothic, sans-serif;
@@ -854,7 +936,7 @@ ul ul {
 
 .tilbage-shop {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     cursor: pointer;
     text-decoration: underline;
     margin-bottom: 30px;
@@ -864,6 +946,37 @@ ul ul {
 .boelge-shop-sv {
     display: none;
 }
+
+.singleview-shop .vare-video-sv {
+    max-width: 95%;
+    position: absolute;
+    left: 0px;
+    opacity: 0;
+}
+
+.singleview-shop .column {
+    position: relative;
+}
+
+.singleview-shop .column:hover img {
+    opacity: 0;
+}
+
+.singleview-shop .column:hover video {
+    opacity: 1;
+}
+
+.singleview-shop .column img {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+
+}
+
+.singleview-shop .fade {
+    transition: opacity .5s ease-in-out;
+}
+
 
 
 
@@ -891,8 +1004,11 @@ ul ul {
 }
 
 #omosvideo {
-    width: 100vw;
-    height: 56.25vw;
+
+    width: 80vw;
+    height: 45vw;
+    display: block;
+    margin: 0 50px;
 }
 
 .indhold_omOS .wave {
@@ -904,9 +1020,7 @@ ul ul {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    align-items: ;
-    padding-left: 50px;
-    padding-right: 10%;
+    padding: 0 50px;
     position: relative;
     margin-bottom: 50px;
 }
@@ -919,6 +1033,10 @@ ul ul {
     color: #ffa8ce;
     font-size: 3rem;
     font-family: century-gothic, sans-serif;
+}
+
+.boelge-om-os {
+    display: none;
 }
 
 .indhold_omOS .smileyboks {
@@ -935,14 +1053,14 @@ ul ul {
 @media(min-width: 900px) {
     .indhold_omOS #omos2 {
         flex-direction: row;
-        padding-left: 12%;
-        padding-right: 10%;
+        padding: 0 100px;
 
     }
 
     .indhold_omOS #column1 {
-        padding-right: 5%;
+        padding-right: 10%;
     }
+
 }
 
 
@@ -978,6 +1096,69 @@ ul ul {
 
 .indhold_kontakt .omossmiley {
     width: 100px;
+}
+
+.indhold_kontakt #insta {
+    max-width: 1199px;
+}
+
+
+#omosvideo {
+    width: 85vw;
+    height: 51vw;
+    display: block;
+    margin: 0 100px 50px;
+}
+
+
+/****************KONTAKT****************/
+
+
+.kontakt_svg {
+    background-image: url(SVG/kontakt.svg);
+    background-size: cover;
+    background-position: 55% 50%;
+    width: 100%;
+    height: 50vh;
+    z-index: 10;
+    position: absolute;
+    left: -2%;
+}
+
+.indhold_kontakt {
+    background-color: white;
+    height: 200vh;
+    width: 100vw;
+    position: relative;
+    z-index: 2;
+    left: 0;
+    top: 50vh;
+}
+
+.indhold_kontakt .smileyboks {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.indhold_kontakt .omossmiley {
+    width: 100px;
+}
+
+
+.indhold_kontakt #kontakttekst {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+}
+
+#kontakttekst img {
+    max-width: 100%;
 }
 
 .indhold_kontakt #insta {
@@ -1025,16 +1206,40 @@ ul ul {
 
 .indhold_kontakt #kontakttekst {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+
+    position: relative;
+
+
 
 }
 
+.indhold_kontakt img {
+    max-width: 700px;
+}
+
+.kontakt-oplysninger {
+    width: 50vw;
+
+}
+
+billede-kontakt {
+    width: 50vw;
+}
+
+.billede-kontakt {
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+#kontakttekst kontaktoplysninger {
+    flex-grow: 1;
+    flex-basis: 400px;
 }
 
 #kontakttekst img {
     max-width: 100%;
+    object-fit: fill;
 }
 
 .indhold_kontakt #kortcontainer {
@@ -1075,21 +1280,8 @@ ul ul {
 
     .indhold_kontakt #kontakttekst {
         flex-direction: row;
+        padding-left: 0%;
 
-
-    }
-
-    .indhold_kontakt img {
-        max-width: 700px;
-    }
-
-    .kontakt-oplysninger {
-        width: 50vw;
-
-    }
-
-    billede-kontakt {
-        width: 50vw;
     }
 
     .indhold_kontakt #kortcontainer {
@@ -1438,6 +1630,7 @@ footer {
     }
 
 
+
     /***************UNIVERS SINGLE******************/
 
     .univers_singleview {
@@ -1541,6 +1734,14 @@ footer {
         bottom: 15%;
         z-index: -1;
     }
+
+    .boelge-om-os {
+        display: block;
+        position: absolute;
+        bottom: 15%;
+        z-index: -1;
+    }
+
 
 
 }
