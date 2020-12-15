@@ -73,7 +73,7 @@ header {
     position: absolute;
     top: 4%;
     left: 2%;
-    z-index: 1000;
+    z-index: 500;
     cursor: pointer;
     pointer-events: all;
 }
@@ -86,7 +86,7 @@ header {
     position: absolute;
     top: 4%;
     left: 4%;
-    z-index: 500;
+    z-index: 5000;
     cursor: pointer;
     pointer-events: all;
 }
@@ -1375,7 +1375,7 @@ footer {
         padding: 7% 8%;
     }
 
-    a:hover {
+    #menu a:hover {
         background: url("SVG/wave.svg");
         background-repeat: repeat;
         /*        background-position-x: 50%;*/
@@ -1393,7 +1393,7 @@ footer {
         /*        -webkit-text-decoration-skip: objects;*/
     }
 
-    a:hover {
+   #menu a:hover {
         animation-play-state: running;
     }
 
