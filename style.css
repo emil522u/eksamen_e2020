@@ -962,11 +962,10 @@ ul ul {
 
 .indhold_kontakt {
     background-color: white;
-    height: 200vh;
     width: 100vw;
     position: relative;
     z-index: 2;
-    left: 0;
+
     top: 50vh;
 }
 
@@ -1026,24 +1025,16 @@ ul ul {
 
 .indhold_kontakt #kontakttekst {
     display: flex;
-    flex-direction: row;
-    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
-.billede-kontakt {
-    flex-grow: 1;
-    flex-basis: 400px;
-}
-
-#kontakttekst kontaktoplysninger {
-    flex-grow: 1;
-    flex-basis: 400px;
 }
 
 #kontakttekst img {
     max-width: 100%;
-    object-fit: fill;
 }
 
 .indhold_kontakt #kortcontainer {
@@ -1084,8 +1075,21 @@ ul ul {
 
     .indhold_kontakt #kontakttekst {
         flex-direction: row;
-        padding-left: 0%;
 
+
+    }
+
+    .indhold_kontakt img {
+        max-width: 700px;
+    }
+
+    .kontakt-oplysninger {
+        width: 50vw;
+
+    }
+
+    billede-kontakt {
+        width: 50vw;
     }
 
     .indhold_kontakt #kortcontainer {

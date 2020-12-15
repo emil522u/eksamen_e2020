@@ -92,134 +92,81 @@
     </section>
 
     <section class="indhold_kontakt">
-        <div>
-            <!--            <img class="wave wave1" src="PNG/wave.png">-->
-        </div>
         <div id=kontakttekst>
             <div class="billede-kontakt">
                 <img src="/PNG/gameboys.jpg" alt="">
             </div>
             <div class="kontakt-oplysninger">
-                <h2>Åbningstider</h2>
-                <ul>
-                    <li>Mandag</li>
-                    <li>Tirsdag</li>
-                    <li>Onsdag</li>
-                    <li>Torsdag</li>
-                    <li>Fredag</li>
-                    <li>Lørdag</li>
-                    <li>Søndag</li>
-                </ul>
+                <div class="tider">
+                    <h2>Åbningstider</h2>
+                    <ul>
+                        <li>Mandag</li>
+                        <li>Tirsdag</li>
+                        <li>Onsdag</li>
+                        <li>Torsdag</li>
+                        <li>Fredag</li>
+                        <li>Lørdag</li>
+                        <li>Søndag</li>
+                    </ul>
+                </div>
+                <div class="oplysninger">
+                    <h2>Kontaktoplysninger</h2>
+                    <ul>
+                        <li>mail</li>
+                        <li>nr. +45</li>
+                        <li>Insta</li>
+                    </ul>
+                </div>
 
-                <h2>Kontaktoplysninger</h2>
-                <ul>
-                    <li>mail</li>
-                    <li>nr. +45</li>
-                    <li>Insta</li>
-                </ul>
+            </div>
+
+            <div>
+
+            </div>
+
+            <div id="kortcontainer">
+                <h2>Sudiestrøde 24, 1455 Kæbenhavn K</h2>
+                <div id="kortoverflow">
+                    <div id="kort"></div>
+                </div>
             </div>
 
 
-        </div>
 
-        <div>
-            <!--            <img class="wave wave2" src="PNG/wave.png">-->
-        </div>
+            <div id="insta">
+                <div class='embedsocial-instagram' data-ref="a265329aff0d0d328ec3d372029cd87d14bb8962"></div>
+                <script>
+                    (function(d, s, id) {
+                        var js;
+                        if (d.getElementById(id)) {
+                            return;
+                        }
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "https://embedsocial.com/embedscript/in.js";
+                        d.getElementsByTagName("head")[0].appendChild(js);
+                    }(document, "script", "EmbedSocialInstagramScript"));
 
-        <div id="kortcontainer">
-            <h2>Sudiestrøde 24, 1455 Kæbenhavn K</h2>
-            <div id="kortoverflow">
-                <div id="kort"></div>
+                </script>
             </div>
-        </div>
+
+            <div class="smileyboks">
+                <img class="omossmiley" src="SVG/smiley.svg" alt="smiley">
+            </div>
 
 
 
-        <div id="insta">
-            <div class='embedsocial-instagram' data-ref="a265329aff0d0d328ec3d372029cd87d14bb8962"></div>
-            <script>
-                (function(d, s, id) {
-                    var js;
-                    if (d.getElementById(id)) {
-                        return;
-                    }
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://embedsocial.com/embedscript/in.js";
-                    d.getElementsByTagName("head")[0].appendChild(js);
-                }(document, "script", "EmbedSocialInstagramScript"));
-            </script>
-        </div>
-
-        <div class="smileyboks">
-            <img class="omossmiley" src="SVG/smiley.svg" alt="smiley">
-        </div>
+            <style>
+                .indhold_kontakt {}
 
 
 
+                #kontakttekst {}
+
+            </style>
 
 
-
-    </section>
-
-    <style>
-        .indhold_kontakt {
-            position: relative;
-        }
-
-        .indhold_kontakt .wave {
-            height: 60px;
-            width: 800px;
-            position: absolute;
-        }
-
-        .indhold_kontakt .wave1 {
-            right: -60%;
-            top: -50px transform: scale(-1, -1);
-        }
-
-        .indhold_kontakt .wave2 {
-            left: -60%;
-            top: 450px;
-
-        }
-
-        #kontakttekst {
-            height: 500px;
-            justify-content: center;
-        }
-
-
-        @media(min-width: 600px) {
-
-            .indhold_kontakt .wave1 {
-                top: -20px;
-                right: -50%;
-            }
-
-            .indhold_kontakt .wave2 {
-                top: 470px;
-                left: -50%;
-            }
-        }
-
-
-        @media(min-width: 900px) {
-
-            .indhold_kontakt .wave1 {
-                top: -120px;
-                right: -1%;
-            }
-
-            .indhold_kontakt .wave2 {
-                top: 280px;
-                left: 0%;
-            }
-        }
-    </style>
-
-
-    <!--
+            <!--
     <footer>
 
         <p>hejhejhejmeddig</p>
@@ -229,6 +176,8 @@
 
     </footer>
 -->
-    <script src="script.js"></script>
+            <script src="script.js"></script>
 
-</body></html>
+</body>
+
+</html>
