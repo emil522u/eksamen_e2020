@@ -715,18 +715,13 @@ ul ul {
 .indhold_shop .varevideo {
     max-width: 92%;
     padding: 4%;
-<<<<<<< HEAD
-=======
     cursor: pointer;
->>>>>>> origin/master
+
 }
 
 .indhold_shop .vare {
     position: relative;
-<<<<<<< HEAD
     cursor: pointer;
-=======
->>>>>>> origin/master
 }
 
 .indhold_shop .vare:hover img {
@@ -774,6 +769,9 @@ ul ul {
     z-index: 2;
 }
 
+.pris {
+    font-size: 1.2rem;
+}
 
 .vare-billede {
     max-width: 100%;
@@ -802,7 +800,7 @@ ul ul {
 #collage h2 {
     margin: 0;
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     font-size: 3rem;
     padding: 100px 0 0 25px;
 
@@ -810,7 +808,7 @@ ul ul {
 
 .vare-navn {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     /*    padding: 5% 0px;*/
     font-size: 2rem;
 }
@@ -818,7 +816,7 @@ ul ul {
 .faste_varer {
     padding: 45px 45px 10px;
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     background-color: #f0f5ff;
     margin: 0;
     font-size: 3rem;
@@ -911,7 +909,7 @@ ul ul {
 
 .singleview-shop h3 {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     font-size: 3rem;
     text-transform: uppercase;
     margin: 0;
@@ -927,6 +925,7 @@ ul ul {
 
 .singleview-shop button {
     background-color: #D5E59E;
+    /*    background-color: #FAF29B;*/
     border: none;
     text-transform: uppercase;
     font-family: century-gothic, sans-serif;
@@ -937,7 +936,7 @@ ul ul {
 
 .tilbage-shop {
     font-family: century-gothic, sans-serif;
-    color: #ffa8ce;
+    color: #d67da5;
     cursor: pointer;
     text-decoration: underline;
     margin-bottom: 30px;
@@ -1008,12 +1007,6 @@ ul ul {
 
     width: 80vw;
     height: 45vw;
-
-
-    /*
-    width: 100%;
-    height: 100%;
-*/
     display: block;
     margin: 0 50px;
 }
@@ -1040,6 +1033,10 @@ ul ul {
     color: #ffa8ce;
     font-size: 3rem;
     font-family: century-gothic, sans-serif;
+}
+
+.boelge-om-os {
+    display: none;
 }
 
 .indhold_omOS .smileyboks {
@@ -1664,6 +1661,14 @@ ul ul {
             bottom: 15%;
             z-index: -1;
         }
+
+        .boelge-om-os {
+            display: block;
+            position: absolute;
+            bottom: 15%;
+            z-index: -1;
+        }
+
 
 
     }
