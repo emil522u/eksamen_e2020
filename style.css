@@ -668,6 +668,41 @@ ul ul {
 /****************SHOP****************/
 
 
+.indhold_shop .varevideo {
+            max-width: 92%;
+            padding: 4%;
+        }
+
+        .indhold_shop .vare {
+            position: relative;
+        }
+
+        .indhold_shop .vare:hover img {
+            opacity: 0;
+        }
+
+        .indhold_shop .vare:hover video {
+            opacity: 1;
+        }
+
+        .indhold_shop .vare img {
+            top: 0px;
+            left: 0px;
+            opacity: 1;
+
+        }
+
+        .indhold_shop .fade {
+            transition: opacity .5s ease-in-out;
+        }
+
+       .indhold_shop video {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+        }
+
 .shop_svg {
     background-image: url(SVG/shop.svg);
     background-size: cover;
