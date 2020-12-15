@@ -94,6 +94,11 @@ function visVare() {
         klon.querySelector(".vare-navn").innerHTML = vare.varenavn;
         klon.querySelector(".vare-billede").src = vare.varebillede.guid;
         klon.querySelector(".pris").innerHTML = vare.varepris + "kr.";
+        klon.querySelector(".varevideo").src = vare.varevideo.guid;
+
+        klon.querySelector(".varevideo").addEventListener('mouseover', hoverVideo, false);
+        klon.querySelector(".varevideo").addEventListener('mouseout', hideVideo, false);
+
 
         klon.querySelector(".vare").addEventListener("click", () => visSingleview(vare));
 
@@ -101,6 +106,15 @@ function visVare() {
 
     })
 }
+
+function hoverVideo(e) {
+    this.play();
+}
+
+function hideVideo(e) {
+    this.pause();
+}
+
 
 function visSingleview(vare) {
     console.log();
@@ -123,7 +137,9 @@ async function loadSingleVare() {
     document.querySelector(".vare-billede-sv").src = SingleVare.varebillede.guid;
     document.querySelector(".pris-sv").innerHTML = SingleVare.varepris + "kr.";
     document.querySelector(".vare-beskrivelse-sv").innerHTML = SingleVare.varebeskrivelse;
-
+    document.querySelector(".vare-video-sv")  .src = SingleVare.varevideo.guid;
+    document.querySelector(".vare-video-sv").addEventListener('mouseover', hoverVideo, false);
+    document.querySelector(".vare-video-sv").addEventListener('mouseout', hideVideo, false);
     document.querySelector(".tilbage-shop").addEventListener("click", function () {
         window.history.back();
     })
