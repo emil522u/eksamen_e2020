@@ -1017,12 +1017,13 @@ ul ul {
 }
 
 .indhold_omOS #omos2 {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    padding: 0 50px;
+    padding: 0 100px;
     position: relative;
     margin-bottom: 50px;
+    background-color: #f0f5ff;
+
 }
 
 .indhold_omOS #omos2 div div {
@@ -1053,7 +1054,7 @@ ul ul {
 @media(min-width: 900px) {
     .indhold_omOS #omos2 {
         flex-direction: row;
-        padding: 0 100px;
+        padding: 40px 100px;
 
     }
 
@@ -1107,7 +1108,7 @@ ul ul {
     width: 85vw;
     height: 51vw;
     display: block;
-    margin: 0 100px 50px;
+    margin: 0 30px 30px;
 }
 
 
@@ -1497,7 +1498,6 @@ footer {
     }
 
     .indhold_omOS {
-        background-color: white;
         height: 200vh;
         width: 100vw;
         position: absolute;
@@ -1529,6 +1529,10 @@ footer {
         left: 0;
         top: 100vh;
 
+    }
+
+    #omosvideo {
+        margin: 0 100px 50px;
     }
 }
 
@@ -1731,7 +1735,7 @@ footer {
     .boelge-shop-sv {
         display: block;
         position: absolute;
-        bottom: 15%;
+        bottom: 22%;
         z-index: -1;
     }
 
