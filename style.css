@@ -904,7 +904,7 @@ sans-serif;*/
     position: relative;
     top: 0vh;
     margin: 0 auto;
-    height: 600px;
+    height: 1000px;
     padding-bottom: 100px;
 }
 
@@ -957,7 +957,7 @@ sans-serif;*/
 
 .boelge-shop {
     position: absolute;
-    bottom: 15%;
+    bottom: 45%;
     z-index: -1;
 }
 
@@ -1749,6 +1749,7 @@ footer {
 
     .collage_wrapper {
         width: 1000px;
+        height: 600px;
         position: relative;
         top: -4vh;
         margin-left: 0 auto;
