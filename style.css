@@ -1174,35 +1174,7 @@ ul ul {
     height: 53.93vw;
     background-size: cover;
     max-width: 540px;
-    transition: .2s;
-}
-
-@media(min-width: 600px) {
-    #kortcontainer {
-        width: 100vw;
-        height: 100vh;
-    }
-
-    #kortoverflow {
-        width: 100vw;
-        height: 80vh;
-    }
-
-    #kort {
-        background-image: url(SVG/kort_stor2.svg);
-        max-width: 900px;
-        max-height: 539.37px;
-    }
-
-}
-
-@media(min-width: 1000px) {
-
-    #kort:hover {
-        background-image: url(SVG/kort_lille2.svg);
-        transition: .2s;
-
-    }
+    transition: .5s;
 }
 
 .indhold_kontakt .smileyboks {
@@ -1437,6 +1409,21 @@ footer {
 
     }
 
+    #kort {
+        background-image: url(SVG/kort_stor2.svg);
+    }
+
+    #kort:hover {
+        background-image: url(SVG/kort_lille2.svg);
+        transition: .5s;
+    }
+
+    .kontakt_container {
+        height: 100vh;
+    }
+
+    /***********************OM OS**********************/
+
     #omosvideo {
         margin: 0 100px 50px;
     }
@@ -1591,6 +1578,19 @@ footer {
     .billede_container {
         flex-grow: 1;
         flex-basis: 400px
+    }
+
+    #kort {
+        background-image: url(SVG/kort_stor2.svg);
+    }
+
+    #kort:hover {
+        background-image: url(SVG/kort_lille2.svg);
+        transition: .5s;
+    }
+
+    .kontakt_container {
+        height: 100vh;
     }
 
 
