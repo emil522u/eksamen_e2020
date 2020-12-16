@@ -137,7 +137,7 @@ async function loadSingleVare() {
     document.querySelector(".vare-billede-sv").src = SingleVare.varebillede.guid;
     document.querySelector(".pris-sv").innerHTML = SingleVare.varepris + "kr.";
     document.querySelector(".vare-beskrivelse-sv").innerHTML = SingleVare.varebeskrivelse;
-    document.querySelector(".vare-video-sv")  .src = SingleVare.varevideo.guid;
+    document.querySelector(".vare-video-sv").src = SingleVare.varevideo.guid;
     document.querySelector(".vare-video-sv").addEventListener('mouseover', hoverVideo, false);
     document.querySelector(".vare-video-sv").addEventListener('mouseout', hideVideo, false);
     document.querySelector(".tilbage-shop").addEventListener("click", function () {

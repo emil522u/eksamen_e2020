@@ -562,6 +562,8 @@ ul ul {
     }
 }
 
+
+
 .splash_forside {
     height: 100vh;
     width: 100vw;
@@ -600,18 +602,6 @@ ul ul {
     overflow-x: hidden;
 }
 
-/*
-}.splash {
-    height: 50vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    overflow-y: hidden;
-    left: 0;
-    background-color: rgb(216, 226, 255);
-    overflow-x: hidden;
-}
-*/
 .vores_univers_svg {
     background-image: url(SVG/vores_univers_mobile.svg);
     background-size: cover;
@@ -623,18 +613,6 @@ ul ul {
     left: 0;
 }
 
-/*
-.vores_univers_svg {
-    background-image: url(SVG/vores_univers.svg);
-    background-size: cover;
-    background-position: 55% 50%;
-    width: 100%;
-    height: 50vh;
-    z-index: 10;
-    position: absolute;
-    left: 0;
-}
-*/
 
 .indhold_univers {
     background-color: white;
@@ -711,7 +689,6 @@ ul ul {
 
 .univers_singleview {
     margin-top: 20px;
-    height: 1000px;
 }
 
 .tilbage {
@@ -816,7 +793,6 @@ sans-serif;*/
     height: 100vh;
     z-index: 10;
     position: absolute;
-
 }
 
 .indhold_shop {
@@ -1550,6 +1526,26 @@ footer {
 @media(min-width: 1000px) {
     /***********************NAV**********************/
 
+    .rotate {
+        animation-name: rotation_kf;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes rotation_kf {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .rotate:hover {
+        animation-play-state: paused;
+    }
 
     .menuknap {
         margin-left: 85%;
