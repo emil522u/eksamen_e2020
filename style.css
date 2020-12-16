@@ -1051,24 +1051,7 @@ ul ul {
 }
 
 
-@media(min-width: 900px) {
-    .indhold_omOS #omos2 {
-        flex-direction: row;
-        padding: 40px 100px;
 
-    }
-
-    .indhold_omOS #column1 {
-        padding-right: 10%;
-    }
-
-    #omosvideo {
-        width: 85vw;
-        height: 51vw;
-        display: block;
-        margin: 0 100px 50px;
-    }
-}
 
 .omos_billede_container {
     width: 100vw;
@@ -1409,22 +1392,43 @@ footer {
 
     }
 
-    #kort {
-        background-image: url(SVG/kort_stor2.svg);
-    }
-
-    #kort:hover {
-        background-image: url(SVG/kort_lille2.svg);
-        transition: .5s;
-    }
-
-    .kontakt_container {
+    #kortcontainer {
+        width: 100vw;
         height: 100vh;
+    }
+
+    #kortoverflow {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    #kort {
+        max-width: 900px;
+        max-height: 539.37px;
     }
 
     /***********************OM OS**********************/
 
     #omosvideo {
+        margin: 0 100px 50px;
+    }
+}
+
+@media(min-width: 900px) {
+    .indhold_omOS #omos2 {
+        flex-direction: row;
+        padding: 40px 100px;
+
+    }
+
+    .indhold_omOS #column1 {
+        padding-right: 10%;
+    }
+
+    #omosvideo {
+        width: 85vw;
+        height: 51vw;
+        display: block;
         margin: 0 100px 50px;
     }
 }
