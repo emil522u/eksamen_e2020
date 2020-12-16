@@ -1800,6 +1800,10 @@ footer {
         z-index: -1;
     }
 
+    .boelge-shop {
+        bottom: 45%;
+    }
+
     .boelge-shop-sv {
         display: block;
         position: absolute;
