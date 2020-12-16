@@ -1148,21 +1148,16 @@ ul ul {
     width: 100vw;
     background-color: #F9D0E2;
     /*    background-color: #f3f9db;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
 }
 
 #kortcontainer h2 {
     font-family: century-gothic, sans-serif;
     /*    text-align: center;*/
     /*    color: #d67da5;*/
-    padding: 45px 40px 5px;
+    padding: 45px 0px 15px;
+    text-align: center;
 }
 
-/*
 #kortoverflow {
     background-size: cover;
     width: 100vw;
@@ -1171,7 +1166,6 @@ ul ul {
     justify-content: center;
     align-items: center;
 }
-*/
 
 
 #kort {
@@ -1180,6 +1174,35 @@ ul ul {
     height: 53.93vw;
     background-size: cover;
     max-width: 540px;
+    transition: .2s;
+}
+
+@media(min-width: 600px) {
+    #kortcontainer {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #kortoverflow {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    #kort {
+        background-image: url(SVG/kort_stor2.svg);
+        max-width: 900px;
+        max-height: 539.37px;
+    }
+
+}
+
+@media(min-width: 1000px) {
+
+    #kort:hover {
+        background-image: url(SVG/kort_lille2.svg);
+        transition: .2s;
+
+    }
 }
 
 .indhold_kontakt .smileyboks {
