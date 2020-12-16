@@ -1069,7 +1069,9 @@ sans-serif;*/
     width: 85vw;
     height: 51vw;
     display: block;
-    margin: 0 30px 30px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .indhold_omOS .wave {
@@ -1165,6 +1167,7 @@ sans-serif;*/
 
 .kontakt_oplysninger {
     margin: 0 0 50px;
+    align-self: center;
 }
 
 .kontakt_oplysninger h2 {
@@ -1503,7 +1506,7 @@ footer {
 
     #kortcontainer {
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
     }
 
     #kortoverflow {
@@ -1518,9 +1521,7 @@ footer {
 
     /***********************OM OS**********************/
 
-    #omosvideo {
-        margin: 0 100px 50px;
-    }
+
 }
 
 @media(min-width: 900px) {
@@ -1535,10 +1536,9 @@ footer {
     }
 
     #omosvideo {
-        width: 85vw;
-        height: 51vw;
+        width: 80vw;
+        height: 45vw;
         display: block;
-        margin: 0 100px 50px;
     }
 }
 
@@ -1703,7 +1703,7 @@ footer {
     }
 
     .kontakt_container {
-        height: 100vh;
+        height: 80vh;
     }
 
 
