@@ -615,8 +615,8 @@ ul ul {
 .vores_univers_svg {
     background-image: url(SVG/vores_univers_mobile.svg);
     background-size: cover;
-    background-position: 55% 55%;
-    width: 100%;
+    background-position: 50% 50%;
+    width: 100vw;
     height: 100vh;
     z-index: 10;
     position: absolute;
@@ -811,12 +811,11 @@ sans-serif;*/
 .shop_svg {
     background-image: url(SVG/shop_mobil.svg);
     background-size: cover;
-    background-position: 55% 50%;
-    width: 100%;
+    background-position: 50% 50%;
+    width: 100vw;
     height: 100vh;
     z-index: 10;
     position: absolute;
-
 }
 
 .indhold_shop {
@@ -1052,8 +1051,8 @@ sans-serif;*/
 .omOS_svg {
     background-image: url(SVG/om_os_mobil.svg);
     background-size: cover;
-    background-position: 55% 50%;
-    width: 100%;
+    background-position: 50% 50%;
+    width: 100vw;
     height: 100vh;
     z-index: 10;
     position: absolute;
@@ -1138,8 +1137,8 @@ sans-serif;*/
 .kontakt_svg {
     background-image: url(SVG/find_os_mobil.svg);
     background-size: cover;
-    background-position: 55% 50%;
-    width: 100%;
+    background-position: 50% 50%;
+    width: 100vw;
     height: 100vh;
     z-index: 10;
     position: absolute;
@@ -1342,7 +1341,7 @@ footer {
 
     .vores_univers_svg {
         background-image: url(SVG/vores_univers.svg);
-        background-position: 55% 80%;
+        background-position: 50% 50%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1380,12 +1379,11 @@ footer {
 
     .shop_svg {
         background-image: url(SVG/shop.svg);
-        background-position: 55% 80%;
+        background-position: 50% 50%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
         position: absolute;
-        left: -1%;
     }
 
     .indhold_shop {
@@ -1467,7 +1465,7 @@ footer {
 
     .omOS_svg {
         background-image: url(SVG/om_os.svg);
-        background-position: 55% 80%;
+        background-position: 50% 50%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1490,12 +1488,11 @@ footer {
 
     .kontakt_svg {
         background-image: url(SVG/kontakt.svg);
-        background-position: 55% 80%;
+        background-position: 50% 50%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
         position: absolute;
-        left: -1%;
     }
 
     .indhold_kontakt {
