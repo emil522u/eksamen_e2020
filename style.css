@@ -10,6 +10,12 @@ p {
     font-family: century-gothic, sans-serif;
 }
 
+h1 {
+    font-size: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 h2 {
     font-family: century-gothic, sans-serif;
     color: #d67da5;
@@ -878,7 +884,7 @@ sans-serif;*/
 
 #collage {
     position: relative;
-    /*    height: 100vh;*/
+    /*    height: 200vh;*/
 }
 
 .collage_wrapper {
