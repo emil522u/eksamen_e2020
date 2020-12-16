@@ -1035,7 +1035,9 @@ sans-serif;*/
     width: 85vw;
     height: 51vw;
     display: block;
-    margin: 0 30px 30px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .indhold_omOS .wave {
@@ -1444,9 +1446,7 @@ footer {
 
     /***********************OM OS**********************/
 
-    #omosvideo {
-        margin: 0 100px 50px;
-    }
+
 }
 
 @media(min-width: 900px) {
@@ -1461,10 +1461,9 @@ footer {
     }
 
     #omosvideo {
-        width: 85vw;
-        height: 51vw;
+        width: 80vw;
+        height: 45vw;
         display: block;
-        margin: 0 100px 50px;
     }
 }
 
