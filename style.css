@@ -109,6 +109,10 @@ header {
 
 }
 
+.farve_single {
+    background-color: #d67da5;
+    box-shadow: none;
+}
 
 .logo_hvid {
     background-image: url(SVG/logo_planet_hvid.svg);
@@ -707,6 +711,7 @@ ul ul {
 
 .univers_singleview {
     margin-top: 20px;
+    height: 1000px;
 }
 
 .tilbage {
