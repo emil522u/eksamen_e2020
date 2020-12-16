@@ -36,6 +36,38 @@ h4 {
     text-transform: uppercase;
 }
 
+#myBtn {
+    width: 50px;
+    height: 50px;
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50%;
+    z-index: 1000;
+    border: none;
+    outline: none;
+    background-color: rgb(216, 226, 255);
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 18px;
+    transform: translate(50%);
+
+}
+
+button div {
+    background-image: url(SVG/pil_op.svg);
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+
+#myBtn:hover {
+    background-color: #d67da5;
+}
+
 /****************NAV****************/
 
 header {
@@ -152,8 +184,6 @@ header {
     cursor: pointer;
     pointer-events: all;
 }
-
-@media(min-width: 600px) {}
 
 
 .hidden_menu {
