@@ -567,9 +567,7 @@ ul ul {
     overflow-y: hidden;
     left: 0;
     background-color: rgb(216, 226, 255);
-
-    /*    overflow: hidden;*/
-
+    overflow-x: hidden;
 }
 
 .vores_univers_svg {
@@ -1103,8 +1101,6 @@ ul ul {
     top: 50vh;
 }
 
-
-
 .kontakt_container {
     width: 100vw;
 }
@@ -1148,34 +1144,42 @@ ul ul {
 }
 
 #kortcontainer {
-    height: 100vh;
+    height: 60vh;
     width: 100vw;
-    /*    background-color: #F9D0E2;*/
+    background-color: #F9D0E2;
+    /*    background-color: #f3f9db;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
 
 #kortcontainer h2 {
     font-family: century-gothic, sans-serif;
-    text-align: center;
-    color: #d67da5;
+    /*    text-align: center;*/
+    /*    color: #d67da5;*/
+    padding: 45px 40px 5px;
 }
 
+/*
 #kortoverflow {
-
     background-size: cover;
     width: 100vw;
-    height: 90vh;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+*/
+
 
 #kort {
-
-    width: 100vw;
-    height: 56.25vw;
+    background-image: url(SVG/kort_lille2.svg);
+    width: 90vw;
+    height: 53.93vw;
     background-size: cover;
+    max-width: 540px;
 }
 
 .indhold_kontakt .smileyboks {
@@ -1191,6 +1195,7 @@ ul ul {
 
 .indhold_kontakt #insta {
     max-width: 1199px;
+    padding: 45px;
 }
 
 
