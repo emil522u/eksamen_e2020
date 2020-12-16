@@ -1348,7 +1348,7 @@ footer {
 
     .vores_univers_svg {
         background-image: url(SVG/vores_univers.svg);
-        background-position: 50% 50%;
+        background-position: 50% 90%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1386,7 +1386,7 @@ footer {
 
     .shop_svg {
         background-image: url(SVG/shop.svg);
-        background-position: 50% 50%;
+        background-position: 50% 90%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1472,7 +1472,7 @@ footer {
 
     .omOS_svg {
         background-image: url(SVG/om_os.svg);
-        background-position: 50% 50%;
+        background-position: 50% 90%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1495,7 +1495,7 @@ footer {
 
     .kontakt_svg {
         background-image: url(SVG/kontakt.svg);
-        background-position: 50% 50%;
+        background-position: 50% 90%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
