@@ -10,6 +10,25 @@ p {
     font-family: century-gothic, sans-serif;
 }
 
+h2 {
+    font-family: century-gothic, sans-serif;
+    color: #d67da5;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-family: century-gothic, sans-serif;
+    color: #d67da5;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: century-gothic, sans-serif;
+    color: #d67da5;
+    text-transform: uppercase;
+}
 
 /****************NAV****************/
 
@@ -53,8 +72,8 @@ header {
 }
 
 .farve {
-    /*    background-color: #D5E59E;*/
-    background-color: #f9d1e3;
+    background-color: #d67da5;
+    /*    background-color: #f9d1e3;*/
     box-shadow: none;
     /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
 }
@@ -64,7 +83,8 @@ header {
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-46deg) translate(-8px, 7px);
-    background-color: #f9d1e3;
+    /*    background-color: #f9d1e3;*/
+    background-color: #d67da5;
     /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
     /*    background-color: #D5E59E;*/
     box-shadow: none;
@@ -80,7 +100,8 @@ header {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-    background-color: #f9d1e3;
+    /*    background-color: #f9d1e3;*/
+    background-color: #d67da5;
     box-shadow: none;
     /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
     /*    background-color: #D5E59E;*/
@@ -623,9 +644,11 @@ ul ul {
     position: absolute;
     bottom: 6%;
     left: 7%;
+    /*
     font-family: century-gothic, sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
+*/
     transform-origin: bottom left;
     max-width: 300px;
     margin: 0;
@@ -666,30 +689,35 @@ ul ul {
 }
 
 .single_post_navn {
+    /*
     font-family: century-gothic, sans-serif;
     color: #d67da5;
     font-size: 3rem;
     text-transform: uppercase;
+*/
     padding: 0 15px;
 }
 
 .single_post_dato {
+    /*
     font-family: century-gothic, sans-serif;
     color: #d67da5;
     text-transform: uppercase;
+*/
     margin: -15px 15px 0;
 }
 
 
 .single_post_tekst1 {
-    font-family: century-gothic, sans-serif;
+    /*    font-family: century-gothic, sans-serif;*/
     padding: 0 15px;
     flex-grow: 1;
     flex-basis: 400px;
 }
 
 .single_post_tekst2 {
-    font-family: century-gothic, sans-serif;
+    /*    font-family: century-gothic,
+sans-serif;*/
     padding: 0 15px;
     flex-grow: 1;
     flex-basis: 400px;
@@ -775,7 +803,8 @@ ul ul {
 .shop-grid {
     display: grid;
     grid-gap: 25px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /*    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));*/
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: 1fr;
     margin: 0;
     /*    background-color: #f0f5ff;*/
@@ -798,17 +827,18 @@ ul ul {
     margin: 0;
     font-family: century-gothic, sans-serif;
     color: #d67da5;
-    font-size: 3rem;
     padding: 100px 0 0 25px;
 
 }
 
+/*
 .vare-navn {
     font-family: century-gothic, sans-serif;
     color: #d67da5;
-    /*    padding: 5% 0px;*/
+        padding: 5% 0px;
     font-size: 2rem;
 }
+*/
 
 .faste_varer {
     padding: 45px 45px 10px;
@@ -822,7 +852,6 @@ ul ul {
     /*    color: black;*/
 }
 
-#collage {}
 
 .collage_wrapper {
     width: 375px;
@@ -906,7 +935,7 @@ ul ul {
     max-width: 95%;
 }
 
-.singleview-shop h3 {
+.singleview-shop h2 {
     font-family: century-gothic, sans-serif;
     color: #d67da5;
     font-size: 3rem;
@@ -1017,7 +1046,7 @@ ul ul {
 .indhold_omOS #omos2 {
     display: flex;
     flex-direction: column;
-    padding: 0 100px;
+    padding: 0 45px;
     position: relative;
     margin-bottom: 50px;
     /*    background-color: #f0f5ff;*/
@@ -1029,12 +1058,14 @@ ul ul {
     margin-bottom: 50px;
 }
 
+/*
 .indhold_omOS h2 {
     font-size: 2rem;
     font-family: century-gothic, sans-serif;
-    /*    padding: 45px 45px 10px;*/
+        padding: 45px 45px 10px;
     color: #d67da5;
 }
+*/
 
 .boelge-om-os {
     display: none;
@@ -1094,9 +1125,8 @@ ul ul {
 
 .kontakt_oplysninger h2 {
     padding: 45px 45px 5px;
-    font-family: century-gothic, sans-serif;
-    color: #d67da5;
     font-size: 2rem;
+
 }
 
 .kontakt_oplysninger li {
@@ -1134,11 +1164,10 @@ ul ul {
 }
 
 #kortcontainer h2 {
-    font-family: century-gothic, sans-serif;
-    /*    text-align: center;*/
-    /*    color: #d67da5;*/
     padding: 45px 0px 15px;
+    font-size: 1.3rem;
     text-align: center;
+    color: black;
 }
 
 #kortoverflow {
@@ -1281,6 +1310,10 @@ footer {
         left: 0;
         /*        top: 100vh;*/
         top: 100vh;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
     }
 
     header {
