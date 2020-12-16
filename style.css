@@ -71,12 +71,7 @@ header {
     z-index: 1000;
 }
 
-.farve {
-    background-color: #d67da5;
-    /*    background-color: #f9d1e3;*/
-    box-shadow: none;
-    /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
-}
+
 
 
 /* Rotate first bar */
@@ -136,7 +131,7 @@ header {
 }
 
 .logo_pink_kontakt {
-    background-image: url(SVG/logo_planet_lyseroed.svg);
+    background-image: url(SVG/logo_planet_hvid.svg);
     height: 35px;
     width: 61px;
     background-size: cover;
@@ -147,6 +142,9 @@ header {
     cursor: pointer;
     pointer-events: all;
 }
+
+@media(min-width: 600px) {}
+
 
 .hidden_menu {
     opacity: 0;
@@ -561,7 +559,8 @@ ul ul {
     top: 0;
     left: 0;
     background-color: rgb(216, 226, 255);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #forside_logo {
@@ -581,7 +580,7 @@ ul ul {
 /****************UNIVERS****************/
 
 .splash {
-    height: 50vh;
+    height: 100vh;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -591,6 +590,30 @@ ul ul {
     overflow-x: hidden;
 }
 
+/*
+}.splash {
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    overflow-y: hidden;
+    left: 0;
+    background-color: rgb(216, 226, 255);
+    overflow-x: hidden;
+}
+*/
+.vores_univers_svg {
+    background-image: url(SVG/vores_univers_mobile.svg);
+    background-size: cover;
+    background-position: 55% 55%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: absolute;
+    left: 0;
+}
+
+/*
 .vores_univers_svg {
     background-image: url(SVG/vores_univers.svg);
     background-size: cover;
@@ -601,6 +624,7 @@ ul ul {
     position: absolute;
     left: 0;
 }
+*/
 
 .indhold_univers {
     background-color: white;
@@ -609,7 +633,7 @@ ul ul {
     position: absolute;
     z-index: 2;
     left: 0;
-    top: 50vh;
+    top: 100vh;
 }
 
 .univers_grid {
@@ -774,21 +798,21 @@ sans-serif;*/
 }
 
 .shop_svg {
-    background-image: url(SVG/shop.svg);
+    background-image: url(SVG/shop_mobil.svg);
     background-size: cover;
     background-position: 55% 50%;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     z-index: 10;
     position: absolute;
-    left: -2%;
+
 }
 
 .indhold_shop {
     width: 100vw;
     /*    background-color: #F9CFE1;*/
     position: relative;
-    top: 50vh;
+    top: 100vh;
     z-index: 2;
 }
 
@@ -852,6 +876,10 @@ sans-serif;*/
     /*    color: black;*/
 }
 
+#collage {
+    position: relative;
+    /*    height: 100vh;*/
+}
 
 .collage_wrapper {
     width: 375px;
@@ -1011,11 +1039,11 @@ sans-serif;*/
 /****************OM OS****************/
 
 .omOS_svg {
-    background-image: url(SVG/om_os.svg);
+    background-image: url(SVG/om_os_mobil.svg);
     background-size: cover;
     background-position: 55% 50%;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     z-index: 10;
     position: absolute;
     left: 0;
@@ -1028,7 +1056,7 @@ sans-serif;*/
     position: relative;
     z-index: 2;
     left: 0;
-    top: 50vh;
+    top: 100vh;
 }
 
 #omosvideo {
@@ -1095,14 +1123,14 @@ sans-serif;*/
 
 
 .kontakt_svg {
-    background-image: url(SVG/kontakt.svg);
+    background-image: url(SVG/find_os_mobil.svg);
     background-size: cover;
     background-position: 55% 50%;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     z-index: 10;
     position: absolute;
-    left: -2%;
+
 }
 
 .indhold_kontakt {
@@ -1112,7 +1140,17 @@ sans-serif;*/
     position: relative;
     z-index: 2;
     left: 0;
-    top: 50vh;
+    top: 100vh;
+}
+
+.indhold_kontakt h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .kontakt_container {
@@ -1215,9 +1253,24 @@ footer {
     background-color: white;
     position: relative;
     z-index: 500;
-    bottom: 0;
+    bottom: -50px;
     left: 0;
-    display: block;
+    display: flex;
+    padding: 5px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forside_footer {
+    position: absolute;
+}
+
+.social {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .facebook {
@@ -1225,9 +1278,11 @@ footer {
     height: 30px;
     background-image: url(SVG/facebook.svg);
     background-size: cover;
+    /*
     position: absolute;
-    top: 7.5px;
+    top: 8px;
     right: 15%;
+*/
 }
 
 .instagram {
@@ -1235,9 +1290,11 @@ footer {
     height: 30px;
     background-image: url(SVG/instagram.svg);
     background-size: cover;
+    /*
     position: absolute;
-    top: 7.5px;
+    top: 8px;
     right: 5%;
+*/
 }
 
 
@@ -1245,6 +1302,19 @@ footer {
 
 
 @media(min-width: 600px) {
+
+    /***************NAV****************/
+
+    .farve {
+        background-color: #d67da5;
+        /*    background-color: #f9d1e3;*/
+        box-shadow: none;
+        /*    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.20);*/
+    }
+
+    .logo_pink_kontakt {
+        background-image: url(SVG/logo_planet_lyseroed.svg);
+    }
 
 
     /****************UNIVERS****************/
@@ -1254,10 +1324,10 @@ footer {
         width: 100vw;
         position: absolute;
         top: 0;
-
     }
 
     .vores_univers_svg {
+        background-image: url(SVG/vores_univers.svg);
         background-position: 55% 80%;
         width: 100vw;
         height: 100vh;
@@ -1321,7 +1391,6 @@ footer {
         height: 100vh;
     }
 
-    #collage {}
 
     .collage_wrapper {
         width: 600px;
