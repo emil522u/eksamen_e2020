@@ -781,7 +781,8 @@ ul ul {
     grid-template-rows: 1fr;
     margin: 0;
     /*    background-color: #f0f5ff;*/
-    background-color: rgb(216, 226, 255);
+    /*    background-color: rgb(216, 226, 255);*/
+    background-color: #f3f9db;
     /*    background-color: #ffedf6;*/
     /*    background-color: #F9D0E2;*/
     padding: 3%;
@@ -816,7 +817,8 @@ ul ul {
     font-family: century-gothic, sans-serif;
     color: #d67da5;
     /*    background-color: #f0f5ff;*/
-    background-color: rgb(216, 226, 255);
+    /*    background-color: rgb(216, 226, 255);*/
+    background-color: #f3f9db;
     margin: 0;
     font-size: 3rem;
     /*    color: black;*/
@@ -1021,8 +1023,8 @@ ul ul {
     position: relative;
     margin-bottom: 50px;
     /*    background-color: #f0f5ff;*/
-    background-color: rgb(216, 226, 255);
-
+    /*    background-color: rgb(216, 226, 255);*/
+    background-color: #f3f9db;
 }
 
 .indhold_omOS #omos2 div div {
@@ -1153,17 +1155,14 @@ ul ul {
 
 }
 
-/*
 #kortcontainer h2 {
     font-family: century-gothic, sans-serif;
     text-align: center;
     color: #d67da5;
 }
-*/
 
-/*
 #kortoverflow {
-    background-image: url(SVG/kort_stor.svg);
+
     background-size: cover;
     width: 100vw;
     height: 90vh;
@@ -1171,10 +1170,9 @@ ul ul {
     justify-content: center;
     align-items: center;
 }
-*/
 
 #kort {
-    background-image: url(SVG/kort_stor.svg);
+
     width: 100vw;
     height: 56.25vw;
     background-size: cover;
