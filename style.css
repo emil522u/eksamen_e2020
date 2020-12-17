@@ -38,8 +38,8 @@ h4 {
 }
 
 #myBtn {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: none;
     position: fixed;
     bottom: 50px;
@@ -60,13 +60,27 @@ h4 {
 button div {
     background-image: url(SVG/pil_op.svg);
     background-size: cover;
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     position: relative;
 }
 
 #myBtn:hover {
     background-color: #d67da5;
+}
+
+.usynlig_ned_knap {
+    width: 80px;
+    height: 50px;
+    border: none;
+    opacity: 0;
+    position: relative;
+    z-index: 500;
+    top: 83%;
+    left: 51%;
+    transform: translate(-50%);
+    cursor: pointer;
+    pointer-events: all;
 }
 
 /****************NAV****************/
@@ -620,6 +634,17 @@ ul ul {
 
 }
 
+.forside_tekst {
+    font-size: 1.5rem;
+    font-family: century-gothic, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    position: relative;
+    top: 310px;
+    text-align: center;
+}
+
 /****************UNIVERS****************/
 
 .splash {
@@ -645,7 +670,7 @@ ul ul {
 }
 
 
-.indhold_univers {
+#indhold_univers {
     background-color: white;
     /*    height: 100vh;*/
     width: 100vw;
@@ -778,38 +803,38 @@ sans-serif;*/
 /****************SHOP****************/
 
 
-.indhold_shop .varevideo {
+#indhold_shop .varevideo {
     max-width: 92%;
     padding: 4%;
     cursor: pointer;
 
 }
 
-.indhold_shop .vare {
+#indhold_shop .vare {
     position: relative;
     cursor: pointer;
 }
 
-.indhold_shop .vare:hover img {
+#indhold_shop .vare:hover img {
     opacity: 0;
 }
 
-.indhold_shop .vare:hover video {
+#indhold_shop .vare:hover video {
     opacity: 1;
 }
 
-.indhold_shop .vare img {
+#indhold_shop .vare img {
     top: 0px;
     left: 0px;
     opacity: 1;
 
 }
 
-.indhold_shop .fade {
+#indhold_shop .fade {
     transition: opacity .5s ease-in-out;
 }
 
-.indhold_shop video {
+#indhold_shop video {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -826,7 +851,7 @@ sans-serif;*/
     position: absolute;
 }
 
-.indhold_shop {
+#indhold_shop {
     width: 100vw;
     /*    background-color: #F9CFE1;*/
     position: relative;
@@ -997,6 +1022,20 @@ sans-serif;*/
     font-family: century-gothic, sans-serif;
 }
 
+.antal {
+    display: flex;
+    align-items: center;
+}
+
+.antal_pil {
+    background-image: url(SVG/pil_ned.svg);
+    transform: rotate(180deg);
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    margin: 16px 15px;
+}
+
 .singleview-shop button {
     background-color: #D5E59E;
     /*    background-color: #FAF29B;*/
@@ -1067,7 +1106,7 @@ sans-serif;*/
     left: 0;
 }
 
-.indhold_omOS {
+#indhold_omOS {
     background-color: white;
     height: 200vh;
     width: 100vw;
@@ -1086,12 +1125,12 @@ sans-serif;*/
     padding-bottom: 50px;
 }
 
-.indhold_omOS .wave {
+#indhold_omOS .wave {
     fill: #F8E9AC;
 
 }
 
-.indhold_omOS #omos2 {
+#indhold_omOS #omos2 {
     display: flex;
     flex-direction: column;
     padding: 0 45px;
@@ -1102,12 +1141,12 @@ sans-serif;*/
     background-color: #f3f9db;
 }
 
-.indhold_omOS #omos2 div div {
+#indhold_omOS #omos2 div div {
     margin-bottom: 50px;
 }
 
 /*
-.indhold_omOS h2 {
+#indhold_omOS h2 {
     font-size: 2rem;
     font-family: century-gothic, sans-serif;
         padding: 45px 45px 10px;
@@ -1119,13 +1158,13 @@ sans-serif;*/
     display: none;
 }
 
-.indhold_omOS .smileyboks {
+#indhold_omOS .smileyboks {
     width: 100vw;
     display: flex;
     justify-content: center;
 }
 
-.indhold_omOS .omossmiley {
+#indhold_omOS .omossmiley {
     width: 100px;
 }
 
@@ -1153,7 +1192,7 @@ sans-serif;*/
 
 }
 
-.indhold_kontakt {
+#indhold_kontakt {
     background-color: white;
     height: 200vh;
     width: 100vw;
@@ -1163,7 +1202,7 @@ sans-serif;*/
     top: 100vh;
 }
 
-.indhold_kontakt h2 {
+#indhold_kontakt h2 {
     display: block;
     font-size: 1.5em;
     margin-block-start: 0;
@@ -1248,18 +1287,19 @@ sans-serif;*/
     transition: .5s;
 }
 
-.indhold_kontakt .smileyboks {
+
+#indhold_kontakt .smileyboks {
     width: 100vw;
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
 }
 
-.indhold_kontakt .omossmiley {
+#indhold_kontakt .omossmiley {
     width: 100px;
 }
 
-.indhold_kontakt #insta {
+#indhold_kontakt #insta {
     max-width: 1199px;
     margin: auto;
     padding: 45px;
@@ -1337,6 +1377,10 @@ footer {
         background-image: url(SVG/logo_planet_lyseroed.svg);
     }
 
+    .usynlig_ned_knap {
+        top: 90%;
+        left: 50%;
+    }
 
     /****************UNIVERS****************/
 
@@ -1357,7 +1401,7 @@ footer {
         left: 0;
     }
 
-    .indhold_univers {
+    #indhold_univers {
         background-color: white;
         height: 200vh;
         width: 100vw;
@@ -1394,7 +1438,7 @@ footer {
         position: absolute;
     }
 
-    .indhold_shop {
+    #indhold_shop {
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1481,7 +1525,7 @@ footer {
         left: 0;
     }
 
-    .indhold_omOS {
+    #indhold_omOS {
         height: 200vh;
         width: 100vw;
         position: absolute;
@@ -1503,7 +1547,7 @@ footer {
         position: absolute;
     }
 
-    .indhold_kontakt {
+    #indhold_kontakt {
         background-color: white;
         height: 200vh;
         width: 100vw;
@@ -1516,7 +1560,7 @@ footer {
 
     #kortcontainer {
         width: 100vw;
-        height: 90vh;
+        height: 95vh;
     }
 
     #kortoverflow {
@@ -1535,13 +1579,13 @@ footer {
 }
 
 @media(min-width: 900px) {
-    .indhold_omOS #omos2 {
+    #indhold_omOS #omos2 {
         flex-direction: row;
         padding: 40px 100px;
 
     }
 
-    .indhold_omOS #column1 {
+    #indhold_omOS #column1 {
         padding-right: 10%;
     }
 
