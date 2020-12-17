@@ -994,7 +994,7 @@ sans-serif;*/
     flex-direction: column;
     padding: 22% 5%;
     align-items: flex-start;
-    height: 100vh;
+/*    height: 100vh;*/
 }
 
 .single-view-vare .column {
@@ -1162,6 +1162,7 @@ sans-serif;*/
     width: 100vw;
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 #indhold_omOS .omossmiley {
@@ -1526,13 +1527,9 @@ footer {
         left: 0;
     }
 
-<<<<<<< HEAD
-    #indhold_omOS {
-        height: 200vh;
-=======
+
     .indhold_omOS {
 /*        height: 155vh;*/
->>>>>>> origin/master
         width: 100vw;
         position: absolute;
         z-index: 2;
