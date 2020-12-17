@@ -929,7 +929,7 @@ sans-serif;*/
     position: relative;
     top: 0vh;
     margin: 0 auto;
-    height: 600px;
+    height: 1000px;
     padding-bottom: 100px;
 }
 
@@ -982,7 +982,7 @@ sans-serif;*/
 
 .boelge-shop {
     position: absolute;
-    bottom: 15%;
+    bottom: 45%;
     z-index: -1;
 }
 
@@ -1108,7 +1108,7 @@ sans-serif;*/
 
 #indhold_omOS {
     background-color: white;
-    height: 200vh;
+/*    height: 200vh;*/
     width: 100vw;
     position: relative;
     z-index: 2;
@@ -1194,7 +1194,7 @@ sans-serif;*/
 
 #indhold_kontakt {
     background-color: white;
-    height: 200vh;
+/*    height: 200vh;*/
     width: 100vw;
     position: relative;
     z-index: 2;
@@ -1247,6 +1247,7 @@ sans-serif;*/
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .billede-kontakt {
@@ -1292,7 +1293,7 @@ sans-serif;*/
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 #indhold_kontakt .omossmiley {
@@ -1403,7 +1404,7 @@ footer {
 
     #indhold_univers {
         background-color: white;
-        height: 200vh;
+/*        height: 200vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1525,8 +1526,13 @@ footer {
         left: 0;
     }
 
+<<<<<<< HEAD
     #indhold_omOS {
         height: 200vh;
+=======
+    .indhold_omOS {
+/*        height: 155vh;*/
+>>>>>>> origin/master
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1549,7 +1555,7 @@ footer {
 
     #indhold_kontakt {
         background-color: white;
-        height: 200vh;
+/*        height: 200vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1793,6 +1799,7 @@ footer {
 
     .collage_wrapper {
         width: 1000px;
+        height: 600px;
         position: relative;
         top: -4vh;
         margin-left: 0 auto;
@@ -1844,10 +1851,14 @@ footer {
         z-index: -1;
     }
 
+    .boelge-shop {
+        bottom: 45%;
+    }
+
     .boelge-shop-sv {
         display: block;
         position: absolute;
-        bottom: 22%;
+        bottom: 32%;
         z-index: -1;
     }
 
@@ -1858,4 +1869,10 @@ footer {
         z-index: -1;
     }
 
+    .billede_container {
+        margin-bottom: 0;
+    }
+
 }
+
+
