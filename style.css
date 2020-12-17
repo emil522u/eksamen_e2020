@@ -1069,7 +1069,7 @@ sans-serif;*/
 
 .indhold_omOS {
     background-color: white;
-    height: 200vh;
+/*    height: 200vh;*/
     width: 100vw;
     position: relative;
     z-index: 2;
@@ -1155,7 +1155,7 @@ sans-serif;*/
 
 .indhold_kontakt {
     background-color: white;
-    height: 200vh;
+/*    height: 200vh;*/
     width: 100vw;
     position: relative;
     z-index: 2;
@@ -1208,6 +1208,7 @@ sans-serif;*/
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .billede-kontakt {
@@ -1252,7 +1253,7 @@ sans-serif;*/
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .indhold_kontakt .omossmiley {
@@ -1359,7 +1360,7 @@ footer {
 
     .indhold_univers {
         background-color: white;
-        height: 200vh;
+/*        height: 200vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1482,7 +1483,7 @@ footer {
     }
 
     .indhold_omOS {
-        height: 200vh;
+/*        height: 155vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1505,7 +1506,7 @@ footer {
 
     .indhold_kontakt {
         background-color: white;
-        height: 200vh;
+/*        height: 200vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1808,7 +1809,7 @@ footer {
     .boelge-shop-sv {
         display: block;
         position: absolute;
-        bottom: 22%;
+        bottom: 32%;
         z-index: -1;
     }
 
@@ -1819,4 +1820,10 @@ footer {
         z-index: -1;
     }
 
+    .billede_container {
+        margin-bottom: 0;
+    }
+
 }
+
+
