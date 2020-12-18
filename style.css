@@ -708,7 +708,7 @@ ul ul {
 .univers_hvid_box {
     height: 100%;
     width: 100%;
-    background-color: rgba(244, 248, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.84);
     position: absolute;
 }
 
@@ -866,8 +866,15 @@ sans-serif;*/
     z-index: 2;
 }
 
+
+
 .pris {
     font-size: 1.2rem;
+
+    font-family: century-gothic, sans-serif;
+    color: #d67da5;
+    font-weight: 900;
+    margin: -10px 0 10px 0;
 }
 
 .vare-billede {
@@ -876,9 +883,9 @@ sans-serif;*/
 
 .shop-grid {
     display: grid;
-    grid-gap: 25px;
+    grid-gap: 10px;
     /*    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));*/
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
     grid-template-rows: 1fr;
     margin: 0;
     /*    background-color: #f0f5ff;*/
@@ -886,7 +893,7 @@ sans-serif;*/
     background-color: #f3f9db;
     /*    background-color: #ffedf6;*/
     /*    background-color: #F9D0E2;*/
-    padding: 3%;
+    padding: 5px 20px 40px 20px;
     z-index: 3;
 }
 
@@ -905,17 +912,14 @@ sans-serif;*/
 
 }
 
-/*
+
 .vare-navn {
-    font-family: century-gothic, sans-serif;
-    color: #d67da5;
-        padding: 5% 0px;
-    font-size: 2rem;
+    margin: 20px 0 0 0;
 }
-*/
+
 
 .faste_varer {
-    padding: 45px 45px 10px;
+    padding: 70px 20px 30px 20px;
     font-family: century-gothic, sans-serif;
     color: #d67da5;
     /*    background-color: #f0f5ff;*/
@@ -1023,6 +1027,10 @@ sans-serif;*/
 
 .singleview-shop .pris-sv {
     font-family: century-gothic, sans-serif;
+    margin: 40px 0 0 0;
+    color: #d67da5;
+    font-weight: 900;
+    font-size: 1.3rem;
 }
 
 .singleview-shop .vare-beskrivelse-sv {
@@ -1471,14 +1479,25 @@ footer {
         top: 100vh;
     }
 
+    .faste_varer {
+        padding: 60px 80px 30px 80px;
+
+
+    }
+
     .shop-grid {
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        padding: 0 80px 130px 80px;
     }
 
     header {
         height: 100vh;
     }
 
+    #collage h2 {
+        padding: 60px 80px 30px 80px;
+
+    }
 
     .collage_wrapper {
         width: 600px;
@@ -1615,7 +1634,7 @@ footer {
 @media(min-width: 900px) {
     #indhold_omOS #omos2 {
         flex-direction: row;
-        padding: 40px 100px;
+        padding: 40px 130px;
 
     }
 
@@ -1628,6 +1647,21 @@ footer {
         height: 45vw;
         display: block;
     }
+
+    .shop-grid {
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+        padding: 0 130px 130px 130px;
+    }
+
+    .faste_varer {
+        padding: 100px 130px 30px 130px;
+    }
+
+    #collage h2 {
+        padding: 100px 130px 30px 130px;
+
+    }
+
 }
 
 @media(min-width: 1000px) {
@@ -1886,7 +1920,7 @@ footer {
     .boelge-shop-sv {
         display: block;
         position: absolute;
-        bottom: 32%;
+        bottom: 17%;
         z-index: -1;
     }
 
