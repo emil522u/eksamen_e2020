@@ -444,7 +444,7 @@ ul ul {
 
 .farve8_container {
     position: absolute;
-    left: 80vw;
+    left: 60vw;
     top: -30vh;
 }
 
@@ -470,7 +470,7 @@ ul ul {
 
 .farve10_container {
     position: absolute;
-    left: 40vw;
+    left: -20vw;
     top: -70vh;
 }
 
@@ -478,12 +478,12 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#faf19b, rgba(0, 0, 0, 0) 70%);
+    background-image: radial-gradient(#f9cee0, rgba(0, 0, 0, 0) 70%);
 }
 
 .farve11_container {
     position: absolute;
-    left: 100vw;
+    left: 40vw;
     top: -50vh;
 }
 
