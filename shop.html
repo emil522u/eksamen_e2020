@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/pkv3fsf.css">
     <meta name="description" content="Moderne vintage tøj butik i centret af København. Bliv indspireret, Køb eller Besøg os på Studiestræd 24">
     <link rel="icon" type="image/png" href="SVG/favicon_lyseroed.svg" />
-    <meta name="robots" content="noindex" />
+<!--    <meta name="robots" content="noindex" />-->
 </head>
 
 <body class="index_body">
@@ -52,7 +52,9 @@
 
     <section class="splash">
 
-        <h1 class="shop_svg"></h1>
+
+        <img class="shop_svg1" src="SVG/shop_mobil.svg" alt="Shop" tiltle="Shop">
+        <img class="shop_svg2" src="SVG/shop.svg" alt="Shop" tiltle="Shop">
         <button class="usynlig_ned_knap" onclick="window.location.href='#indhold_shop'"></button>
         <div class="farve1_container ltr">
             <div class="farve1_sprite"></div>
@@ -99,6 +101,14 @@
     <main id="indhold_shop">
 
         <h2 class="faste_varer">FASTE VARER</h2>
+        <div class="knapsektion">
+            <div class="knap_container">
+                <button class="filter valgt" data-kategori="alle">Alle</button>
+                <button class="filter" data-kategori=3>Til håret</button>
+                <button class="filter" data-kategori=4>Smykker</button>
+                <button class="filter" data-kategori=5>Solbriller</button>
+            </div>
+        </div>
 
         <section class="shop-grid">
 
@@ -168,6 +178,4 @@
     <script src="script.js">
 
     </script>
-</body>
-
-</html>
+</body></html>

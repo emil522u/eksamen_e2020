@@ -1,5 +1,6 @@
 let blogPosts;
 let varer;
+let filter = "alle";
 document.addEventListener("DOMContentLoaded", start)
 
 //Get the button:
@@ -95,12 +96,12 @@ function postClick(id) {
 
 //*********SHOP********//
 
-
 async function varerJSON() {
     const JSONData = await
     fetch("http://signemariemathiasen.dk/kea/2_sem/eksamen/wordpress/wp-json/wp/v2/vare");
     jsonvare = await JSONData.json();
     visVare();
+    addEventListenersToButtons();
     console.log("loaded");
 }
 
@@ -111,20 +112,26 @@ function visVare() {
     sectionPointer.innerHTML = "";
     jsonvare.forEach(vare => {
 
-        const klon = templatePointer.cloneNode(true).content;
+        console.log(filter, vare.kategori);
 
-        klon.querySelector(".vare-navn").innerHTML = vare.varenavn;
-        klon.querySelector(".vare-billede").src = vare.varebillede.guid;
-        klon.querySelector(".pris").innerHTML = vare.varepris + "kr.";
-        klon.querySelector(".varevideo").src = vare.varevideo.guid;
+        if (filter == "alle" || filter == vare.kategori[1]) {
 
-        klon.querySelector(".varevideo").addEventListener('mouseover', hoverVideo, false);
-        klon.querySelector(".varevideo").addEventListener('mouseout', hideVideo, false);
+            console.log("indhold");
+            const klon = templatePointer.cloneNode(true).content;
+
+            klon.querySelector(".vare-navn").innerHTML = vare.varenavn;
+            klon.querySelector(".vare-billede").src = vare.varebillede.guid;
+            klon.querySelector(".pris").innerHTML = vare.varepris + " kr.";
+            klon.querySelector(".varevideo").src = vare.varevideo.guid;
+
+            klon.querySelector(".varevideo").addEventListener('mouseover', hoverVideo, false);
+            klon.querySelector(".varevideo").addEventListener('mouseout', hideVideo, false);
 
 
-        klon.querySelector(".vare").addEventListener("click", () => visSingleview(vare));
+            klon.querySelector(".vare").addEventListener("click", () => visSingleview(vare));
 
-        sectionPointer.appendChild(klon);
+            sectionPointer.appendChild(klon);
+        }
 
     })
 }
@@ -137,6 +144,21 @@ function hideVideo(e) {
     this.pause();
 }
 
+function addEventListenersToButtons() {
+    document.querySelectorAll(".filter").forEach((btn) => {
+        btn.addEventListener("click", filterBTNs);
+    });
+}
+
+function filterBTNs() {
+    filter = this.dataset.kategori;
+    //console.log(this.dataset.kategori);
+    document.querySelectorAll(".filter").forEach((btn) => {
+        btn.classList.remove("valgt");
+    })
+    this.classList.add("valgt");
+    visVare()
+}
 
 function visSingleview(vare) {
     console.log();
