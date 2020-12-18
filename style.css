@@ -704,7 +704,7 @@ ul ul {
 .univers_hvid_box {
     height: 100%;
     width: 100%;
-    background-color: rgba(244, 248, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.84);
     position: absolute;
 }
 
@@ -861,6 +861,7 @@ sans-serif;*/
 
 .pris {
     font-size: 1.2rem;
+    margin: 0;
 }
 
 .vare-billede {
@@ -869,9 +870,9 @@ sans-serif;*/
 
 .shop-grid {
     display: grid;
-    grid-gap: 25px;
+    grid-gap: 10px;
     /*    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));*/
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
     grid-template-rows: 1fr;
     margin: 0;
     /*    background-color: #f0f5ff;*/
@@ -879,7 +880,7 @@ sans-serif;*/
     background-color: #f3f9db;
     /*    background-color: #ffedf6;*/
     /*    background-color: #F9D0E2;*/
-    padding: 3%;
+    padding: 5px 20px 40px 20px;
     z-index: 3;
 }
 
@@ -908,7 +909,7 @@ sans-serif;*/
 */
 
 .faste_varer {
-    padding: 45px 45px 10px;
+    padding: 70px 20px 30px 20px;
     font-family: century-gothic, sans-serif;
     color: #d67da5;
     /*    background-color: #f0f5ff;*/
@@ -994,7 +995,7 @@ sans-serif;*/
     flex-direction: column;
     padding: 22% 5%;
     align-items: flex-start;
-/*    height: 100vh;*/
+    /*    height: 100vh;*/
 }
 
 .single-view-vare .column {
@@ -1108,7 +1109,7 @@ sans-serif;*/
 
 #indhold_omOS {
     background-color: white;
-/*    height: 200vh;*/
+    /*    height: 200vh;*/
     width: 100vw;
     position: relative;
     z-index: 2;
@@ -1195,7 +1196,7 @@ sans-serif;*/
 
 #indhold_kontakt {
     background-color: white;
-/*    height: 200vh;*/
+    /*    height: 200vh;*/
     width: 100vw;
     position: relative;
     z-index: 2;
@@ -1405,7 +1406,7 @@ footer {
 
     #indhold_univers {
         background-color: white;
-/*        height: 200vh;*/
+        /*        height: 200vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1449,14 +1450,25 @@ footer {
         top: 100vh;
     }
 
+    .faste_varer {
+        padding: 60px 80px 30px 80px;
+
+
+    }
+
     .shop-grid {
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        padding: 0 80px 130px 80px;
     }
 
     header {
         height: 100vh;
     }
 
+    #collage h2 {
+        padding: 60px 80px 30px 80px;
+
+    }
 
     .collage_wrapper {
         width: 600px;
@@ -1529,7 +1541,7 @@ footer {
 
 
     .indhold_omOS {
-/*        height: 155vh;*/
+        /*        height: 155vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1552,7 +1564,7 @@ footer {
 
     #indhold_kontakt {
         background-color: white;
-/*        height: 200vh;*/
+        /*        height: 200vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1584,7 +1596,7 @@ footer {
 @media(min-width: 900px) {
     #indhold_omOS #omos2 {
         flex-direction: row;
-        padding: 40px 100px;
+        padding: 40px 130px;
 
     }
 
@@ -1597,6 +1609,21 @@ footer {
         height: 45vw;
         display: block;
     }
+
+    .shop-grid {
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+        padding: 0 130px 130px 130px;
+    }
+
+    .faste_varer {
+        padding: 100px 130px 30px 130px;
+    }
+
+    #collage h2 {
+        padding: 100px 130px 30px 130px;
+
+    }
+
 }
 
 @media(min-width: 1000px) {
@@ -1855,7 +1882,7 @@ footer {
     .boelge-shop-sv {
         display: block;
         position: absolute;
-        bottom: 32%;
+        bottom: 17%;
         z-index: -1;
     }
 
@@ -1871,5 +1898,3 @@ footer {
     }
 
 }
-
-
