@@ -956,7 +956,7 @@ sans-serif;*/
     /*    background-color: rgb(216, 226, 255);*/
     background-color: #f3f9db;
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
     /*    color: black;*/
 }
 
@@ -1102,6 +1102,10 @@ sans-serif;*/
 }
 
 .boelge-shop-sv {
+    display: none;
+}
+
+.boelge-omos {
     display: none;
 }
 
@@ -1420,7 +1424,7 @@ footer {
 @media(min-width: 600px) {
 
     h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     /***************NAV****************/
@@ -1520,7 +1524,7 @@ footer {
     }
 
     .pris {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .knap_container {
@@ -1648,7 +1652,7 @@ footer {
 
     #kortcontainer {
         width: 100vw;
-        height: 95vh;
+        height: 100vh;
     }
 
     #kortoverflow {
@@ -1667,7 +1671,7 @@ footer {
 
 @media(min-width: 800px) {
     .single-view-vare {
-        margin:auto;
+        margin: auto;
         margin-top: 5%;
         flex-direction: row;
         padding: 10%;
@@ -1683,10 +1687,11 @@ footer {
     .single-view-vare .two {
         margin-top: 54px;
     }
+
     .shopfooter {
-    position:absolute;
+        position: absolute;
         bottom: -90px
-}
+    }
 }
 
 
@@ -1903,7 +1908,7 @@ footer {
     }
 
     .kontakt_container {
-        height: 80vh;
+        height: 90vh;
     }
 
 
@@ -1967,7 +1972,7 @@ footer {
     .boelge-blog {
         display: block;
         position: absolute;
-        bottom: 15%;
+        bottom: 20%;
         z-index: -1;
     }
 
@@ -1976,6 +1981,13 @@ footer {
     }
 
     .boelge-shop-sv {
+        display: block;
+        position: absolute;
+        bottom: 20%;
+        z-index: -1;
+    }
+
+    .boelge-omos {
         display: block;
         position: absolute;
         bottom: 30%;
@@ -1992,13 +2004,15 @@ footer {
     .billede_container {
         margin-bottom: 0;
     }
-     .univers_singleview {
+
+    .univers_singleview {
         display: flex;
         flex-direction: row-reverse;
         padding: 0 100px;
-         padding-left: 0;
-         margin-left: 0;
+        padding-left: 0;
+        margin-left: 0;
     }
+
     .postfooter {
         position: absolute;
     }
@@ -2010,5 +2024,3 @@ footer {
 
 
 }
-
-
