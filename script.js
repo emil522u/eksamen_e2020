@@ -44,7 +44,7 @@ async function loadUniversPostsJSON() {
     let jsonData = await fetch(url);
     blogPost = await jsonData.json();
 
-    doc
+
     document.querySelector(".single_post_navn").innerHTML = blogPost.overskrift;
     document.querySelector(".single_post_billede").src = blogPost.billede.guid;
     document.querySelector(".single_post_dato").innerHTML = blogPost.dato;

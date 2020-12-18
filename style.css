@@ -749,6 +749,8 @@ ul ul {
 
 .univers_singleview {
     margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .tilbage {
@@ -802,6 +804,10 @@ sans-serif;*/
 
 .boelge-blog {
     display: none;
+}
+
+.postfooter {
+    position: sticky;
 }
 
 /****************SHOP****************/
@@ -1129,7 +1135,9 @@ sans-serif;*/
     transition: opacity .5s ease-in-out;
 }
 
-
+.shopfooter {
+    position: sticky;
+}
 
 
 /****************OM OS****************/
@@ -1580,14 +1588,7 @@ footer {
 
     /****************SHOP SINGLEVIEW****************/
 
-    .single-view-vare {
-        flex-direction: row;
-        padding: 3% 2% 0%;
-    }
 
-    .shop-single-tekst {
-        padding: 10%;
-    }
 
     /****************OM OS****************/
 
@@ -1663,6 +1664,32 @@ footer {
 
 
 }
+
+@media(min-width: 800px) {
+    .single-view-vare {
+        margin:auto;
+        margin-top: 5%;
+        flex-direction: row;
+        padding: 10%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+    }
+
+    .single-view-vare .column {
+        max-width: 650px;
+        height: 650px;
+    }
+
+    .single-view-vare .two {
+        margin-top: 54px;
+    }
+    .shopfooter {
+    position:absolute;
+        bottom: -90px
+}
+}
+
+
 
 @media(min-width: 900px) {
     #indhold_omOS #omos2 {
@@ -1818,14 +1845,11 @@ footer {
 
     /***************UNIVERS SINGLE******************/
 
-    .univers_singleview {
-        display: flex;
-        flex-direction: row-reverse;
-        padding: 0 150px;
-    }
+
+
 
     .univers_singleview_containerBig {
-        max-width: 60%;
+        max-width: 800px;
     }
 
     .univers_singleview_containerTekst {
@@ -1840,16 +1864,17 @@ footer {
         margin: 0 15px;
     }
 
+    .single_post_billede {
+        max-width: 80vw;
+    }
+
     .tilbage {
         margin: 150px 165px 0;
     }
 
     /************SHOP SINGLE********************************/
 
-    .single-view-vare {
-        padding: 1% 12% 0%;
-        margin-top: 5%;
-    }
+
 
     /************FIND OS**********************************/
 
@@ -1953,7 +1978,7 @@ footer {
     .boelge-shop-sv {
         display: block;
         position: absolute;
-        bottom: 17%;
+        bottom: 30%;
         z-index: -1;
     }
 
@@ -1967,5 +1992,23 @@ footer {
     .billede_container {
         margin-bottom: 0;
     }
+     .univers_singleview {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 100px;
+         padding-left: 0;
+         margin-left: 0;
+    }
+    .postfooter {
+        position: absolute;
+    }
+
+    .single_post_billede {
+        max-width: 30vw;
+        margin-left: 165px;
+    }
+
 
 }
+
+
