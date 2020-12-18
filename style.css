@@ -749,6 +749,8 @@ ul ul {
 
 .univers_singleview {
     margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .tilbage {
@@ -802,6 +804,10 @@ sans-serif;*/
 
 .boelge-blog {
     display: none;
+}
+
+.postfooter {
+    position: sticky;
 }
 
 /****************SHOP****************/
@@ -1810,14 +1816,11 @@ footer {
 
     /***************UNIVERS SINGLE******************/
 
-    .univers_singleview {
-        display: flex;
-        flex-direction: row-reverse;
-        padding: 0 150px;
-    }
+
+
 
     .univers_singleview_containerBig {
-        max-width: 60%;
+        max-width: 800px;
     }
 
     .univers_singleview_containerTekst {
@@ -1830,6 +1833,10 @@ footer {
 
     .single_post_dato {
         margin: 0 15px;
+    }
+
+    .single_post_billede {
+        max-width: 80vw;
     }
 
     .tilbage {
@@ -1956,5 +1963,23 @@ footer {
     .billede_container {
         margin-bottom: 0;
     }
+     .univers_singleview {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 100px;
+         padding-left: 0;
+         margin-left: 0;
+    }
+    .postfooter {
+        position: absolute;
+    }
+
+    .single_post_billede {
+        max-width: 30vw;
+        margin-left: 165px;
+    }
+
 
 }
+
+
