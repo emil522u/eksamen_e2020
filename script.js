@@ -115,7 +115,7 @@ function visVare() {
 
         klon.querySelector(".vare-navn").innerHTML = vare.varenavn;
         klon.querySelector(".vare-billede").src = vare.varebillede.guid;
-        klon.querySelector(".pris").innerHTML = vare.varepris + "kr.";
+        klon.querySelector(".pris").innerHTML = vare.varepris + " kr.";
         klon.querySelector(".varevideo").src = vare.varevideo.guid;
 
         klon.querySelector(".varevideo").addEventListener('mouseover', hoverVideo, false);
