@@ -20,7 +20,7 @@ h1 {
 h2 {
     font-family: century-gothic, sans-serif;
     color: #d67da5;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
 }
 
@@ -1053,7 +1053,7 @@ sans-serif;*/
 .singleview-shop h2 {
     font-family: century-gothic, sans-serif;
     color: #d67da5;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     margin: 0;
 }
@@ -1261,7 +1261,7 @@ sans-serif;*/
 
 #indhold_kontakt h2 {
     display: block;
-    font-size: 1.5em;
+    font-size: 2.5rem;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0px;
@@ -1321,7 +1321,7 @@ sans-serif;*/
 
 #kortcontainer h2 {
     padding: 45px 0px 15px;
-    font-size: 1.3rem;
+    font-size: 2.5rem;
     text-align: center;
     color: black;
 }
