@@ -860,13 +860,38 @@ sans-serif;*/
 
 #indhold_shop {
     width: 100vw;
-    /*    background-color: #F9CFE1;*/
+    /*    background-color: #f3f9db;*/
     position: relative;
     top: 100vh;
     z-index: 2;
 }
 
+.knapsektion {
+    width: 100vw;
+    background-color: #f3f9db;
+}
 
+.knap_container {
+    display: flex;
+    background-color: #f3f9db;
+    justify-content: space-between;
+    padding: 25px 15px;
+    width: 470px;
+}
+
+.valgt {
+    background-color: #d67da5;
+}
+
+#indhold_shop button {
+    background-color: #D5E59E;
+    border: none;
+    text-transform: uppercase;
+    font-family: century-gothic, sans-serif;
+    height: 45px;
+    width: 100px;
+    cursor: pointer;
+}
 
 .pris {
     font-size: 1rem;
@@ -1488,6 +1513,10 @@ footer {
 
     .pris {
         font-size: 1.3rem;
+    }
+
+    .knap_container {
+        padding: 25px 130px;
     }
 
     .shop-grid {
