@@ -885,18 +885,21 @@ sans-serif;*/
     width: 470px;
 }
 
-.valgt {
-    background-color: #d67da5;
-}
+
 
 #indhold_shop button {
     background-color: #D5E59E;
+    background-color: #d8e3fe;
     border: none;
     text-transform: uppercase;
     font-family: century-gothic, sans-serif;
     height: 45px;
     width: 100px;
     cursor: pointer;
+}
+
+.valgt {
+    background-color: #d77da5 !important;
 }
 
 .pris {
