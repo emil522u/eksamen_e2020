@@ -859,9 +859,15 @@ sans-serif;*/
     z-index: 2;
 }
 
+
+
 .pris {
     font-size: 1.2rem;
-    margin: 0;
+
+    font-family: century-gothic, sans-serif;
+    color: #d67da5;
+    font-weight: 900;
+    margin: -10px 0 10px 0;
 }
 
 .vare-billede {
@@ -899,14 +905,11 @@ sans-serif;*/
 
 }
 
-/*
+
 .vare-navn {
-    font-family: century-gothic, sans-serif;
-    color: #d67da5;
-        padding: 5% 0px;
-    font-size: 2rem;
+    margin: 20px 0 0 0;
 }
-*/
+
 
 .faste_varer {
     padding: 70px 20px 30px 20px;
@@ -1017,6 +1020,10 @@ sans-serif;*/
 
 .singleview-shop .pris-sv {
     font-family: century-gothic, sans-serif;
+    margin: 40px 0 0 0;
+    color: #d67da5;
+    font-weight: 900;
+    font-size: 1.3rem;
 }
 
 .singleview-shop .vare-beskrivelse-sv {
