@@ -658,15 +658,19 @@ ul ul {
     overflow-x: hidden;
 }
 
-.vores_univers_svg {
-    background-image: url(SVG/vores_univers_mobile.svg);
-    background-size: cover;
+.vores_univers_svg1 {
+    /*    background-image: url(SVG/vores_univers_mobile.svg);*/
+    object-fit: cover;
     background-position: 50% 50%;
     width: 100vw;
     height: 100vh;
     z-index: 10;
     position: absolute;
     left: 0;
+}
+
+.vores_univers_svg2 {
+    display: none;
 }
 
 
@@ -841,14 +845,17 @@ sans-serif;*/
     opacity: 0;
 }
 
-.shop_svg {
-    background-image: url(SVG/shop_mobil.svg);
-    background-size: cover;
+.shop_svg1 {
+    object-fit: cover;
     background-position: 50% 50%;
     width: 100vw;
     height: 100vh;
     z-index: 10;
     position: absolute;
+}
+
+.shop_svg2 {
+    display: none;
 }
 
 #indhold_shop {
@@ -994,7 +1001,7 @@ sans-serif;*/
     flex-direction: column;
     padding: 22% 5%;
     align-items: flex-start;
-/*    height: 100vh;*/
+    /*    height: 100vh;*/
 }
 
 .single-view-vare .column {
@@ -1095,10 +1102,9 @@ sans-serif;*/
 
 /****************OM OS****************/
 
-.omOS_svg {
-    background-image: url(SVG/om_os_mobil.svg);
-    background-size: cover;
-    background-position: 50% 50%;
+.omOS_svg1 {
+    object-fit: cover;
+    object-position: 50% 50%;
     width: 100vw;
     height: 100vh;
     z-index: 10;
@@ -1106,9 +1112,13 @@ sans-serif;*/
     left: 0;
 }
 
+.omOS_svg2 {
+    display: none;
+}
+
 #indhold_omOS {
     background-color: white;
-/*    height: 200vh;*/
+    /*    height: 200vh;*/
     width: 100vw;
     position: relative;
     z-index: 2;
@@ -1182,10 +1192,9 @@ sans-serif;*/
 /****************KONTAKT****************/
 
 
-.kontakt_svg {
-    background-image: url(SVG/find_os_mobil.svg);
-    background-size: cover;
-    background-position: 50% 50%;
+.kontakt_svg1 {
+    object-fit: cover;
+    object-position: 50% 50%;
     width: 100vw;
     height: 100vh;
     z-index: 10;
@@ -1193,9 +1202,13 @@ sans-serif;*/
 
 }
 
+.kontakt_svg2 {
+    display: none;
+}
+
 #indhold_kontakt {
     background-color: white;
-/*    height: 200vh;*/
+    /*    height: 200vh;*/
     width: 100vw;
     position: relative;
     z-index: 2;
@@ -1393,9 +1406,14 @@ footer {
         top: 0;
     }
 
-    .vores_univers_svg {
-        background-image: url(SVG/vores_univers.svg);
-        background-position: 50% 90%;
+    .vores_univers_svg1 {
+        display: none;
+    }
+
+    .vores_univers_svg2 {
+        display: block;
+        object-fit: cover;
+        object-position: 50% 90%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1405,7 +1423,7 @@ footer {
 
     #indhold_univers {
         background-color: white;
-/*        height: 200vh;*/
+        /*        height: 200vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1430,10 +1448,14 @@ footer {
 
     /****************SHOP****************/
 
+    .shop_svg1 {
+        display: none;
+    }
 
-    .shop_svg {
-        background-image: url(SVG/shop.svg);
-        background-position: 50% 90%;
+    .shop_svg2 {
+        display: block;
+        object-fit: cover;
+        object-position: 50% 90%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1516,10 +1538,14 @@ footer {
 
     /****************OM OS****************/
 
+    .omOS_svg1 {
+        display: none;
+    }
 
-    .omOS_svg {
-        background-image: url(SVG/om_os.svg);
-        background-position: 50% 90%;
+    .omOS_svg2 {
+        object-fit: cover;
+        display: block;
+        object-position: 50% 90%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
@@ -1529,7 +1555,7 @@ footer {
 
 
     .indhold_omOS {
-/*        height: 155vh;*/
+        /*        height: 155vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1541,18 +1567,23 @@ footer {
     /****************KONTAKT****************/
 
 
-    .kontakt_svg {
-        background-image: url(SVG/kontakt.svg);
-        background-position: 50% 90%;
+    .kontakt_svg2 {
+        display: block;
+        object-fit: cover;
+        object-position: 50% 90%;
         width: 100vw;
         height: 100vh;
         z-index: 10;
         position: absolute;
     }
 
+    .kontakt_svg1 {
+        display: none;
+    }
+
     #indhold_kontakt {
         background-color: white;
-/*        height: 200vh;*/
+        /*        height: 200vh;*/
         width: 100vw;
         position: absolute;
         z-index: 2;
@@ -1871,5 +1902,3 @@ footer {
     }
 
 }
-
-
