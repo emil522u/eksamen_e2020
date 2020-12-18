@@ -885,18 +885,21 @@ sans-serif;*/
     width: 470px;
 }
 
-.valgt {
-    background-color: #d67da5;
-}
+
 
 #indhold_shop button {
     background-color: #D5E59E;
+    background-color: #d8e3fe;
     border: none;
     text-transform: uppercase;
     font-family: century-gothic, sans-serif;
     height: 45px;
     width: 100px;
     cursor: pointer;
+}
+
+.valgt {
+    background-color: #d77da5 !important;
 }
 
 .pris {
@@ -1667,7 +1670,7 @@ footer {
 
 @media(min-width: 800px) {
     .single-view-vare {
-        margin:auto;
+        margin: auto;
         margin-top: 5%;
         flex-direction: row;
         padding: 10%;
@@ -1683,10 +1686,11 @@ footer {
     .single-view-vare .two {
         margin-top: 54px;
     }
+
     .shopfooter {
-    position:absolute;
+        position: absolute;
         bottom: -90px
-}
+    }
 }
 
 
@@ -1992,13 +1996,15 @@ footer {
     .billede_container {
         margin-bottom: 0;
     }
-     .univers_singleview {
+
+    .univers_singleview {
         display: flex;
         flex-direction: row-reverse;
         padding: 0 100px;
-         padding-left: 0;
-         margin-left: 0;
+        padding-left: 0;
+        margin-left: 0;
     }
+
     .postfooter {
         position: absolute;
     }
@@ -2010,5 +2016,3 @@ footer {
 
 
 }
-
-
