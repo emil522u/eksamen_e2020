@@ -303,7 +303,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#f9cee0, rgba(255, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#f9cee0, rgba(255, 0, 0, 0) 70%);
 }
 
 .farve2_container {
@@ -316,7 +316,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#faf19b, rgba(255, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#faf19b, rgba(255, 0, 0, 0) 70%);
 }
 
 .farve3_container {
@@ -329,7 +329,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#d6e397, rgba(255, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#d6e397, rgba(255, 0, 0, 0) 70%);
 }
 
 .farve4_container {
@@ -342,7 +342,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#d6e397, rgba(255, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#d6e397, rgba(255, 0, 0, 0) 70%);
 }
 
 .farve5_container {
@@ -355,7 +355,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#faf19b, rgba(0, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#faf19b, rgba(0, 0, 0, 0) 70%);
 }
 
 .farve6_container {
@@ -368,7 +368,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#FAF29B, rgba(0, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#FAF29B, rgba(0, 0, 0, 0) 70%);
 }
 
 .farve7_container {
@@ -379,7 +379,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#faf19b, rgba(0, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#faf19b, rgba(0, 0, 0, 0) 70%);
 }
 
 .farve8_container {
@@ -392,7 +392,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#f9cee0, rgba(0, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#f9cee0, rgba(0, 0, 0, 0) 70%);
 }
 
 .farve9_container {
@@ -405,7 +405,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#d6e397, rgba(0, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#d6e397, rgba(0, 0, 0, 0) 70%);
 }
 
 .farve10_container {
@@ -418,7 +418,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#f9cee0, rgba(0, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#f9cee0, rgba(0, 0, 0, 0) 70%);
 }
 
 .farve11_container {
@@ -431,7 +431,7 @@ ul ul {
     height: 1000px;
     width: 1000px;
     border-radius: 100%;
-    background-image: radial-gradient(#f9cee0, rgba(0, 0, 0, 0) 70%);
+    background: -webkit-radial-gradient(#f9cee0, rgba(0, 0, 0, 0) 70%);
 }
 
 .ltr {
@@ -573,13 +573,14 @@ ul ul {
 }
 
 .forside_tekst {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: century-gothic, sans-serif;
     font-weight: 400;
     font-style: italic;
     color: white;
     position: relative;
     top: 310px;
+    left: 5px;
     text-align: center;
 }
 
