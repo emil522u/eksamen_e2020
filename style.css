@@ -1300,7 +1300,7 @@ footer {
 
 /****************MEDIA************************************************/
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
     #shopfooter {
         bottom: -190px;
     }
@@ -1894,32 +1894,33 @@ footer {
 
 /************SHOP-GRID**********************************/
 /*query to fix grid at 800px  to 900px*/
-@media(min-width: 800px){
+@media(min-width: 800px) {
     .shop-grid {
         grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     }
 }
 
-@media(min-width: 1240px){
+@media(min-width: 1240px) {
     .shop-grid {
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         max-width: 1305px;
         margin: auto;
     }
+
     .knapsektion {
         width: 1305px;
         margin: auto;
-        padding:0;
+        padding: 0;
     }
 
     .knap_container {
         padding-left: 0;
     }
 
-    .faste_varer{
+    .faste_varer {
         width: 1305px;
         margin: auto;
-        padding:0;
+        padding: 0;
         margin-top: 100px;
     }
 }
