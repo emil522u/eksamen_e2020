@@ -784,6 +784,7 @@ ul ul {
     position: relative;
     top: 100vh;
     z-index: 2;
+    background-color: #f3f9db;
 }
 
 .knapsektion {
@@ -831,12 +832,12 @@ ul ul {
 .shop-grid {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     grid-template-rows: 1fr;
-    margin: 0;
     background-color: #f3f9db;
-    padding: 5px 20px 40px 20px;
+    margin: 5px 20px 40px 20px;
     z-index: 3;
+    justify-self: center;
 }
 
 
@@ -870,6 +871,8 @@ ul ul {
 
 #collage {
     position: relative;
+    background-color: white;
+    z-index: -1;
 }
 
 .collage_wrapper {
@@ -1411,8 +1414,8 @@ footer {
     }
 
     .shop-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        padding: 0 80px 130px 80px;
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+        margin: 0 80px 130px 80px;
     }
 
     header {
@@ -1589,7 +1592,7 @@ footer {
 
     .shop-grid {
         grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-        padding: 0 130px 130px 130px;
+        margin: 0 130px 130px 130px;
     }
 
     .faste_varer {
@@ -1887,4 +1890,36 @@ footer {
     }
 
 
+}
+
+/************SHOP-GRID**********************************/
+/*query to fix grid at 800px  to 900px*/
+@media(min-width: 800px){
+    .shop-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media(min-width: 1240px){
+    .shop-grid {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        max-width: 1305px;
+        margin: auto;
+    }
+    .knapsektion {
+        width: 1305px;
+        margin: auto;
+        padding:0;
+    }
+
+    .knap_container {
+        padding-left: 0;
+    }
+
+    .faste_varer{
+        width: 1305px;
+        margin: auto;
+        padding:0;
+        margin
+    }
 }
