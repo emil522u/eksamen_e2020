@@ -1297,6 +1297,12 @@ footer {
 
 /****************MEDIA************************************************/
 
+@media(max-width: 600px){
+    #shopfooter {
+        bottom: -190px;
+    }
+}
+
 
 @media(min-width: 600px) {
 
