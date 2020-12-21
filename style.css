@@ -1346,7 +1346,7 @@ footer {
         display: block;
         object-fit: cover;
         object-position: 50% 90%;
-        width: 100vw;
+        width: 101vw;
         height: 100vh;
         z-index: 10;
         position: absolute;
@@ -1482,7 +1482,7 @@ footer {
         object-fit: cover;
         display: block;
         object-position: 50% 90%;
-        width: 100vw;
+        width: 101vw;
         height: 100vh;
         z-index: 10;
         position: absolute;
