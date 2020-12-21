@@ -1539,7 +1539,7 @@ footer {
 @media(min-width: 800px) {
     .single-view-vare {
         margin: auto;
-        margin-top: 5%;
+        margin-top: 7%;
         flex-direction: row;
         padding: 10%;
         padding-top: 0%;
