@@ -1905,6 +1905,7 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         max-width: 1305px;
         margin: auto;
+        padding-bottom: 130px;
     }
 
     .knapsektion {
